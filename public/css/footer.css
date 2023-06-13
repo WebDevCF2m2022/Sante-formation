@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+/* CONTAINER GÉNÉRAL DU FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 50px;
+    grid-template-areas: 
+    "menuFooter aboutFooter aboutFooter coordonneeFooter coordonneeFooter contactFooter"
+    "copyright copyright copyright copyright copyright copyright";
+    background-color: #095C76;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* HR BLEU EN DESSOUS DES TITRES DU FOOTER */ 
+#hrBleu {
+    background-color: #0C9AEA;
+    height: 3px;
+    margin-right: 60%;
+    border: none;
+    overflow: visible;
+    text-align: center;
+}
+
+/* MENU DU FOOTER */
+#menuFooter {
+    display: grid;
+    justify-items: start;
+    grid-area: menuFooter;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* LES LIENS DU MENU DU FOOTER */
+#menuFooter a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Á PROPOS DU FOOTER */
+#aboutFooter {
+    grid-area: aboutFooter;
+    width: 80%;
+}
+
+#aboutFooter img {
+    float: left;
+    margin: 10px 15px 0 0;
+}
+
+/* COORDONEE DU FOOTER */ 
+#coordoneeFooter {
+    grid-area: coordonneeFooter;
+    
+}
+
+/* RESEAUX SOCIAUX DU FOOTER */
+#coordoneeFooter img {
+    border-radius: 20px;
+}
+
+/* FORMULAIRE DE CONTACT DU FOOTER */
+#formFooter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "nomFooter nomFooter"
+    "emailFooter emailFooter"
+    "messageFooter messageFooter"
+    ". submitFooter";
+    grid-auto-rows: auto;
+    margin-right: 30px;
+}
+
+/* CONTACT INPUT NOM, PRENOM FOOTER */
+#nomFooter {
+    grid-area: nomFooter;
+}
+
+/* CONTACT INPUT EMAIL FOOTER */
+#emailFooter {
+    grid-area: emailFooter;
+}
+
+/* CONTACT INPUT MESSAGE FOOTER */
+#messageFooter {
+    height: 50px;
+    grid-area: messageFooter;
+}
+
+/* CONTACT INPUT SUBMIT FOOTER */
+#submitFooter {
+    border-radius: 10px;
+    background-color: #0C9AEA;
+    border: 1px solid #0C9AEA;
+    color: white;
+    grid-area: submitFooter;
+}
+
+/* INPUT DU FORMULAIRE DE CONTACT DU FOOTER */
+form input {
+    margin-top: 15px;
+}
+
+/* COPYRIGHT FOOTER */
+#copyright {
+    grid-area: copyright;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* HR BLANC AU DESSUS DU COPYRIGHT */ 
+#copyright hr {
+    height: 3px;
+    width: 80%;
+    border: none;
+    overflow: visible;
+    text-align: center;
+    background-color: white;
+}
