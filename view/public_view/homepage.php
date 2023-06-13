@@ -23,7 +23,7 @@
             <h2>Santé et formation</h2>
             <hr id="hrBleu">
             <img src="img/logoSanteFormation.png" width="60px" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ratione cupiditate mollitia placeat officiis expedita? At, repellat reprehenderit labore quaerat itaque sequi voluptate quos, natus earum perferendis, pariatur numquam dignissimos quis sint ipsa laborum. Molestiae sit ipsum commodi omnis voluptatum id, nobis suscipit quaerat eius impedit voluptatem minima rerum culpa architecto dolorem, deserunt in nihil sint illo recusandae laborum dolores, blanditiis animi? Maxime nam quia laborum. Cumque fugiat magni, dolor illum suscipit, nesciunt ipsam aut doloribus et numquam atque inventore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus provident hic, voluptatum consequatur modi labore est, illum vitae ab, aperiam magni? Modi ducimus provident commodi aspernatur deserunt tenetur eaque!</p>
         </div>
 
         <div id="coordoneeFooter">
