@@ -8,6 +8,10 @@
     <title>Accueil</title>
 </head>
 <body>
+    <?php
+include "../view/public_view/menu.php";
+    ?>
+    <p>Accueil</p>
     <footer>
         <div id="menuFooter">
             <a href="#" target="_blank">L'ASBL</a>
