@@ -8,10 +8,10 @@
     <title>Accueil</title>
 </head>
 <body>
-
-
-    <!-- INCLUDE DU FOOTER -->
+<!--include menu-->
+<!-- INCLUDE DU FOOTER -->
     <?php
+     include "../view/public_view/menu.php";
     include_once '../view/public_view/src/NL/footerNL.php';
     ?>
 </body>
