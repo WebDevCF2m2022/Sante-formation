@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
     <!-- INCLUDE DU FOOTER -->
     <?php
     include_once '../view/public_view/src/NL/footerNL.php';
