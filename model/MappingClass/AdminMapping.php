@@ -2,7 +2,7 @@
 namespace model\MappingClass;
 use model\AbstractsClass\AbstractsMapping;
 
-class AdminMapping
+class AdminMapping extends AbstractsMapping
 {
 
     private int $idAdmin;

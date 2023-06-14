@@ -3,7 +3,7 @@
 namespace model\MappingClass;
 use model\AbstractsClass\AbstractsMapping;
 
-class AgendaMapping
+class AgendaMapping extends AbstractsMapping
 {
     private int $idAgenda;
     private string $agendaTitre;

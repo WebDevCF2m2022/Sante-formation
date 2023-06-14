@@ -3,7 +3,7 @@
 namespace model\MappingClass;
 use model\AbstractsClass\AbstractsMapping;
 
-class FormationMapping
+class FormationMapping extends AbstractsMapping
 {
    private int $idFormation ;
    private string $formationTitre ;

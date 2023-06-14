@@ -1,6 +1,5 @@
 
         <nav class="navbar">
-
             <a href="index.php?view=homepage" class="active">L'ASBL</a>
             <a href="index.php?view=action" class="active">Nos actions</a>
             <a href="index.php?view=formation" class="active">Formations</a>
@@ -15,6 +14,5 @@
             <option value="ar">AR</option>
         </select>
         </nav>
-    
 
 
