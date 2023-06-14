@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/footer.css">
-    <title>Home</title>
-</head>
-<body>
-    <footer>
+<footer>
         <div id="menuFooter">
             <?php
                 $asbl = "Vzw";
@@ -19,13 +9,13 @@
                 $mentionsLegales = "Juridische informatie";
                 $politiqueConfidentialite = "Privacybeleid";
                 
-                echo "<a href=\"#\" target=\"_blank\">$asbl</a>";
-                echo "<a href=\"#\" target=\"_blank\">$formation</a>";
-                echo "<a href=\"#\" target=\"_blank\">$don</a>";
-                echo "<a href=\"#\" target=\"_blank\">$agenda</a>";
-                echo "<a href=\"#\" target=\"_blank\">$credits</a>";
-                echo "<a href=\"#\" target=\"_blank\">$mentionsLegales</a>";
-                echo "<a href=\"#\" target=\"_blank\">$politiqueConfidentialite</a>";
+                echo "<a href=\"index.php?view=homepage\" target=\"_blank\">$asbl</a>";
+                echo "<a href=\"index.php?view=formation\" target=\"_blank\">$formation</a>";
+                echo "<a href=\"index.php?view=donation\" target=\"_blank\">$don</a>";
+                echo "<a href=\"index.php?view=agenda\" target=\"_blank\">$agenda</a>";
+                echo "<a href=\"index.php?view=admin\" target=\"_blank\">$credits</a>";
+                echo "<a href=\"index.php?view=don\" target=\"_blank\">$mentionsLegales</a>";
+                echo "<a href=\"index.php?view=don\" target=\"_blank\">$politiqueConfidentialite</a>";
             ?>
         </div>
 

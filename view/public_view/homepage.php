@@ -8,12 +8,18 @@
     <title>Accueil</title>
 </head>
 <body>
+
 <!--include menu-->
+<?php
+    include "../view/public_view/src/menu.php";
+?>
+
+<h1>YOYOYOYO</h1>
+
 <!-- INCLUDE DU FOOTER -->
-    <?php
-     include "../view/public_view/src/FR/menuFR.php";
-    include_once '../view/public_view/src/NL/footerNL.php';
-    ?>
+<?php
+    include_once '../view/public_view/src/FR/footerFR.php';
+?>
 
 
 
