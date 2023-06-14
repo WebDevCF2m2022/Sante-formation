@@ -1,7 +1,9 @@
 <?php
 
 require_once '../view/public_view/homepage.php';
+
 //include menu dans toute le page
+
 if(isset($_GET['view'])){
     switch($_GET['view']){
         case 'accueil':
@@ -24,8 +26,9 @@ if(isset($_GET['view'])){
                     break;
         
         default:
-            include_once "../view/public_view/homepage.php";
+           include_once "../view/public_view/homepage.php";
     }
-}else{
-    include_once "../view/public_view/homepage.php";
 }
+
+
+
