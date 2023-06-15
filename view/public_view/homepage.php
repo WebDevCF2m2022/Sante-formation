@@ -47,7 +47,11 @@
         </div>
         -->
     </div>
-
+    <div class="dots-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
     <span class="prev">&#10094;</span>
     <span class="next">&#10095;</span>
 </div>
