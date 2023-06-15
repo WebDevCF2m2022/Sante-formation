@@ -1,20 +1,21 @@
 .navigation{
-    background-color:  #095C76;
+    background-color:   #14939c;
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: large;
     justify-content: space-between;
     align-items: center;
-    height: 156px;
+    height: 100px;
     display: flex;
     list-style: none;
 }
 
 .logo{
-    width: 226px;
-    height: 226px;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    margin-top: 70px;
+    margin-top: 90px;
+    margin-left: 25px;
 }
 
 .navi{
@@ -23,6 +24,10 @@
     margin: 0 10px 0 20px;
     list-style: none;
     text-decoration: none;
+}
+
+.navi:nth-child(1){
+    margin-left: 150px;
 }
 
 .navibutton{
