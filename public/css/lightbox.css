@@ -24,22 +24,21 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 24px;
-    color: white;
+    color: black;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    border-radius: 100px;
     cursor: pointer;
 }
 
 #lightbox .prev {
-    border-radius: 100px;
     left: 10px;
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 #lightbox .next {
-    border-radius: 100px;
     right: 10px;
-    background-color: black;
+    background-color: white;
 }
 
 #lightbox .caption {
@@ -66,7 +65,8 @@
     cursor: pointer;
 }
 
-/* Ajout des styles pour les points */
+/* STYLES POUR LES POINTS CHANGEMENT D'IMAGE CAROUSEL */
+
 #lightbox .dots-container {
     position: absolute;
     bottom: 10px;
@@ -87,3 +87,4 @@
 #lightbox .dot.active {
     background-color: white;
 }
+

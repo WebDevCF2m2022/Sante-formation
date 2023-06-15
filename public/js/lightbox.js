@@ -14,6 +14,10 @@ function showImage(index) {
     images[currentImageIndex].classList.remove("active");
     images[index].classList.add("active");
 
+    var dots = document.querySelectorAll("#lightbox .dot");
+    dots[currentImageIndex].classList.remove("active");
+    dots[index].classList.add("active");
+
     currentImageIndex = index;
 }
 
@@ -35,6 +39,20 @@ function startSlideshow() {
         showImage(currentImageIndex + 1);
     }, 7500);
 }
+
+function changeImage(index) {
+    clearInterval(interval);
+    showImage(index);
+    startSlideshow();
+}
+
+var dots = document.querySelectorAll("#lightbox .dot");
+dots.forEach(function (dot, index) {
+    dot.addEventListener("click", function () {
+        changeImage(index);
+    });
+});
+
 
 prevButton.addEventListener("click", showPreviousImage);
 nextButton.addEventListener("click", showNextImage);
