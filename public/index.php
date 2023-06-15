@@ -14,7 +14,7 @@ try{
         DB_USER,DB_PWD);
     $dbConnect->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 }catch(Exception $e){
-    $e = throw new Exception('CONNECTION ERROR');
+     throw new Exception('CONNECTION ERROR');
 
 }
 
