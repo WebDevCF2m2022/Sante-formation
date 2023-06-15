@@ -16,11 +16,12 @@ class ActionManager{
     }
 
     /**
+     * request for one by id
      * @param int $id
      * @return \model\MappingClass\ActionMapping|void
      */
     public  function getOneById(int $id){
-        $prepare = $this->db->prepare("SELECT * FROM action WHERE `idCateg` = :id");
+        $prepare = $this->connect->prepare("SELECT * FROM action WHERE `idaction` = :id");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         try {
             $prepare->execute();
@@ -34,6 +35,7 @@ class ActionManager{
     }
 
     /**
+     * request for get all
      * @return array
      */
     public function getAll(): array{
@@ -53,6 +55,7 @@ class ActionManager{
     }
 
     /**
+     * request for insert of db
      * @param \model\MappingClass\ActionMapping $datas
      * @return bool
      */
@@ -74,6 +77,7 @@ class ActionManager{
     }
 
     /**
+     * request for update of db
      * @param \model\MappingClass\ActionMapping $datas
      * @return bool
      */
@@ -96,6 +100,7 @@ class ActionManager{
   }
 
     /**
+     * request delete of db
      * @param \model\MappingClass\ActionMapping $id
      * @return bool
      */
