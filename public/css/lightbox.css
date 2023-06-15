@@ -65,3 +65,25 @@
     padding: 5px 10px;
     cursor: pointer;
 }
+
+/* Ajout des styles pour les points */
+#lightbox .dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#lightbox .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#lightbox .dot.active {
+    background-color: white;
+}
