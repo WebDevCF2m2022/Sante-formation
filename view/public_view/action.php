@@ -14,7 +14,7 @@
         include "../view/public_view/src/menu.php";
         ?>
     </nav>
--
+
  <footer>
      <!-- INCLUDE DU FOOTER -->
      <?php
