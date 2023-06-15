@@ -8,15 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-
 <!--include menu-->
-<?php
+<nav>
+    <?php
     include "../view/public_view/src/menu.php";
-?>
-<h1>YOYOYOYOYOYO</h1>
-<!-- INCLUDE DU FOOTER -->
-<?php
+    ?>
+</nav>
+-
+<footer>
+    <!-- INCLUDE DU FOOTER -->
+    <?php
     include_once '../view/public_view/src/FR/footerFR.php';
-?>
+    ?>
+</footer>
 </body>
 </html>

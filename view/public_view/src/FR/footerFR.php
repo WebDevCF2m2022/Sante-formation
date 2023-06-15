@@ -1,4 +1,4 @@
-<footer>
+
         <div id="menuFooter">
             <?php
                 $asbl = "L'ASBL";
@@ -75,6 +75,4 @@
             ?>
         </div>
 
-    </footer>
-</body>
-</html>
+

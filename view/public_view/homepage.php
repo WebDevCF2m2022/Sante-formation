@@ -11,10 +11,10 @@
 </head>
 <body>
 
-<!--include menu-->
+<nav>
 <?php
     include "../view/public_view/src/menu.php";
-?>
+?></nav>
 
 <div id="lightbox">
     <div class="image">
@@ -62,9 +62,13 @@
 </div>
 
 <!-- INCLUDE DU FOOTER -->
-<?php
+<footer>
+
+    <?php
     include_once '../view/public_view/src/FR/footerFR.php';
-?>
+    ?>
+</footer>
+
 
 
 
