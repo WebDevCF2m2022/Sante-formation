@@ -1,0 +1,46 @@
+.navigation{
+    background-color:  #095C76;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    justify-content: space-between;
+    align-items: center;
+    height: 156px;
+    display: flex;
+    list-style: none;
+}
+
+.logo{
+    width: 226px;
+    height: 226px;
+    z-index: 1;
+    margin-top: 70px;
+}
+
+.navi{
+    color: white;
+    margin-right: 20px;
+    margin: 0 10px 0 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navibutton{
+    border: 2px solid black;
+    box-shadow: 2px;
+    border-radius: 15px 15px;
+    padding: 8px 12px;
+    background-color:  #095C76;
+    box-shadow: 10px 5px 5px #095C76;
+}
+
+.navilien{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.navilangue{
+    border-radius: 15px 15px;
+    margin-right: 8px;
+}
