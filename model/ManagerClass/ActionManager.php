@@ -56,7 +56,7 @@ class ActionManager{
      * @param \model\MappingClass\ActionMapping $datas
      * @return bool
      */
-    public function InsertAction(ActionMapping  $datas): bool{
+    public function insertAction(ActionMapping  $datas): bool{
         $prepare = $this->connect->prepare("INSERT INTO `action` (`actionTitre`, `actionDescription`, `actionText`,`actionImage`,`actionDate`) VALUES (:actionTitre, :actionDescription, :actionText , :actionImage , :actionDate");
         $prepare->bindValue(":actionTitre", $datas->getActionTitre(), PDO::PARAM_STR);
         $prepare->bindValue(":actionDescription", $datas->getActionDescription(), PDO::PARAM_STR);
@@ -73,6 +73,10 @@ class ActionManager{
         }
     }
 
+    /**
+     * @param \model\MappingClass\ActionMapping $datas
+     * @return bool
+     */
   public function  updateAction(ActionMapping $datas):bool
   {
       $prepare = $this->connect->prepare("UPDATE action SET actionTitle=?,actioniDescription=?,actionText=?,actionImage=?,actionDate=? WHERE id = :idAction");
@@ -91,7 +95,10 @@ class ActionManager{
       }
   }
 
-
+    /**
+     * @param \model\MappingClass\ActionMapping $id
+     * @return bool
+     */
     public function deleteAction(ActionMapping $id):bool
     {
           $prepare= $this->connect->prepare("DELETE FROM action WHERE id=  :idAction");
