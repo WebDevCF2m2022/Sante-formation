@@ -1,0 +1,67 @@
+#lightbox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+#lightbox .image {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    will-change: opacity;
+}
+
+#lightbox .image.active {
+    opacity: 1;
+}
+
+#lightbox .prev,
+#lightbox .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#lightbox .prev {
+    border-radius: 100px;
+    left: 10px;
+    background-color: black;
+}
+
+#lightbox .next {
+    border-radius: 100px;
+    right: 10px;
+    background-color: black;
+}
+
+#lightbox .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+#lightbox .caption h2,
+#lightbox .caption p {
+    margin: 0;
+}
+
+#lightbox .caption button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
