@@ -3,7 +3,7 @@
         <img src="img/logo.png" alt="logo">
         </div>
             <a href="index.php?view=homepage" class="navi">L'ASBL</a>
-            <a href="index.php?view=action" class="navi">Nos actions</a>
+            <a href="index.php?view=action" class="navi">Actions</a>
             <a href="index.php?view=formation" class="navi">Formations</a>
             <a href="index.php?view=agenda" class="navi">Agenda</a>
             <a href="index.php?view=contact" class="navi">Contact</a>

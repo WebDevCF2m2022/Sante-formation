@@ -1,21 +1,28 @@
 .navigation{
+    display: grid;
+    grid-template-columns: 245px repeat(7, 1fr);
+    grid-template-areas: 
+    "img asbl action formation agenda contact don langue"
+    ;
+    grid-template-rows: 100px;
     background-color:   #14939c;
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: large;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    display: flex;
     list-style: none;
 }
 
 .logo{
-    width: 150px;
-    height: 150px;
     z-index: 1;
     margin-top: 90px;
     margin-left: 25px;
+}
+
+.logo img {
+    grid-area: img;
+    width: 150px;
 }
 
 .navi{
@@ -49,3 +56,52 @@
     border-radius: 15px 15px;
     margin-right: 8px;
 }
+
+#asbl {
+    justify-self: center;
+    grid-area: asbl;
+}
+
+#action {
+    justify-self: center;
+    grid-area: action;
+}
+
+#formation {
+    justify-self: center;
+    grid-area: formation;
+}
+
+#agenda {
+    justify-self: center;
+    grid-area: agenda;
+}
+
+#contact {
+    justify-self: center;
+    grid-area: contact;
+}
+
+#don {
+    justify-self: center;
+    grid-area: don;
+}
+
+#langue {
+    justify-self: center;
+    grid-area: langue;
+}
+
+/* RESPONSIVE POUR LE MOBILE
+@media screen and (max-width: 600px) {
+   
+}
+*/
+
+/* RESPONSIVE POUR LA TABLET */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .navigation{
+        grid-template-columns: 150px repeat(7, 1fr);
+    }
+}
+

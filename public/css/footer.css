@@ -148,7 +148,7 @@ form input {
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     footer {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 50px;
