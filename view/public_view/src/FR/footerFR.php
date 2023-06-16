@@ -1,5 +1,9 @@
-
-        <div id="menuFooter">
+<div id="donFooter">
+        <h1>Faire un don</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quis delectus odio hic cupiditate recusandae magnam vel totam doloribus, alias aspernatur dolorum omnis sint amet optio nihil beatae eaque debitis vitae fuga temporibus. Dolore in molestias soluta officia eius consequuntur veritatis molestiae. Totam excepturi veritatis aperiam iure quisquam pariatur voluptatum assumenda, voluptatibus illo quas ipsam dicta ad porro, obcaecati at laboriosam sunt placeat expedita. Aliquid, sint a aspernatur veritatis voluptatum minima deserunt? Distinctio voluptatibus, voluptatem totam, necessitatibus consequuntur ab maxime iure eligendi deserunt laborum doloribus repellat rem vero deleniti debitis illo cumque ipsam? Quisquam aspernatur ratione harum nostrum beatae quidem!</p>
+        <button><a href="index.php?view=donation">Donation</a></button>
+</div>
+<div id="menuFooter">
             <?php
                 $asbl = "L'ASBL";
                 $formation = "Formation";

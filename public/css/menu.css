@@ -105,3 +105,13 @@
     }
 }
 
+/* RESPONSIVE POUR LE DESKTOP */
+@media screen and (min-width: 1023px) {
+    .navigation{
+        grid-template-columns: 380px repeat(7, 1fr);
+    }
+
+    #langue {
+        justify-self: center;
+    }
+}
