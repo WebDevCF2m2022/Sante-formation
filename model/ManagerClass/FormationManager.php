@@ -5,8 +5,10 @@ namespace model\MappingClass;
 use PDO;
 use Exception;
 use model\MappingClass\FormationMapping;
+use model\InterfaceClass\ManagerInterface;
+use models\Traits\TestTrait;
 
-class  FormationManager{
+class  FormationManager implements ManagerInterface{
 
     protected PDO $connect;
 

@@ -5,9 +5,10 @@
  use PDO;
  use Exception;
  use model\MappingClass\ActionMapping;
+ use model\InterfaceClass\ManagerInterface;
+ use models\TraitsClass\TestTrait;
 
-
-class ActionManager{
+class ActionManager implements ManagerInterface{
 
     protected PDO $connect;
 

@@ -4,8 +4,10 @@ namespace model\MappingClass;
 use PDO;
 use Exception;
 use model\MappingClass\AgendaMapping;
+use model\InterfaceClass\ManagerInterface;
+use models\Traits\TestTrait;
 
-class AgendaManager
+class AgendaManager implements ManagerInterface
 {
 
 
