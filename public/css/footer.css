@@ -4,14 +4,83 @@
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 50px;
+    grid-template-rows: auto auto 50px;
     grid-template-areas: 
+    "donFooter donFooter donFooter donFooter"
     "menuFooter aboutFooter coordonneeFooter contactFooter"
     "copyright copyright copyright copyright";
     background-color: #14939c;
     color: white;
     font-family: 'Inter', sans-serif;
 }
+
+#donFooter {
+    grid-area: donFooter;
+    background-image: url(../img/photoDon.png);
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr 50px;
+    grid-template-areas: 
+    "donFooterh1"
+    "donFooterp"
+    "donFooterButton";
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative; /* Ajoute une position relative pour le conteneur */
+}
+
+#donFooter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur d'arrière-plan pour assombrir */
+}
+
+#donFooter h1 {
+    justify-self: center;
+    grid-area: donFooterh1;
+    position: relative; /* Ajoute une position relative pour conserver l'empilement correct */
+    z-index: 1; /* Élévation pour placer le texte au-dessus du pseudo-élément */
+}
+
+#donFooter p {
+    text-align: center;
+    justify-self: center;
+    grid-area: donFooterp;
+    max-width: 75%;
+    position: relative; /* Ajoute une position relative pour conserver l'empilement correct */
+    z-index: 1; /* Élévation pour placer le texte au-dessus du pseudo-élément */
+}
+
+#donFooter button {
+    justify-self: center;
+    grid-area: donFooterButton;
+    background-color: #14939c;
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    position: relative; /* Ajoute une position relative pour conserver l'empilement correct */
+    z-index: 1; /* Élévation pour placer le bouton au-dessus du pseudo-élément */
+}
+
+#donFooter a {
+    font-weight: 400;
+    font-size: large;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+#donFooter button:hover {
+    background-color: #095C76;
+}
+
 
 /* HR BLEU EN DESSOUS DES TITRES DU FOOTER */ 
 #hrBleu {
@@ -46,6 +115,8 @@ footer {
     grid-area: aboutFooter;
     width: 80%;
 }
+
+/* LOGO */
 
 #aboutFooter img {
     float: left;
@@ -133,11 +204,12 @@ form input {
 }
 
 /* RESPONSIVE FOOTER */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     footer {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 50px;
+    grid-template-rows: auto auto 50px;
     grid-template-areas: 
+    "donFooter donFooter donFooter"
     "menuFooter aboutFooter coordonneeFooter"
     "copyright copyright copyright";
     }
@@ -151,8 +223,9 @@ form input {
 @media screen and (max-width: 800px) {
     footer {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 50px;
+        grid-template-rows: auto auto auto 50px;
         grid-template-areas: 
+        "donFooter"
         "menuFooter"
         "coordonneeFooter"
         "copyright";
