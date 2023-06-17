@@ -7,7 +7,7 @@ use model\InterfaceClass\ManagerInterface;
 use model\InterfaceClass\SecuriteInterface;
 
 
-class AdminManger implements ManagerInterface,SecuriteInterface
+class AdminManager implements ManagerInterface,SecuriteInterface
 {
 
     protected PDO $connect;
