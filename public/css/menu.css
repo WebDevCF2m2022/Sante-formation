@@ -1,6 +1,105 @@
+/* RESPONSIVE POUR LE MOBILE*/
+@media screen and (max-width: 600px) {
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+     
+        height: 300px;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        background-image:url(../img/bouloulou.jpg) ;
+        background-attachment: fixed;
+        background-position: bottom;
+        font-size: larger;
+   
+      
+    }
+
+    .logo,.img{
+    display: none;
+    }
+
+    .navbar.active2{
+        right: 0;
+        transition: 0.9s;
+    }
+
+    .menubtn{
+        flex-direction: flex-end;
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        right: 26px;
+    }
+
+    .navi{
+        color: white;
+        margin-right: 20px;
+        margin: 0 10px 0 20px;
+        list-style: none;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .navibutton{
+        border: 2px solid black;
+        box-shadow: 2px;
+        border-radius: 15px 15px;
+        padding: 5px 9px;
+        background-color:  #095C76;
+        box-shadow:0px -2px 5px #095C76;
+        width: 130px;
+        position: inherit;
+        margin-left: 37%;
+
+    }
+
+    .navilien{
+        text-decoration: none;
+        color: white;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .buttonopen{
+        display: none;
+    }
+    
+  
+
+    .buttonclose{
+       width: 30px;
+    }
+
+#lightbox{
+    display: none; 
+}
+ 
+   
+}
+
+
+/* RESPONSIVE POUR LA TABLET */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .navigation{
+        grid-template-columns: 150px repeat(7, 1fr);
+    }
+    
+    .buttonopen{
+        display: none;
+    }
+    
+    .buttonclose{
+      display: none;
+     }
+}
+/*RESPONSIVE DESKTOP*/
+@media screen and (min-width: 1023px) {
 .navigation{
     display: grid;
-    grid-template-columns: 245px repeat(7, 1fr);
+    grid-template-columns: 380px repeat(7, 1fr);
+    /*grid-template-columns: 245px repeat(7, 1fr);*/
     grid-template-areas: 
     "img asbl action formation agenda contact don langue"
     ;
@@ -33,9 +132,9 @@
     text-decoration: none;
 }
 
-.navi:nth-child(1){
-    margin-left: 150px;
-}
+/*.navi:nth-child(1){
+    margin-left: 150px;*/
+
 
 .navibutton{
     border: 2px solid black;
@@ -56,6 +155,13 @@
     border-radius: 15px 15px;
     margin-right: 8px;
 }
+.buttonopen{
+    display: none;
+}
+
+.buttonclose{
+  display: none;
+ }
 
 #asbl {
     justify-self: center;
@@ -92,26 +198,8 @@
     grid-area: langue;
 }
 
-/* RESPONSIVE POUR LE MOBILE
-@media screen and (max-width: 600px) {
-   
-}
-*/
-
-/* RESPONSIVE POUR LA TABLET */
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-    .navigation{
-        grid-template-columns: 150px repeat(7, 1fr);
-    }
 }
 
-/* RESPONSIVE POUR LE DESKTOP */
-@media screen and (min-width: 1023px) {
-    .navigation{
-        grid-template-columns: 380px repeat(7, 1fr);
-    }
 
-    #langue {
-        justify-self: center;
-    }
-}
+
+
