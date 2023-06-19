@@ -2,12 +2,12 @@
         <div class="logo">
         <img src="img/logo.png" alt="logo">
         </div>
-            <a href="index.php?view=homepage" class="navi">L'ASBL</a>
+            <a href="index.php?view=homepage" class="navi">Association</a>
             <a href="index.php?view=action" class="navi">Actions</a>
-            <a href="index.php?view=formation" class="navi">Formations</a>
+            <a href="index.php?view=formation" class="navi">Training</a>
             <a href="index.php?view=agenda" class="navi">Agenda</a>
             <a href="index.php?view=contact" class="navi">Contact</a>
-            <button class="navibutton"><a href="index.php?view=donation" class="navilien">Faire un don</a></button>
+            <button class="navibutton"><a href="index.php?view=donation" class="navilien">Make a donation</a></button>
             <!-- BOUTON CHANGEMENT DE LANGUES -->
             <form method="post" action="">
                 <select name="langSelect"  class= "navilangue" id="langue-select" onchange="this.form.submit()">

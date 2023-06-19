@@ -2,12 +2,12 @@
         <div class="logo">
         <img src="img/logo.png" alt="logo">
         </div>
-            <a href="index.php?view=homepage" class="navi">L'ASBL</a>
-            <a href="index.php?view=action" class="navi">Actions</a>
-            <a href="index.php?view=formation" class="navi">Formations</a>
-            <a href="index.php?view=agenda" class="navi">Agenda</a>
-            <a href="index.php?view=contact" class="navi">Contact</a>
-            <button class="navibutton"><a href="index.php?view=donation" class="navilien">Faire un don</a></button>
+            <a href="index.php?view=homepage" class="navi">جمعية</a>
+            <a href="index.php?view=action" class="navi"> الإجراءات</a>
+            <a href="index.php?view=formation" class="navi">تدريب</a>
+            <a href="index.php?view=agenda" class="navi">خطة</a>
+            <a href="index.php?view=contact" class="navi"> اتصال</a>
+            <button class="navibutton"><a href="index.php?view=donation" class="navilien">تبرع</a></button>
             <!-- BOUTON CHANGEMENT DE LANGUES -->
             <form method="post" action="">
                 <select name="langSelect"  class= "navilangue" id="langue-select" onchange="this.form.submit()">
@@ -30,12 +30,16 @@
         // Inclure le contenu traduit en fonction de la langue sélectionnée
         if ($selectedLang === "fr") {
             include "../view/public_view/src/FR/footerFR.php";
+            include "../view/public_view/src/FR/menuFR.php";
         } else if ($selectedLang === "en") {
             include "../view/public_view/src/ENG/footerENG.php";
+            include "../view/public_view/src/ENG/menuENG.php";
         } else if ($selectedLang === "nl") {
             include "../view/public_view/src/NL/footerNL.php";
+            include "../view/public_view/src/NL/menuNL.php";
         } else if ($selectedLang === "ar") {
             include "../view/public_view/src/AR/footerAR.php";
+            include "../view/public_view/src/AR/menuAR.php";
         }
 
         // Arrêter l'exécution du script pour afficher uniquement le contenu traduit
