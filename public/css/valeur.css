@@ -1,0 +1,118 @@
+#valeur {
+    display: grid;
+    grid-area: valeur;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    ". titreValeur ."
+    "valeur1 valeur2 valeur3"
+    "valeur4 valeur5 valeur6"
+    ;
+}
+
+#valeur h1 {
+    justify-self: center;
+    grid-area: titreValeur;
+}
+
+#valeur1 {
+    grid-area: valeur1;
+    background-color: #D9D9D9;
+}
+
+#valeur1 img {
+
+}
+
+#valeur1 h4 {
+
+}
+
+#valeur1 p {
+
+}
+
+#valeur2 {
+    grid-area: valeur2;
+    background-color: #D9D9D9;
+}
+
+#valeur2 img {
+
+}
+
+#valeur2 h4 {
+
+}
+
+#valeur2 p {
+    
+}
+
+#valeur3 {
+    grid-area: valeur3;
+    background-color: #D9D9D9;
+}
+
+#valeur3 img {
+
+}
+
+#valeur3 h4 {
+
+}
+
+#valeur3 p {
+    
+}
+
+#valeur4 {
+    grid-area: valeur4;
+    background-color: #D9D9D9;
+}
+
+#valeur4 img {
+
+}
+
+#valeur4 h4 {
+
+}
+
+#valeur4 p {
+    
+}
+
+#valeur5 {
+    grid-area: valeur5;
+    background-color: #D9D9D9;
+}
+
+#valeur5 img {
+
+}
+
+#valeur5 h4 {
+
+}
+
+#valeur5 p {
+    
+}
+
+#valeur6 {
+    grid-area: valeur6;
+    background-color: #D9D9D9;
+}
+
+#valeur6 img {
+
+}
+
+#valeur6 h4 {
+
+}
+
+#valeur6 p {
+    
+}

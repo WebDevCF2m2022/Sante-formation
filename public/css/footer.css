@@ -9,6 +9,7 @@ footer {
     "donFooter donFooter donFooter donFooter"
     "menuFooter aboutFooter coordonneeFooter contactFooter"
     "copyright copyright copyright copyright";
+    grid-area: footer;
     background-color: #14939c;
     color: white;
     font-family: 'Inter', sans-serif;
