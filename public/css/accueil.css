@@ -1,0 +1,135 @@
+#gridAccueil {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "menu"
+    "lightbox"
+    "quiSommeNous"
+    "text1"
+    "historique"
+    "text2"
+    "objectif"
+    "text3"
+    "valeur"
+    "footer"
+    ;
+}
+
+#quiSommeNous {
+    display: grid;
+    grid-area: quiSommeNous;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "imgQuiSommeNous titreQuiSommeNous"
+    "imgQuiSommeNous descriptionQuiSommeNous"
+    ;
+    background-color: #14939c;
+}
+
+#quiSommeNous img {
+    grid-area: imgQuiSommeNous;
+    width: 100%;
+    
+}
+
+#quiSommeNous h1 {
+    justify-self: center;
+    grid-area: titreQuiSommeNous;
+    color: white;
+}
+
+#quiSommeNous h3 {
+    max-width: 85%;
+    text-align: center;
+    justify-self: center;
+    grid-area: descriptionQuiSommeNous;
+}
+
+#text1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 75%;
+    grid-area: text1;
+    justify-self: center;
+    text-align: center;
+}
+
+#historique {
+    display: grid;
+    grid-area: historique;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "titreHistorique imgHistorique"
+    "descriptionHistorique imgHistorique"
+    ;
+    background-color: #14939c;
+}
+
+#historique img {
+    grid-area: imgHistorique;
+    width: 100%;
+}
+
+#historique h1{
+    color: white;
+    justify-self: center;
+    grid-area: titreHistorique;
+}
+
+#historique h3 {
+    max-width: 85%;
+    text-align: center;
+    justify-self: center;
+    grid-area: descriptionHistorique;
+}
+
+#text2 {
+    grid-area: text2;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 75%;
+    justify-self: center;
+    text-align: center;
+}
+
+#objectif {
+    grid-area: objectif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "imgObjectif titreObjectif"
+    "imgObjectif descriptionObjectif"
+    ;
+    background-color: #14939c;
+}
+
+#objectif img {
+    grid-area: imgObjectif;
+    width: 100%;
+}
+
+#objectif h1 {
+    color: white;
+    justify-self: center;
+    grid-area: titreObjectif;
+}
+
+#objectif h3 {
+    max-width: 85%;
+    text-align: center;
+    justify-self: center;
+    grid-area: descriptionObjectif;
+}
+
+#text3 {
+    grid-area: text3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 75%;
+    justify-self: center;
+    text-align: center;
+}

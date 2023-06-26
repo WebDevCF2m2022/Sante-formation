@@ -12,13 +12,15 @@ class Autoloader
      * @param $class_name
      * @return void
      */
-   static function autoload($class_name)
-   {
-       if (strpos($class_name, __NAMESPACE__ . '\\') === 0) {
-           $class_name = str_replace(__NAMESPACE__ . '\\', '', $class_name);
-           $class_name = str_replace('\\', '/', $class_name);
-           require 'model/' . $class_name . '.php';
-       }
-   }
+    static function autoload($class_name){
+        if (strpos($class_name, __NAMESPACE__ . '\\') === 0) {
+            $class_name = str_replace(__NAMESPACE__ . '\\', '', $class_name);
+            $class_name = str_replace('\\', '/', $class_name);
+            require __DIR__ . '/' . $class_name . '.php';
+        }
+    }
 
-}
+
+
+
+    }

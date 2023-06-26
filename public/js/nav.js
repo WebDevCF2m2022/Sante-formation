@@ -1,3 +1,4 @@
+
 /*Menu Burger*/
 let navigation_bar = document.querySelector('.navigation');
 let menu_btn = document.querySelector('.menubtn');

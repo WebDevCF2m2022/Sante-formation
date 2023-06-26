@@ -5,12 +5,12 @@ use model\AbstractsClass\AbstractsMapping;
 class AdminMapping extends AbstractsMapping
 {
 
-    private int $idAdmin;
-    private string  $login;
-    private  string $pwd;
+    protected int $idAdmin;
+    protected string  $login;
+    protected  string $pwd;
 
 
-    /**
+    /**getter
      * @return int
      */
     public function getIdAdmin(): int
@@ -18,7 +18,7 @@ class AdminMapping extends AbstractsMapping
         return $this->idAdmin;
     }
 
-    /**
+    /**getter
      * @return string
      */
     public function getLogin(): string
@@ -26,7 +26,7 @@ class AdminMapping extends AbstractsMapping
         return $this->login;
     }
 
-    /**
+    /**getter
      * @return string
      */
     public function getPwd(): string
@@ -34,7 +34,7 @@ class AdminMapping extends AbstractsMapping
         return $this->pwd;
     }
 
-    /**
+    /**setter
      * @param int $idAdmin
      */
     public function setIdAdmin(int $idAdmin): void
@@ -42,7 +42,7 @@ class AdminMapping extends AbstractsMapping
         $this->idAdmin = $idAdmin;
     }
 
-    /**
+    /**setter
      * @param string $login
      */
     public function setLogin(string $login): void
@@ -50,7 +50,7 @@ class AdminMapping extends AbstractsMapping
         $this->login = $login;
     }
 
-    /**
+    /**setter
      * @param string $pwd
      */
     public function setPwd(string $pwd): void
