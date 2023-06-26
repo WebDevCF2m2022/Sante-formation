@@ -5,15 +5,15 @@ use model\AbstractsClass\AbstractsMapping;
 
 class FormationMapping extends AbstractsMapping
 {
-   private int $idFormation ;
-   private string $formationTitre ;
-   private mixed $formationDate;
-   private mixed $formationDescription ;
-   private string $formationText;
-   private mixed $formationImage;
+   protected int $idFormation ;
+   protected string $formationTitre ;
+   protected mixed $formationDate;
+   protected mixed $formationDescription ;
+   protected string $formationText;
+   protected mixed $formationImage;
 
 
-    /**
+    /**getter
      * @return int
      */
     public function getIdFormation(): int
@@ -21,7 +21,7 @@ class FormationMapping extends AbstractsMapping
         return $this->idFormation;
     }
 
-    /**
+    /**getter
      * @return string
      */
     public function getFormationTitre(): string
@@ -29,7 +29,7 @@ class FormationMapping extends AbstractsMapping
         return $this->formationTitre;
     }
 
-    /**
+    /**getter
      * @return mixed
      */
     public function getFormationDate(): mixed
@@ -37,7 +37,7 @@ class FormationMapping extends AbstractsMapping
         return $this->formationDate;
     }
 
-    /**
+    /**getter
      * @return mixed
      */
     public function getFormationDescription(): mixed
@@ -45,7 +45,7 @@ class FormationMapping extends AbstractsMapping
         return $this->formationDescription;
     }
 
-    /**
+    /**getter
      * @return string
      */
     public function getFormationText(): string
@@ -53,7 +53,7 @@ class FormationMapping extends AbstractsMapping
         return $this->formationText;
     }
 
-    /**
+    /**getter
      * @return mixed
      */
     public function getFormationImage(): mixed
@@ -61,7 +61,7 @@ class FormationMapping extends AbstractsMapping
         return $this->formationImage;
     }
 
-    /**
+    /**setter
      * @param int $idFormation
      */
     public function setIdFormation(int $idFormation): void
@@ -69,7 +69,7 @@ class FormationMapping extends AbstractsMapping
         $this->idFormation = $idFormation;
     }
 
-    /**
+    /**setter
      * @param string $formationTitre
      */
     public function setFormationTitre(string $formationTitre): void
@@ -77,7 +77,7 @@ class FormationMapping extends AbstractsMapping
         $this->formationTitre = $formationTitre;
     }
 
-    /**
+    /**setter
      * @param mixed $formationDate
      */
     public function setFormationDate(mixed $formationDate): void
@@ -85,7 +85,7 @@ class FormationMapping extends AbstractsMapping
         $this->formationDate = $formationDate;
     }
 
-    /**
+    /**setter
      * @param mixed $formationDescription
      */
     public function setFormationDescription(mixed $formationDescription): void
@@ -93,7 +93,7 @@ class FormationMapping extends AbstractsMapping
         $this->formationDescription = $formationDescription;
     }
 
-    /**
+    /**setter
      * @param string $formationText
      */
     public function setFormationText(string $formationText): void
@@ -101,7 +101,7 @@ class FormationMapping extends AbstractsMapping
         $this->formationText = $formationText;
     }
 
-    /**
+    /**setter
      * @param mixed $formationImage
      */
     public function setFormationImage(mixed $formationImage): void

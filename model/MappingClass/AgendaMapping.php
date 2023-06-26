@@ -5,15 +5,15 @@ use model\AbstractsClass\AbstractsMapping;
 
 class AgendaMapping extends AbstractsMapping
 {
-    private int $idAgenda;
-    private string $agendaTitre;
-    private mixed  $agendaDate;
-    private string $agendaDescription;
-    private string $agendaText;
-    private mixed $agendaImages;
+    protected int $idAgenda;
+    protected string $agendaTitre;
+    protected mixed  $agendaDate;
+    protected string $agendaDescription;
+    protected string $agendaText;
+    protected mixed $agendaImages;
 
 
-    /**
+    /** getter
      * @return int
      */
     public function getIdAgenda(): int
@@ -21,7 +21,7 @@ class AgendaMapping extends AbstractsMapping
         return $this->idAgenda;
     }
 
-    /**
+    /** getter
      * @return string
      */
     public function getAgendaTitre(): string
@@ -29,7 +29,7 @@ class AgendaMapping extends AbstractsMapping
         return $this->agendaTitre;
     }
 
-    /**
+    /**getter
      * @return mixed
      */
     public function getAgendaDate(): mixed
@@ -37,7 +37,7 @@ class AgendaMapping extends AbstractsMapping
         return $this->agendaDate;
     }
 
-    /**
+    /**getter
      * @return string
      */
     public function getAgendaDescription(): string
@@ -45,22 +45,24 @@ class AgendaMapping extends AbstractsMapping
         return $this->agendaDescription;
     }
 
-    /**
+    /**getter
      * @return string
      */
     public function getAgendaText(): string
     {
         return $this->agendaText;
     }
-    /**
- * @return mixed
- */
+
+
+    /**getter
+     * @return mixed
+     */
     public function getAgendaImages(): mixed
     {
         return $this->agendaImages;
     }
 
-    /**
+    /**setter
      * @param int $idAgenda
      */
     public function setIdAgenda(int $idAgenda): void
@@ -68,7 +70,7 @@ class AgendaMapping extends AbstractsMapping
         $this->idAgenda = $idAgenda;
     }
 
-    /**
+    /**setter
      * @param string $agendaTitre
      */
     public function setAgendaTitre(string $agendaTitre): void
@@ -76,7 +78,7 @@ class AgendaMapping extends AbstractsMapping
         $this->agendaTitre = $agendaTitre;
     }
 
-    /**
+    /**setter
      * @param mixed $agendaDate
      */
     public function setAgendaDate(mixed $agendaDate): void
@@ -84,7 +86,7 @@ class AgendaMapping extends AbstractsMapping
         $this->agendaDate = $agendaDate;
     }
 
-    /**
+    /**setter
      * @param string $agendaDescription
      */
     public function setAgendaDescription(string $agendaDescription): void
@@ -92,7 +94,7 @@ class AgendaMapping extends AbstractsMapping
         $this->agendaDescription = $agendaDescription;
     }
 
-    /**
+    /**setter
      * @param string $agendaText
      */
     public function setAgendaText(string $agendaText): void
@@ -100,7 +102,7 @@ class AgendaMapping extends AbstractsMapping
         $this->agendaText = $agendaText;
     }
 
-    /**
+    /**setter
      * @param mixed $agendaImages
      */
     public function setAgendaImages(mixed $agendaImages): void

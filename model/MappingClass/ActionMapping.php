@@ -6,22 +6,22 @@ use model\AbstractsClass\AbstractsMapping;
 class ActionMapping extends AbstractsMapping
 {
 
-    private int $idAction ;
-    private string $actionTitre;
-    private string $actionDescription;
-    private string $actionText;
-    private mixed $actionImage;
-    private  mixed $actionDate;
+    protected int $idAction ;
+    protected string $actionTitre;
+    protected string $actionDescription;
+    protected string $actionText;
+    protected mixed $actionImage;
+    protected  mixed $actionDate;
 
 
-    /**
+    /**getter
      * @return int
      */
    public function getIdAction():int{
        return $this->idAction;
    }
 
-    /**
+    /**getter
      * @return string
      */
     public function getActionTitre(): string
@@ -29,7 +29,7 @@ class ActionMapping extends AbstractsMapping
         return $this->actionTitre;
     }
 
-    /**
+    /**getter
      * @return string
      */
     public function getActionDescription(): string
@@ -37,7 +37,7 @@ class ActionMapping extends AbstractsMapping
         return $this->actionDescription;
     }
 
-    /**
+    /**getter
      * @return string
      */
     public function getActionText(): string
@@ -45,7 +45,7 @@ class ActionMapping extends AbstractsMapping
         return $this->actionText;
     }
 
-    /**
+    /**getter
      * @return mixed
      */
     public function getActionImage()
@@ -53,7 +53,7 @@ class ActionMapping extends AbstractsMapping
         return $this->actionImage;
     }
 
-    /**
+    /**getter
      * @return mixed
      */
     public function getActionDate()
@@ -61,7 +61,7 @@ class ActionMapping extends AbstractsMapping
         return $this->actionDate;
     }
 
-    /**
+    /**setter
      * @param int $idAction
      */
     public function setIdAction(int $idAction): void
@@ -69,7 +69,7 @@ class ActionMapping extends AbstractsMapping
         $this->idAction = $idAction;
     }
 
-    /**
+    /**setter
      * @param string $actionTitre
      */
     public function setActionTitre(string $actionTitre): void
@@ -77,7 +77,7 @@ class ActionMapping extends AbstractsMapping
         $this->actionTitre = $actionTitre;
     }
 
-    /**
+    /**setter
      * @param string $actionDescription
      */
     public function setActionDescription(string $actionDescription): void
@@ -85,7 +85,7 @@ class ActionMapping extends AbstractsMapping
         $this->actionDescription = $actionDescription;
     }
 
-    /**
+    /**setter
      * @param string $actionText
      */
     public function setActionText(string $actionText): void
@@ -93,7 +93,7 @@ class ActionMapping extends AbstractsMapping
         $this->actionText = $actionText;
     }
 
-    /**
+    /**setter
      * @param mixed $actionImage
      */
     public function setActionImage($actionImage): void
@@ -101,7 +101,7 @@ class ActionMapping extends AbstractsMapping
         $this->actionImage = $actionImage;
     }
 
-    /**
+    /**setter
      * @param mixed $actionDate
      */
     public function setActionDate($actionDate): void
