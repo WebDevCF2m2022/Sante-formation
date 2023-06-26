@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 #valeur {
     display: grid;
+    gap: 70px;
     grid-area: valeur;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
@@ -8,6 +11,8 @@
     "valeur1 valeur2 valeur3"
     "valeur4 valeur5 valeur6"
     ;
+    width: 85%;
+    margin: auto auto 100px auto;;
 }
 
 #valeur h1 {
@@ -16,103 +21,232 @@
 }
 
 #valeur1 {
+    display: grid;
+    grid-template-rows: 60px 75px auto;
+    grid-template-areas: 
+    "valeur1img"
+    "valeur1h4"
+    "valeur1p";
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
     grid-area: valeur1;
     background-color: #D9D9D9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
+
 }
 
 #valeur1 img {
-
+    margin-top: 15px;
+    justify-self: center;
+    grid-area: valeur1img;
 }
 
 #valeur1 h4 {
-
+    justify-self: center;
+    grid-area: valeur1h4;
+    color: #0C9AEA;
+    font-size: xx-large;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur1 p {
+    justify-self: center;
+    text-align: center;
+    grid-area: valeur1p;
+    max-width: 75%;
+    font-family: 'Inter', sans-serif;
 
 }
 
 #valeur2 {
+    display: grid;
+    grid-template-rows: 60px 75px auto;
+    grid-template-areas: 
+    "valeur2img"
+    "valeur2h4"
+    "valeur2p";
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
     grid-area: valeur2;
     background-color: #D9D9D9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
+
 }
 
 #valeur2 img {
-
+    margin-top: 15px;
+    justify-self: center;
+    grid-area: valeur2img;
 }
 
 #valeur2 h4 {
-
+    justify-self: center;
+    grid-area: valeur2h4;
+    color: #0C9AEA;
+    font-size: xx-large;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur2 p {
-    
+    justify-self: center;
+    text-align: center;
+    grid-area: valeur2p;
+    max-width: 75%;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur3 {
+    display: grid;
+    grid-template-rows: 60px 75px auto;
+    grid-template-areas: 
+    "valeur3img"
+    "valeur3h4"
+    "valeur3p";
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
     grid-area: valeur3;
     background-color: #D9D9D9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
 }
 
 #valeur3 img {
-
+    margin-top: 15px;
+    justify-self: center;
+    grid-area: valeur3img;
 }
 
 #valeur3 h4 {
-
+    justify-self: center;
+    grid-area: valeur3h4;
+    color: #0C9AEA;
+    font-size: xx-large;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur3 p {
-    
+    justify-self: center;
+    text-align: center;
+    grid-area: valeur3p;
+    max-width: 75%;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur4 {
+    display: grid;
+    grid-template-rows: 60px 75px auto;
+    grid-template-areas: 
+    "valeur4img"
+    "valeur4h4"
+    "valeur4p";
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
     grid-area: valeur4;
     background-color: #D9D9D9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
 }
 
 #valeur4 img {
-
+    margin-top: 15px;
+    justify-self: center;
+    grid-area: valeur4img;
 }
 
 #valeur4 h4 {
-
+    justify-self: center;
+    grid-area: valeur4h4;
+    color: #0C9AEA;
+    font-size: xx-large;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur4 p {
-    
+    justify-self: center;
+    text-align: center;
+    grid-area: valeur4p;
+    max-width: 75%;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur5 {
+    display: grid;
+    grid-template-rows: 60px 75px auto;
+    grid-template-areas: 
+    "valeur5img"
+    "valeur5h4"
+    "valeur5p";
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
     grid-area: valeur5;
     background-color: #D9D9D9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
 }
 
 #valeur5 img {
-
+    margin-top: 15px;
+    justify-self: center;
+    grid-area: valeur5img;
 }
 
 #valeur5 h4 {
-
+    justify-self: center;
+    grid-area: valeur5h4;
+    color: #0C9AEA;
+    font-size: xx-large;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur5 p {
-    
+    justify-self: center;
+    text-align: center;
+    grid-area: valeur5p;
+    max-width: 75%;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur6 {
+    display: grid;
+    grid-template-rows: 60px 75px auto;
+    grid-template-areas: 
+    "valeur6img"
+    "valeur6h4"
+    "valeur6p";
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
     grid-area: valeur6;
     background-color: #D9D9D9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
 }
 
 #valeur6 img {
-
+    margin-top: 15px;
+    justify-self: center;
+    grid-area: valeur6img;
 }
 
 #valeur6 h4 {
-
+    justify-self: center;
+    grid-area: valeur6h4;
+    color: #0C9AEA;
+    font-size: xx-large;
+    font-family: 'Inter', sans-serif;
 }
 
 #valeur6 p {
-    
+    justify-self: center;
+    text-align: center;
+    grid-area: valeur6p;
+    max-width: 75%;
+    font-family: 'Inter', sans-serif;
 }
