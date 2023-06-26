@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <script src="js/lightbox.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/countrySelect.css">
+    <script src="js/countrySelect.js"></script>
     <title>Accueil</title>
 </head>
 <body>
@@ -68,7 +71,14 @@
 </footer>
 
 
-
+<script>
+    $("#country_selector").countrySelect({
+        defaultCountry: "fr",
+        onlyCountries: ['gb', 'fr', 'nl', 'sa'],
+        preferredCountries: [],
+        localizedCountries:{'gb': 'GB', 'fr': 'FR', 'nl': 'NL', 'sa': 'AR'}
+    });
+</script>
 
 </body>
 </html>
