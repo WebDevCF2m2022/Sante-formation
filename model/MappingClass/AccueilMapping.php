@@ -29,21 +29,38 @@ class AccueilMapping extends AbstractsMapping
     {
         return $this->idAccueil;
     }
+
+    /**
+     * @return string
+     */
     public function getAccueilTitre(): string{
         return $this->accueilTitre;
     }
 
+    /**
+     * @return string
+     */
     public function getAccueilText(): string{
         return $this->accueilText;
     }
+
+    /**
+     * @return string
+     */
     public function getAccueilDescription(): string{
         return $this->accueilDescription;
     }
 
+    /**
+     * @return string
+     */
     public function getAccueilImage(): string{
         return $this->accueilImage;
     }
 
+    /**
+     * @return string
+     */
     public function getAccueilButton(): string{
         return $this->accueilButton;
     }
@@ -59,6 +76,10 @@ class AccueilMapping extends AbstractsMapping
         $this->idAccueil = $idAccueil;
     }
 
+    /**
+     * @param string $accueilTitre
+     * @return void
+     */
     public function setAccueilTitre(string $accueilTitre):void
     {
         $this->accueilTitre =$accueilTitre;
@@ -72,22 +93,34 @@ class AccueilMapping extends AbstractsMapping
         $this->accueilText = $accueilText;
     }
 
+    /**
+     * @param string $accueilDescription
+     * @return void
+     */
     public function setAccueilDescription(string $accueilDescription): void
     {
         $this->accueilDescription =$accueilDescription;
     }
 
+    /**
+     * @param string $accueilImage
+     * @return void
+     */
     public function setAccueilImage(string $accueilImage): void
     {
         $this->accueilImage = $accueilImage;
     }
 
+    /**
+     * @param string $accueilButton
+     * @return void
+     */
     public function setAccueilButton(string $accueilButton): void
     {
         $this->accueilButton =$accueilButton;
     }
 
-    
+
 
 
 
