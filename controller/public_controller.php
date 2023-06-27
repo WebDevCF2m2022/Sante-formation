@@ -1,8 +1,8 @@
 <?php
 
-//include menu dans toute la page
-if(isset($_GET['view'])){
-    switch($_GET['view']){
+// include menu dans toute la page
+if (isset($_GET['view'])) {
+    switch ($_GET['view']) {
         case 'homepage':
             include "../view/public_view/homepage.php";
             break;
@@ -26,8 +26,12 @@ if(isset($_GET['view'])){
             break;
         default:
             include_once "../view/public_view/homepage.php";
+            break;
     }
+} else {
+    include_once "../view/public_view/homepage.php";
 }
+
 ?>
 
 
