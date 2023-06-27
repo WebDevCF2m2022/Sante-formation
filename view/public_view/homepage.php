@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/valeur.css">
-    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <script src="js/lightbox.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/countrySelect.css">
@@ -29,54 +29,15 @@
         include "../view/public_view/src/lightbox.php"
     ?>
 
-    <div id="quiSommeNous">
-        <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1>Qui sommes nous ?</h1>
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt voluptates unde molestias minima optio? Molestiae sit id aperiam facere facilis? Magnam sed laborum itaque sunt ducimus ea necessitatibus animi! Tenetur, soluta natus rerum, quia quas delectus cupiditate neque blanditiis similique accusamus quos saepe recusandae tempora rem dolor laboriosam. Doloribus omnis voluptatem quisquam, nisi eveniet debitis ipsa! Illo mollitia sint fuga enim tenetur suscipit quam expedita, voluptatum deserunt similique minima libero, inventore dolorum quae tempore?</h3>
+    <div id="aProposAcc">
+            <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
+            <h1>A propos de nous</h1>
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt voluptates unde molestias minima optio? Molestiae sit id aperiam facere facilis? Magnam sed laborum itaque sunt ducimus ea necessitatibus animi! Tenetur, soluta natus rerum, quia quas delectus cupiditate neque blanditiis similique accusamus quos saepe recusandae tempora rem dolor laboriosam. Doloribus omnis voluptatem quisquam, nisi eveniet debitis ipsa! Illo mollitia sint fuga enim tenetur suscipit quam expedita, voluptatum deserunt similique minima libero, inventore dolorum quae tempore?</h3>
     </div>
 
-            <div id="text1">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur magni, nisi natus deserunt dolore ab, inventore at veniam cupiditate, sit aliquid alias voluptates iusto ipsa eos placeat. Illo ex officia fuga doloremque ea et minima incidunt, excepturi deleniti ratione nisi quasi debitis dolores quaerat nobis hic praesentium exercitationem molestias adipisci?</p>
-                <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil dolorum? Asperiores harum totam quia maiores rem pariatur et, aperiam tempora nihil molestias voluptatum quaerat minus veritatis quo repellendus voluptatibus iusto alias obcaecati sed placeat iste ex corporis natus dolore! Blanditiis assumenda quibusdam quisquam obcaecati debitis nostrum. Nisi, ea reprehenderit!</p>
-                <br><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam beatae nemo veniam quaerat soluta accusantium necessitatibus sapiente recusandae sint temporibus facilis itaque esse blanditiis odit inventore, ratione dolores aperiam non nihil ipsum expedita sit? Qui, officia debitis ducimus explicabo quis porro aspernatur eum et libero adipisci, esse reiciendis, reprehenderit eligendi!</p>
-            </div>
-
-    <div id="historique">
-        <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1>Historique</h1>
-        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ut facere velit nobis, saepe perferendis architecto eum provident eius excepturi consectetur. Pariatur exercitationem facilis, hic, incidunt eligendi laboriosam, tempora sapiente neque nam rerum similique suscipit? Non, tempore! Magni totam et officia, consequuntur vitae, ipsum aspernatur iusto nulla sit ipsam fuga dolores suscipit pariatur corporis nisi beatae velit a minus adipisci id! Ducimus similique iure, vel autem vitae soluta suscipit beatae, doloremque eveniet, nisi dolor quam.</h3>
+    <div id="text1Accueil">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit nisi. Quia, incidunt ipsa. Eum voluptates harum animi aut est. Dolore est quasi reiciendis minima natus laudantium officiis? Perferendis distinctio facere quaerat consequuntur? Accusantium quam dicta sint neque ipsa expedita beatae blanditiis sunt necessitatibus dolor itaque voluptatum sed, deserunt, voluptas modi possimus dignissimos dolores temporibus labore, pariatur enim distinctio! Autem magni consequuntur ducimus sed, repudiandae rem nemo omnis illo, esse iure officia placeat neque illum, reiciendis id vel rerum atque a quibusdam nulla corrupti. Rerum in ratione, facere nobis ipsam officiis, velit ipsa suscipit quaerat libero cupiditate deleniti architecto magnam?</p>
     </div>
-
-            <div id="text2">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur magni, nisi natus deserunt dolore ab, inventore at veniam cupiditate, sit aliquid alias voluptates iusto ipsa eos placeat. Illo ex officia fuga doloremque ea et minima incidunt, excepturi deleniti ratione nisi quasi debitis dolores quaerat nobis hic praesentium exercitationem molestias adipisci?</p>
-                <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil dolorum? Asperiores harum totam quia maiores rem pariatur et, aperiam tempora nihil molestias voluptatum quaerat minus veritatis quo repellendus voluptatibus iusto alias obcaecati sed placeat iste ex corporis natus dolore! Blanditiis assumenda quibusdam quisquam obcaecati debitis nostrum. Nisi, ea reprehenderit!</p>
-                <br><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam beatae nemo veniam quaerat soluta accusantium necessitatibus sapiente recusandae sint temporibus facilis itaque esse blanditiis odit inventore, ratione dolores aperiam non nihil ipsum expedita sit? Qui, officia debitis ducimus explicabo quis porro aspernatur eum et libero adipisci, esse reiciendis, reprehenderit eligendi!</p>
-            </div>
-
-    <div id="objectif">
-        <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1>Objectif</h1>
-        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium expedita totam inventore est, placeat quibusdam repellat ipsa quod eum dolorem alias, obcaecati, fugit laudantium sint quam cupiditate blanditiis necessitatibus nihil voluptates? Non natus similique illum, ratione quidem eius eaque blanditiis accusantium tempora corrupti repellendus eligendi quis numquam tempore possimus ducimus aspernatur perspiciatis atque magni vel architecto ea amet! Quisquam reprehenderit eum soluta maiores rem repellat deleniti nostrum voluptatem accusamus numquam. Corrupti molestiae dolor eius consequatur!</h3>
-    </div>
-
-            <div id="text3">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur magni, nisi natus deserunt dolore ab, inventore at veniam cupiditate, sit aliquid alias voluptates iusto ipsa eos placeat. Illo ex officia fuga doloremque ea et minima incidunt, excepturi deleniti ratione nisi quasi debitis dolores quaerat nobis hic praesentium exercitationem molestias adipisci?</p>
-                <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil dolorum? Asperiores harum totam quia maiores rem pariatur et, aperiam tempora nihil molestias voluptatum quaerat minus veritatis quo repellendus voluptatibus iusto alias obcaecati sed placeat iste ex corporis natus dolore! Blanditiis assumenda quibusdam quisquam obcaecati debitis nostrum. Nisi, ea reprehenderit!</p>
-                <br><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam beatae nemo veniam quaerat soluta accusantium necessitatibus sapiente recusandae sint temporibus facilis itaque esse blanditiis odit inventore, ratione dolores aperiam non nihil ipsum expedita sit? Qui, officia debitis ducimus explicabo quis porro aspernatur eum et libero adipisci, esse reiciendis, reprehenderit eligendi!</p>
-            </div>    
-
-    <!-- INCLUDE DE "NOS VALEUR -->
-    <?php
-        include "../view/public_view/src/valeur.php"
-    ?>
-
-</footer>
 
 
 <script>
