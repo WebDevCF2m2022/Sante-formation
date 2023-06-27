@@ -16,7 +16,7 @@
     <title>Accueil</title>
 </head>
 <body>
-        <div id="gridAccueil">
+<div id="gridAccueil">
     <!-- INCLUDE DU MENU -->
     <nav>
     <?php
@@ -35,8 +35,27 @@
             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt voluptates unde molestias minima optio? Molestiae sit id aperiam facere facilis? Magnam sed laborum itaque sunt ducimus ea necessitatibus animi! Tenetur, soluta natus rerum, quia quas delectus cupiditate neque blanditiis similique accusamus quos saepe recusandae tempora rem dolor laboriosam. Doloribus omnis voluptatem quisquam, nisi eveniet debitis ipsa! Illo mollitia sint fuga enim tenetur suscipit quam expedita, voluptatum deserunt similique minima libero, inventore dolorum quae tempore?</h3>
     </div>
 
-    <div id="text1Accueil">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit nisi. Quia, incidunt ipsa. Eum voluptates harum animi aut est. Dolore est quasi reiciendis minima natus laudantium officiis? Perferendis distinctio facere quaerat consequuntur? Accusantium quam dicta sint neque ipsa expedita beatae blanditiis sunt necessitatibus dolor itaque voluptatum sed, deserunt, voluptas modi possimus dignissimos dolores temporibus labore, pariatur enim distinctio! Autem magni consequuntur ducimus sed, repudiandae rem nemo omnis illo, esse iure officia placeat neque illum, reiciendis id vel rerum atque a quibusdam nulla corrupti. Rerum in ratione, facere nobis ipsam officiis, velit ipsa suscipit quaerat libero cupiditate deleniti architecto magnam?</p>
+        <div id="text1Accueil">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit nisi. Quia, incidunt ipsa. Eum voluptates harum animi aut est. Dolore est quasi reiciendis minima natus laudantium officiis? Perferendis distinctio facere quaerat consequuntur? Accusantium quam dicta sint neque ipsa expedita beatae blanditiis sunt necessitatibus dolor itaque voluptatum sed, deserunt, voluptas modi possimus dignissimos dolores temporibus labore, pariatur enim distinctio! Autem magni consequuntur ducimus sed, repudiandae rem nemo omnis illo, esse iure officia placeat neque illum, reiciendis id vel rerum atque a quibusdam nulla corrupti. Rerum in ratione, facere nobis ipsam officiis, velit ipsa suscipit quaerat libero cupiditate deleniti architecto magnam?</p>
+        </div>
+
+    <div id="actionAccueil">
+        <h1>Nos actions</h1>
+        <h3>SLOGAN en long</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
+    <div class="carteAction">
+        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <h1>Action</h1>
+    </div>
+    <div class="carteAction">
+        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <h1>Action</h1>
+    </div>
+    <div class="carteAction">
+        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <h1>Action</h1>
+    </div>
+    <a href="">En savoir plus</a>
     </div>
 
 
@@ -58,6 +77,6 @@
     </footer>
 
 
-        </div>
+</div>
 </body>
 </html>
