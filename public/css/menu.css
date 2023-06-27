@@ -1,3 +1,13 @@
+.country-select {
+    justify-self: center;
+    grid-area: langue;
+    width: 85px;
+}
+
+#country_selector {
+    width: 100%;
+}
+
 /* RESPONSIVE POUR LE MOBILE*/
 @media screen and (max-width: 600px) {
     .navigation{
@@ -21,7 +31,7 @@
     display: none;
     }
 
-    .navbar.active2{
+    .navigation.active2{
         right: 0;
         transition: 0.9s;
     }
@@ -83,7 +93,20 @@
 /* RESPONSIVE POUR LA TABLET */
 @media screen and (min-width: 600px) and (max-width: 1023px) {
     .navigation{
-        grid-template-columns: 150px repeat(7, 1fr);
+        display: grid;
+        grid-template-columns: 50px repeat(7, 1fr);
+        grid-template-areas: 
+    "img asbl action formation agenda contact don langue"
+    ;
+    grid-template-rows: 100px;
+    background-color:   #14939c;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
     }
     
     .buttonopen{
@@ -93,7 +116,53 @@
     .buttonclose{
       display: none;
      }
-}
+
+     .logo{
+        z-index: 1;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    
+    .logo img {
+        grid-area: img;
+        width: 125px;
+    }
+
+    #asbl {
+        justify-self: center;
+        grid-area: asbl;
+    }
+    
+    #action {
+        justify-self: center;
+        grid-area: action;
+    }
+    
+    #formation {
+        justify-self: center;
+        grid-area: formation;
+    }
+    
+    #agenda {
+        justify-self: center;
+        grid-area: agenda;
+    }
+    
+    #contact {
+        justify-self: center;
+        grid-area: contact;
+    }
+    
+    #don {
+        justify-self: center;
+        grid-area: don;
+    }
+    
+    #langue {
+        justify-self: center;
+        grid-area: langue;
+    }
+
 /*RESPONSIVE DESKTOP*/
 @media screen and (min-width: 1023px) {
 .navigation{
@@ -193,7 +262,7 @@
     grid-area: don;
 }
 
-#langue {
+.country_select {
     justify-self: center;
     grid-area: langue;
 }

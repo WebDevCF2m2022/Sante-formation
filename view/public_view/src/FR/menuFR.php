@@ -19,14 +19,16 @@
             <a id="contact" href="index.php?view=contact" class="navi">Contact</a>
             <button id="don" class="navibutton"><a href="index.php?view=donation" class="navilien">Faire un don</a></button>
             <!-- BOUTON CHANGEMENT DE LANGUES -->
-            <form id="langue" method="post" action="">
+            <input id="country_selector" class= "navilangue" type="text">
+
+            <!--<form id="langue" method="post" action="">
                 <select name="langSelect"  class= "navilangue" id="langue-select" onchange="this.form.submit()">
                     <option value="fr" <?php if(isset($_POST['langSelect']) && $_POST['langSelect'] === "fr") { echo "selected"; } ?>>FR</option>
                     <option value="en" <?php if(isset($_POST['langSelect']) && $_POST['langSelect'] === "en") { echo "selected"; } ?>>EN</option>
                     <option value="nl" <?php if(isset($_POST['langSelect']) && $_POST['langSelect'] === "nl") { echo "selected"; } ?>>NL</option>
                     <option value="ar" <?php if(isset($_POST['langSelect']) && $_POST['langSelect'] === "ar") { echo "selected"; } ?>>AR</option>
                 </select>
-            </form>
+            </form>-->
           
     </div>     
         
