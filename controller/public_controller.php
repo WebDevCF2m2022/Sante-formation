@@ -6,6 +6,9 @@ if(isset($_GET['view'])){
         case 'homepage':
             include "../view/public_view/homepage.php";
             break;
+        case 'asbl':
+            include "../view/public_view/asbl.php";
+            break;
         case 'action':
             include "../view/public_view/action.php";
             break;
