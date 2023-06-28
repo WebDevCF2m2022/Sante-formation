@@ -1,11 +1,13 @@
 <?php
 
-namespace model\MappingClass;
-use PDO ;
+namespace model\ManagerClass;
+
 use model\MappingClass\AdminMapping;
 use model\InterfaceClass\ManagerInterface;
 use model\InterfaceClass\SecuriteInterface;
 
+use PDO ;
+use Exception;
 
 class AdminManager implements ManagerInterface,SecuriteInterface
 {
@@ -22,7 +24,7 @@ class AdminManager implements ManagerInterface,SecuriteInterface
      * @return \model\MappingClass\AdminMapping|void
      */
     public  function getOneById(int $id){
-        $prepare = $this->connect->prepare("SELECT * FROM admin WHERE `idadmin` = :id");
+        $prepare = $this->connect->prepare("SELECT * FROM admin WHERE `idAdmin` = :id");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         try {
             $prepare->execute();
