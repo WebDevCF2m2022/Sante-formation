@@ -22,7 +22,7 @@ class  FormationManager implements ManagerInterface{
      * @return \model\MappingClass\FormationMapping|void
      */
     public  function getOneById(int $id){
-        $prepare = $this->connect->prepare("SELECT * FROM formation WHERE `idformation` = :id");
+        $prepare = $this->connect->prepare("SELECT * FROM formation WHERE `idFormation` = :id");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         try {
             $prepare->execute();
@@ -84,7 +84,7 @@ class  FormationManager implements ManagerInterface{
      */
     public function  updateAction(FormationMapping $datas):bool
     {
-        $prepare = $this->connect->prepare("UPDATE formation SET formationTitle=?,formationDescription=?,formationText=?,formationImage=?,formationDate=? WHERE id = :idFormation");
+        $prepare = $this->connect->prepare("UPDATE formation SET formationTitle=?,formationDescription=?,formationText=?,formationImage=?,formationDate=? WHERE idFormation = :idFormation");
         $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getFormationTitre()), ENT_QUOTES)), PDO::PARAM_STR);
         $prepare->bindValue(2, htmlspecialchars(strip_tags(trim($datas->getFormationDescription()), ENT_QUOTES)), PDO::PARAM_STR);
         $prepare->bindValue(3, htmlspecialchars(strip_tags(trim($datas->getFormationText()), ENT_QUOTES)), PDO::PARAM_STR);
@@ -107,7 +107,7 @@ class  FormationManager implements ManagerInterface{
      */
     public function deleteAction(FormationMapping $id):bool
     {
-        $prepare= $this->connect->prepare("DELETE FROM formation WHERE id=  :idFormation");
+        $prepare= $this->connect->prepare("DELETE FROM formation WHERE idFormation=  :idFormation");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         header("Location:./");
 

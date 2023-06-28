@@ -22,7 +22,7 @@ class ActionManager implements ManagerInterface{
      * @return \model\MappingClass\ActionMapping|void
      */
     public  function getOneById(int $id){
-        $prepare = $this->connect->prepare("SELECT * FROM action WHERE `idaction` = :id");
+        $prepare = $this->connect->prepare("SELECT * FROM action WHERE `idAction` = :id");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         try {
             $prepare->execute();
@@ -61,7 +61,7 @@ class ActionManager implements ManagerInterface{
      * @return bool
      */
     public function insertAction(ActionMapping  $datas): bool{
-        $prepare = $this->connect->prepare("INSERT INTO `action` (`actionTitre`, `actionDescription`, `actionText`,`actionImage`,`actionDate`) VALUES (:actionTitre, :actionDescription, :actionText , :actionImage , :actionDate");
+        $prepare = $this->connect->prepare("INSERT INTO `action` (`actionTitre`, `actionDescription`, `actionText`,`actionImages`,`actionDate`) VALUES (:actionTitre, :actionDescription, :actionText , :actionImage , :actionDate");
         $prepare->bindValue(":actionTitre", $datas->getActionTitre(), PDO::PARAM_STR);
         $prepare->bindValue(":actionDescription", $datas->getActionDescription(), PDO::PARAM_STR);
         $prepare->bindValue(":actionText", $datas->getActionText(), PDO::PARAM_STR);
@@ -84,7 +84,7 @@ class ActionManager implements ManagerInterface{
      */
   public function  updateAction(ActionMapping $datas):bool
   {
-      $prepare = $this->connect->prepare("UPDATE action SET actionTitle=?,actioniDescription=?,actionText=?,actionImage=?,actionDate=? WHERE id = :idAction");
+      $prepare = $this->connect->prepare("UPDATE action SET actionTitle=?,actioniDescription=?,actionText=?,actionImages=?,actionDate=? WHERE idAction = :idAction");
       $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getActionTitre()), ENT_QUOTES)), PDO::PARAM_STR);
       $prepare->bindValue(2, htmlspecialchars(strip_tags(trim($datas->getActionDescription()), ENT_QUOTES)), PDO::PARAM_STR);
       $prepare->bindValue(3, htmlspecialchars(strip_tags(trim($datas->getActionText()), ENT_QUOTES)), PDO::PARAM_STR);
@@ -107,7 +107,7 @@ class ActionManager implements ManagerInterface{
      */
     public function deleteAction(ActionMapping $id):bool
     {
-          $prepare= $this->connect->prepare("DELETE FROM action WHERE id=  :idAction");
+          $prepare= $this->connect->prepare("DELETE FROM action WHERE idAction =  :idAction");
           $prepare->bindValue(":id", $id, PDO::PARAM_INT);
           header("Location:./");
 

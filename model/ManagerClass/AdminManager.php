@@ -24,7 +24,7 @@ class AdminManager implements ManagerInterface,SecuriteInterface
      * @return \model\MappingClass\AdminMapping|void
      */
     public  function getOneById(int $id){
-        $prepare = $this->connect->prepare("SELECT * FROM admin WHERE `idadmin` = :id");
+        $prepare = $this->connect->prepare("SELECT * FROM admin WHERE `idAdmin` = :id");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         try {
             $prepare->execute();
