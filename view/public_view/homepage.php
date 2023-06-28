@@ -29,36 +29,74 @@
         include "../view/public_view/src/lightbox.php"
     ?>
 
-    <div id="aProposAcc">
-            <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-            <h1>A propos de nous</h1>
-            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt voluptates unde molestias minima optio? Molestiae sit id aperiam facere facilis? Magnam sed laborum itaque sunt ducimus ea necessitatibus animi! Tenetur, soluta natus rerum, quia quas delectus cupiditate neque blanditiis similique accusamus quos saepe recusandae tempora rem dolor laboriosam. Doloribus omnis voluptatem quisquam, nisi eveniet debitis ipsa! Illo mollitia sint fuga enim tenetur suscipit quam expedita, voluptatum deserunt similique minima libero, inventore dolorum quae tempore?</h3>
-    </div>
+<div id="aProposAcc">
+        <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
+        <h1>A propos de nous</h1>
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt voluptates unde molestias minima optio? Molestiae sit id aperiam facere facilis? Magnam sed laborum itaque sunt ducimus ea necessitatibus animi! Tenetur, soluta natus rerum, quia quas delectus cupiditate neque blanditiis similique accusamus quos saepe recusandae tempora rem dolor laboriosam. Doloribus omnis voluptatem quisquam, nisi eveniet debitis ipsa! Illo mollitia sint fuga enim tenetur suscipit quam expedita, voluptatum deserunt similique minima libero, inventore dolorum quae tempore?</h3>
+</div>
 
-        <div id="text1Accueil">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit nisi. Quia, incidunt ipsa. Eum voluptates harum animi aut est. Dolore est quasi reiciendis minima natus laudantium officiis? Perferendis distinctio facere quaerat consequuntur? Accusantium quam dicta sint neque ipsa expedita beatae blanditiis sunt necessitatibus dolor itaque voluptatum sed, deserunt, voluptas modi possimus dignissimos dolores temporibus labore, pariatur enim distinctio! Autem magni consequuntur ducimus sed, repudiandae rem nemo omnis illo, esse iure officia placeat neque illum, reiciendis id vel rerum atque a quibusdam nulla corrupti. Rerum in ratione, facere nobis ipsam officiis, velit ipsa suscipit quaerat libero cupiditate deleniti architecto magnam?</p>
-        </div>
+<div id="text1Accueil">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit nisi. Quia, incidunt ipsa. Eum voluptates harum animi aut est. Dolore est quasi reiciendis minima natus laudantium officiis? Perferendis distinctio facere quaerat consequuntur? Accusantium quam dicta sint neque ipsa expedita beatae blanditiis sunt necessitatibus dolor itaque voluptatum sed, deserunt, voluptas modi possimus dignissimos dolores temporibus labore, pariatur enim distinctio! Autem magni consequuntur ducimus sed, repudiandae rem nemo omnis illo, esse iure officia placeat neque illum, reiciendis id vel rerum atque a quibusdam nulla corrupti. Rerum in ratione, facere nobis ipsam officiis, velit ipsa suscipit quaerat libero cupiditate deleniti architecto magnam?</p>
+</div>
 
-<div id="actionAccueil">
-        <h1>Nos actions</h1>
+                <div id="actionAccueil">
+                        <h1>Nos actions</h1>
+                        <h3>SLOGAN en long</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
+                <div id="positionAction">
+                    <div class="carteAction">
+                        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+                        <h1>Actions</h1>
+                    </div>
+                    <div class="carteAction">
+                        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+                        <h1>Actions</h1>
+                    </div>
+                    <div class="carteAction">
+                        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+                        <h1>Actions</h1>
+                    </div>
+                </div>
+                    <a href="?view=action" target="_blank">En savoir plus</a>
+                </div>
+
+<div id="formationAccueil">
+        <h1>Nos formations</h1>
         <h3>SLOGAN en long</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
-<div id="positionCarte">
-    <div class="carteAction">
+<div id="positionFormation">
+    <div class="carteFormation">
         <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>Actions</h1>
+        <h1>Formation</h1>
     </div>
-    <div class="carteAction">
+    <div class="carteFormation">
         <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>Actions</h1>
+        <h1>Formation</h1>
     </div>
-    <div class="carteAction">
+    <div class="carteFormation">
         <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>Actions</h1>
+        <h1>Formation</h1>
     </div>
 </div>
-    <a href="?view=action" target="_blank">En savoir plus</a>
+    <a href="?view=formation" target="_blank">En savoir plus</a>
 </div>
+
+                <div id="contactAccueil">
+                    <h1>Votre action sur mesure</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magni officia eveniet maiores consectetur voluptas aliquid quisquam optio, facere repudiandae?</p>
+                <form action="#" id="formulaireAccueil" method="post">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required><br>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
+
+                    <input type="submit" value="Envoyer">
+                </form>
+                </div>
 
 
 <script>
