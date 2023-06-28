@@ -34,7 +34,7 @@
     border-radius: 50%;
     grid-area: valeur1;
     background-color: #D9D9D9;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
 
 }
 
