@@ -20,7 +20,7 @@
 <!-- INCLUDE DU MENU -->
     <nav>
         <?php
-        include "../view/public_view/src/FR/menuFR.php";
+        include "../view/public_view/src/menu.php";
         ?>
     </nav>
 
@@ -29,12 +29,15 @@
     include "../view/public_view/src/lightbox.php"
 ?>
 
+
+
+<!--script langue-->
 <script>
     $("#country_selector").countrySelect({
         defaultCountry: "fr",
         onlyCountries: ['gb', 'fr', 'nl', 'sa'],
         preferredCountries: [],
-        localizedCountries:{'gb': 'GB', 'fr': 'FR', 'nl': 'NL', 'sa': 'AR'}
+        localizedCountries:{'gb': 'EN', 'fr': 'FR', 'nl': 'NL', 'sa': 'AR'}
     });
 </script>
 

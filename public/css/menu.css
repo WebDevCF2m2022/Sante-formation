@@ -6,34 +6,63 @@
     width: 30%;
     margin-left: 40%;
     border-radius: 15px 15px;
-   margin-right: 40%;
+    margin-right: 40%;
 }
 
 #country_selector {
     width: 100%;
 }
+.navigation{
+    color: white;
+    list-style: none;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navibutton {
+    border: 2px solid black;
+    border-radius: 15px 15px;
+    background-color:  #095C76;
+}
+
+.navilien {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.navi{
+    color: white;
+    margin-right: 20px;
+    margin: 0 10px 0 20px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 /* RESPONSIVE POUR LE MOBILE*/
 @media screen and (max-width: 599px) {
+
+    .country-select {
+    width: 9%;
+    }
+
     .navigation{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-     
         height: 300px;
-        color: white;
-        text-align: center;
         padding: 25px;
         background-image:url(../img/bouloulou.jpg) ;
         background-attachment: fixed;
         background-position: bottom;
         font-size: larger;
-   
-      
+
     }
 
     .logo,.img{
-    display: none;
+        display: none;
     }
 
     .navigation.active2{
@@ -42,28 +71,18 @@
     }
 
     .menubtn{
-        flex-direction: flex-end;
+        flex-direction: column;
         width: 25px;
         height: 20px;
         position: absolute;
         right: 26px;
     }
 
-    .navi{
-        color: white;
-        margin-right: 20px;
-        margin: 0 10px 0 20px;
-        list-style: none;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
+
+
     .navibutton{
-        border: 2px solid black;
-        box-shadow: 2px;
-        border-radius: 15px 15px;
+
         padding: 5px 9px;
-        background-color:  #095C76;
         box-shadow:0px -2px 5px #095C76;
         width: 130px;
         position: inherit;
@@ -71,27 +90,23 @@
 
     }
 
-    .navilien{
-        text-decoration: none;
-        color: white;
-        font-family: 'Inter', sans-serif;
-    }
-    
+
+
     .buttonopen{
         display: none;
     }
-    
-  
+
+
 
     .buttonclose{
-       width: 30px;
+        width: 30px;
     }
 
-#lightbox{
-    display: none; 
-}
- 
-   
+    #lightbox{
+        display: none;
+    }
+
+
 }
 
 
@@ -103,14 +118,18 @@
         grid-template-areas:
     "img asbl action formation agenda contact don langue";
         grid-template-rows: 100px;
-        background-color: #14939c;
-        color: white;
         font-family: 'Inter', sans-serif;
         font-size: 10px;
         justify-content: space-between;
         align-items: center;
-        list-style: none;
+        background-color: #14939c;
     }
+
+    .navibutton{
+        padding: 4% 5%;
+        box-shadow: 10px 5px 5px #095C76;
+    }
+
 
 
     .buttonopen {
@@ -174,110 +193,84 @@
 /*RESPONSIVE DESKTOP*/
 
 @media screen and (min-width: 1023px) {
-.navigation{
-    display: grid;
-    grid-template-columns: 380px repeat(7, 1fr);
-    /*grid-template-columns: 245px repeat(7, 1fr);*/
-    grid-template-areas: 
+    .navigation{
+        display: grid;
+        grid-template-columns: 380px repeat(7, 1fr);
+        /*grid-template-columns: 245px repeat(7, 1fr);*/
+        grid-template-areas:
     "img asbl action formation agenda contact don langue"
     ;
-    grid-template-rows: 100px;
-    background-color:   #14939c;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: large;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-.logo{
-    z-index: 1;
-    margin-top: 90px;
-    margin-left: 25px;
-}
-
-.logo img {
-    grid-area: img;
-    width: 150px;
-}
-
-.navi{
-    color: white;
-    margin-right: 20px;
-    margin: 0 10px 0 20px;
-    list-style: none;
-    text-decoration: none;
-}
-
-/*.navi:nth-child(1){
-    margin-left: 150px;*/
+        grid-template-rows: 100px;
+        font-family: 'Inter', sans-serif;
+        font-size: large;
+        background-color: #14939c;
+    }
 
 
-.navibutton{
-    border: 2px solid black;
-    box-shadow: 2px;
-    border-radius: 15px 15px;
-    padding: 8px 12px;
-    background-color:  #095C76;
-    box-shadow: 10px 5px 5px #095C76;
-}
 
-.navilien{
-    text-decoration: none;
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
+    .logo img {
+        grid-area: img;
+        width: 150px;
+    }
 
-.navilangue{
-    border-radius: 15px 15px;
-    margin-right: 8px;
-}
-.buttonopen{
-    display: none;
-}
 
-.buttonclose{
-  display: none;
- }
 
-#asbl {
-    justify-self: center;
-    grid-area: asbl;
-}
+    /*.navi:nth-child(1){
+        margin-left: 150px;*/
 
-#action {
-    justify-self: center;
-    grid-area: action;
-}
 
-#formation {
-    justify-self: center;
-    grid-area: formation;
-}
+    .navibutton{
 
-#agenda {
-    justify-self: center;
-    grid-area: agenda;
-}
+        padding: 8px 12px;
+        box-shadow: 10px 5px 5px #095C76;
+    }
 
-#contact {
-    justify-self: center;
-    grid-area: contact;
-}
 
-#don {
-    justify-self: center;
-    grid-area: don;
-}
+    .navilangue{
+        border-radius: 15px 15px;
+        margin-right: 8px;
+    }
+    .buttonopen{
+        display: none;
+    }
 
-.country_select {
-    justify-self: center;
-    grid-area: langue;
-}
+    .buttonclose{
+        display: none;
+    }
+
+    #asbl {
+        justify-self: center;
+        grid-area: asbl;
+    }
+
+    #action {
+        justify-self: center;
+        grid-area: action;
+    }
+
+    #formation {
+        justify-self: center;
+        grid-area: formation;
+    }
+
+    #agenda {
+        justify-self: center;
+        grid-area: agenda;
+    }
+
+    #contact {
+        justify-self: center;
+        grid-area: contact;
+    }
+
+    #don {
+        justify-self: center;
+        grid-area: don;
+    }
+
+    .country_select {
+        justify-self: center;
+        grid-area: langue;
+    }
 
 }
-
-
-
-
