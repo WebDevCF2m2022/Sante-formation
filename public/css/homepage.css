@@ -16,6 +16,7 @@ body {
     "actionAcc"
     "formationAcc"
     "contact"
+    "agendaAccueil"
     "valeur"
     "footer";
 }
@@ -269,4 +270,78 @@ body {
     border-radius: 10px;
     height: 35px;
     width: 380px;
+}
+
+#agendaAccueil {
+    display: grid;
+    grid-area: agendaAccueil;
+    margin: 0 40px 0 40px;
+}
+
+.centre {
+    text-align: center;
+}
+
+#positionAgenda {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.carteAgenda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 50px 40px 150px 30px;
+    grid-template-areas: 
+    "imgAgenda"
+    "titreAgenda"
+    "heureAgenda"
+    "textAgenda"
+    "detailAgenda";
+    margin: 0 20px 0 20px;
+    background-color: #FFFF;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+.carteAgenda img{
+    width: 100%;
+    height: 300px;
+    grid-area: imgAgenda;
+}
+
+.carteAgenda h1 {
+    grid-area: titreAgenda;
+}
+
+.carteAgenda #date {
+    grid-area: heureAgenda;
+}
+
+.carteAgenda p {
+    grid-area: textAgenda;
+}
+
+.carteAgenda a {
+    grid-area: detailAgenda;
+    justify-self: right;
+    margin: 0 10px 10px 0;
+}
+
+#savoirPlusAgenda {
+    justify-self: center;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: #14939c;
+    border: 1px solid black;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px;
+    padding: 0 30px 0 30px;
+    font-weight: bolder;
+}
+
+#savoirPlusAgenda:hover {
+    background-color: #095C76;
 }

@@ -98,6 +98,34 @@
                 </form>
                 </div>
 
+<div id="agendaAccueil">
+        <h1 class="centre">Agenda</h1>
+<div id="positionAgenda">
+    <div class="carteAgenda">
+        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <h1>titre</h1>
+        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur nemo atque odio perferendis laudantium, eum non temporibus alias laborum distinctio maiores facilis et cumque?</p>
+        <a href="">Detail</a>
+    </div>
+    <div class="carteAgenda">
+        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <h1>titre</h1>
+        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur autem ipsam hic provident quod molestiae ducimus distinctio exercitationem cumque enim. Magnam laborum ipsa eaque omnis!</p>
+        <a href="">Detail</a>
+    </div>
+    <div class="carteAgenda">
+        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <h1>titre</h1>
+        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
+        <a href="#">Detail</a>
+    </div>
+</div>
+    <a id="savoirPlusAgenda" href="?view=agenda" target="_blank">En savoir plus</a>
+</div>
+
 
 <script>
     $("#country_selector").countrySelect({
