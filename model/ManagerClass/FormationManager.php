@@ -1,12 +1,12 @@
 <?php
 
 namespace model\MappingClass;
-
-use PDO;
-use Exception;
 use model\MappingClass\FormationMapping;
 use model\InterfaceClass\ManagerInterface;
 use models\Traits\TestTrait;
+
+use PDO;
+use Exception;
 
 class  FormationManager implements ManagerInterface{
 

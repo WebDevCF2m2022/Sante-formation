@@ -1,11 +1,13 @@
 <?php
 
 namespace model\MappingClass;
-use PDO ;
+
 use model\MappingClass\AdminMapping;
 use model\InterfaceClass\ManagerInterface;
 use model\InterfaceClass\SecuriteInterface;
 
+use PDO ;
+use Exception;
 
 class AdminManager implements ManagerInterface,SecuriteInterface
 {

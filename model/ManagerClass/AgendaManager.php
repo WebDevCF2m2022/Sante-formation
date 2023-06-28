@@ -1,11 +1,13 @@
 <?php
 
 namespace model\MappingClass;
+
+use model\InterfaceClass\ManagerInterface;
+use model\MappingClass\AgendaMapping;
+use models\Traits\TestTrait;
+
 use PDO;
 use Exception;
-use model\MappingClass\AgendaMapping;
-use model\InterfaceClass\ManagerInterface;
-use models\Traits\TestTrait;
 
 class AgendaManager implements ManagerInterface
 {
