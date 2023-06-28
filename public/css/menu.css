@@ -1,7 +1,12 @@
+
+/* button langue*/
 .country-select {
     justify-self: center;
     grid-area: langue;
-    width: 85px;
+    width: 30%;
+    margin-left: 40%;
+    border-radius: 15px 15px;
+   margin-right: 40%;
 }
 
 #country_selector {
@@ -9,7 +14,7 @@
 }
 
 /* RESPONSIVE POUR LE MOBILE*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     .navigation{
         display: flex;
         flex-direction: column;
@@ -91,38 +96,37 @@
 
 
 /* RESPONSIVE POUR LA TABLET */
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-    .navigation{
+@media screen and (min-width: 600px) and (max-width: 1022px) {
+    .navigation {
         display: grid;
         grid-template-columns: 50px repeat(7, 1fr);
-        grid-template-areas: 
-    "img asbl action formation agenda contact don langue"
-    ;
-    grid-template-rows: 100px;
-    background-color:   #14939c;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 10px;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
+        grid-template-areas:
+    "img asbl action formation agenda contact don langue";
+        grid-template-rows: 100px;
+        background-color: #14939c;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
     }
-    
-    .buttonopen{
+
+
+    .buttonopen {
         display: none;
     }
-    
-    .buttonclose{
-      display: none;
-     }
 
-     .logo{
+    .buttonclose {
+        display: none;
+    }
+
+    .logo {
         z-index: 1;
         margin-top: 50px;
         margin-left: 10px;
     }
-    
+
     .logo img {
         grid-area: img;
         width: 125px;
@@ -132,38 +136,43 @@
         justify-self: center;
         grid-area: asbl;
     }
-    
+
     #action {
         justify-self: center;
         grid-area: action;
     }
-    
+
     #formation {
         justify-self: center;
         grid-area: formation;
     }
-    
+
     #agenda {
         justify-self: center;
         grid-area: agenda;
     }
-    
+
     #contact {
         justify-self: center;
         grid-area: contact;
     }
-    
+
     #don {
         justify-self: center;
         grid-area: don;
     }
-    
+
     #langue {
         justify-self: center;
         grid-area: langue;
     }
+}
+
+
+
 
 /*RESPONSIVE DESKTOP*/
+
 @media screen and (min-width: 1023px) {
 .navigation{
     display: grid;
