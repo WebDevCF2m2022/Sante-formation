@@ -1,8 +1,6 @@
 <?php
 
 namespace model\InterfaceClass;
-use model\MappingClass\ActionMapping;
-use model\MappingClass\AgendaMapping;
 use PDO ;
 use Exception;
 

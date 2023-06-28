@@ -1,6 +1,6 @@
 <?php
 
-namespace model\MappingClass;
+namespace model\ManagerClass;
 
 use model\InterfaceClass\ManagerInterface;
 use model\MappingClass\AgendaMapping;

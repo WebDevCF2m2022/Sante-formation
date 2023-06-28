@@ -1,6 +1,6 @@
 <?php
 
-namespace model\MappingClass;
+namespace model\ManagerClass;
 
 use model\MappingClass\AdminMapping;
 use model\InterfaceClass\ManagerInterface;

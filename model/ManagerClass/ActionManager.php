@@ -1,12 +1,13 @@
 <?php
 
- namespace  model\MappingClass;
+ namespace  model\ManagerClass;
 
- use PDO;
- use Exception;
+
  use model\MappingClass\ActionMapping;
  use model\InterfaceClass\ManagerInterface;
  use models\TraitsClass\TestTrait;
+ use PDO;
+ use Exception;
 
 class ActionManager implements ManagerInterface{
 

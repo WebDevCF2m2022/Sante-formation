@@ -7,7 +7,6 @@ use model\MappingClass\ValuersMapping;
 use PDO ;
 use Exception;
 
-class NavbarManager implements ManagerInterface
-{
+class NavbarManager implements ManagerInterface{
 
 }
