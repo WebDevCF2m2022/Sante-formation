@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/valeur.css">
+    <link rel="stylesheet" href="css/contactPage.css">
     <link rel="stylesheet" href="css/homepage.css">
     <script src="js/lightbox.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -81,22 +82,10 @@
     <a href="?view=formation" target="_blank">En savoir plus</a>
 </div>
 
-                <div id="contactAccueil">
-                    <h1>Votre action sur mesure</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magni officia eveniet maiores consectetur voluptas aliquid quisquam optio, facere repudiandae?</p>
-                <form action="#" id="formulaireAccueil" method="post">
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required><br>
-
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required><br>
-
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
-
-                    <input type="submit" value="Envoyer">
-                </form>
-                </div>
+    <!-- INCLUDE DU CONTACT DANS LA PAGE -->
+    <?php
+    include_once "../view/public_view/src/contactPage.php";
+    ?>
 
 <div id="agendaAccueil">
         <h1 class="centre">Agenda</h1>
