@@ -37,39 +37,39 @@
             <div id="positionAction">
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <a href="#"><h1>Actions</h1></a>
+                    <h1>Actions</h1>
                 </div>
             </div>
             </div>
