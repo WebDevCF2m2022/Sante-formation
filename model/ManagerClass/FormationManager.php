@@ -3,7 +3,7 @@
 namespace model\ManagerClass;
 use model\MappingClass\FormationMapping;
 use model\InterfaceClass\ManagerInterface;
-use models\Traits\TestTrait;
+use model\TraitsClass\TestTrait;
 
 use PDO;
 use Exception;

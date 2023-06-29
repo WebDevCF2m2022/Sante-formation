@@ -5,7 +5,7 @@
 
  use model\MappingClass\ActionMapping;
  use model\InterfaceClass\ManagerInterface;
- use models\TraitsClass\TestTrait;
+ use model\TraitsClass\TestTrait;
  use PDO;
  use Exception;
 

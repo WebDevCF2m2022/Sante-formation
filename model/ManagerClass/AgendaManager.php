@@ -4,7 +4,7 @@ namespace model\ManagerClass;
 
 use model\InterfaceClass\ManagerInterface;
 use model\MappingClass\AgendaMapping;
-use models\Traits\TestTrait;
+use model\TraitsClass\TestTrait;
 
 use PDO;
 use Exception;

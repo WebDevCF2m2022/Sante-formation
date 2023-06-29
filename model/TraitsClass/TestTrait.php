@@ -1,5 +1,7 @@
 <?php
 
+
+namespace model\TraitsClass;
 trait TestTrait
 {
     public function slugify(string $s): string
