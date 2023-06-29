@@ -5,13 +5,13 @@
 </div>
 
 <div id="menuFooter">
-    <a href="index.php?view=homepage" target="_blank">L'ASBL</a>
-    <a href="index.php?view=formation" target="_blank">Formation</a>
-    <a href="index.php?view=donation" target="_blank">Don</a>
-    <a href="index.php?view=agenda" target="_blank">Agenda</a>
-    <a href="index.php?view=admin" target="_blank">Admin</a>
-    <a href="index.php?view=don" target="_blank">Mention légales</a>
-    <a href="index.php?view=don" target="_blank">Politique de confidentialité</a>
+    <a href="?view=homepage">L'ASBL</a>
+    <a href="?view=formation">Formation</a>
+    <a href="?view=donation">Don</a>
+    <a href="?view=agenda">Agenda</a>
+    <a href="?view=admin" target="_blank">Admin</a>
+    <a href="?view=don" target="_blank">Mention légales</a>
+    <a href="?view=don" target="_blank">Politique de confidentialité</a>
 </div>
 
 <div id="aboutFooter">
