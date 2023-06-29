@@ -252,14 +252,17 @@ body {
 
 .carteAgenda h1 {
     grid-area: titreAgenda;
+    margin-left: 10px;
 }
 
 .carteAgenda #date {
     grid-area: heureAgenda;
+    margin-left: 10px;
 }
 
 .carteAgenda p {
     grid-area: textAgenda;
+    margin-left: 10px;
 }
 
 .carteAgenda a {

@@ -24,6 +24,9 @@ if (isset($_GET['view'])) {
         case 'formation':
             include "../view/public_view/formation.php";
             break;
+        case 'admin':
+            include "../view/public_view/admin.php";
+            break;
         default:
             include_once "../view/public_view/homepage.php";
             break;

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 #gridAgenda {
     display: grid;
     grid-template-columns: 1fr;
@@ -51,14 +57,17 @@
 
 .carteAgenda h1 {
     grid-area: titreAgenda;
+    margin-left: 10px;
 }
 
 .carteAgenda #date {
     grid-area: heureAgenda;
+    margin-left: 10px;
 }
 
 .carteAgenda p {
     grid-area: textAgenda;
+    margin-left: 10px;
 }
 
 .carteAgenda a {
