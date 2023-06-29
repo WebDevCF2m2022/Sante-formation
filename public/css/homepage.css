@@ -224,10 +224,8 @@ body {
 }
 
 #positionAgenda {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .carteAgenda {
@@ -246,7 +244,8 @@ body {
 }
 
 .carteAgenda img{
-    width: 100%;
+    border: 10px white solid;
+    width: -webkit-fill-available;
     height: 300px;
     grid-area: imgAgenda;
 }

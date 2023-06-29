@@ -13,7 +13,7 @@
     <script src="js/countrySelect.js"></script>
 
 
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 
 <body>
