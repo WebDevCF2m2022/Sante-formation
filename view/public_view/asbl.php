@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/countrySelect.css">
     <script src="js/countrySelect.js"></script>
-    <title>Accueil</title>
+    <title>ASBL</title>
 </head>
 <body>
         <div id="gridASBL">

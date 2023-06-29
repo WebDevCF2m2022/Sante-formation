@@ -1,0 +1,68 @@
+#gridAgenda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "menu"
+    "lightbox"
+    "agenda"
+    "contact"
+    "valeur"
+    "footer";
+}
+
+#agendaBloc {
+    display: grid;
+    grid-area: agenda;
+    margin: 0 40px 0 40px;
+}
+
+.centre {
+    text-align: center;
+}
+
+#positionAgenda {
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.carteAgenda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 50px 40px 150px 30px;
+    grid-template-areas: 
+    "imgAgenda"
+    "titreAgenda"
+    "heureAgenda"
+    "textAgenda"
+    "detailAgenda";
+    margin: 0 20px 0 20px;
+    background-color: #FFFF;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+.carteAgenda img{
+    border: 10px white solid;
+    width: -webkit-fill-available;
+    height: 300px;
+    grid-area: imgAgenda;
+}
+
+.carteAgenda h1 {
+    grid-area: titreAgenda;
+}
+
+.carteAgenda #date {
+    grid-area: heureAgenda;
+}
+
+.carteAgenda p {
+    grid-area: textAgenda;
+}
+
+.carteAgenda a {
+    grid-area: detailAgenda;
+    justify-self: right;
+    margin: 0 10px 10px 0;
+}

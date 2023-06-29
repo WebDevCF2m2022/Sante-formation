@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/countrySelect.css">
     <script src="js/countrySelect.js"></script>
 
-    <title>Document</title>
+    <title>Actions</title>
 </head>
 <body>
     <div id="gridAction">

@@ -8,18 +8,23 @@
     "textContact formulaireContact"
     ;
     background-image: url(../img/pexels-jack-redgate-2929227.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-bottom: 50px;
     margin-top: 35px;
 }
 
 #contactPage h1 {
     justify-self: center;
+    color: white;
     grid-area: titreContact;
 }
 
 #contactPage p {
     grid-area: textContact;
     text-align: center;
+    color: white;
 }
 
 #formulairePage {
