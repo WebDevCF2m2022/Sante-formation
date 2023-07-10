@@ -225,7 +225,7 @@
     .navigation{
         display: grid;
         grid-template-columns: 380px repeat(7, 1fr);
-        /*grid-template-columns: 245px repeat(7, 1fr);*/
+        grid-template-columns: 245px repeat(7, 1fr);
         grid-template-areas:
     "img asbl action formation agenda contact don langue"
     ;
@@ -235,11 +235,22 @@
         background-color: #14939c;
     }
 
+    .logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
 
 
     .logo img {
         grid-area: img;
         width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        z-index: 1;
+        margin-top: 20%;
     }
 
 
