@@ -257,3 +257,18 @@
         ;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    #valeur{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titreValeur"
+        "valeur1" 
+        "valeur2" 
+        "valeur3" 
+        "valeur4"
+        "valeur5"
+        "valeur6"
+        ;
+    }
+  }
