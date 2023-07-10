@@ -2,7 +2,8 @@
 
 namespace model\ManagerClass;
 use model\InterfaceClass\ManagerInterface;
-use model\MappingClass\ValuersMapping;
+use model\MappingClass\NavbarMapping;
+
 
 use PDO ;
 use Exception;
@@ -17,11 +18,33 @@ class NavbarManager implements ManagerInterface{
 
     public function getOneById(int $id)
     {
-        // TODO: Implement getOneById() method.
+        $prepare = $this->connect->prepare("SELECT * FROM navbar WHERE `idNavbar` = :id");
+        $prepare->bindValue(":id", $id, PDO::PARAM_INT);
+        try {
+            $prepare->execute();
+            $result = $prepare->fetch();
+            return new NavbarMapping($result);
+        } catch (Exception $e) {
+            echo "Erreur de requête : " . $e->getMessage();
+            exit;
+        }
     }
 
     public function getAll()
     {
-        // TODO: Implement getAll() method.
+        $prepare =$this->connect->prepare("SELECT * FROM  navbar");
+        try{
+            $prepare->execute();
+            $result = $prepare->fetchAll();
+            $all = [];
+            foreach ($result as $row ){
+                $all[] = new NavbarMapping($row);
+            }
+            return $all ;
+
+        }catch (Exception $e){
+            echo "erreur  : " .$e->getMessage();
+            exit;
+        }
     }
 }
