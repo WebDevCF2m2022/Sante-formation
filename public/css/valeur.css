@@ -245,3 +245,15 @@
     grid-area: valeur6p;
     max-width: 65%;
 }
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    #valeur{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "titreValeur titreValeur"
+        "valeur1 valeur2" 
+        "valeur3 valeur4"
+        "valeur5 valeur6"
+        ;
+    }
+  }
