@@ -63,7 +63,7 @@ class AgendaManager implements ManagerInterface
      * @param \model\MappingClass\AgendaMapping $datas
      * @return bool
      */
-    public function insertAction(AgendaMapping  $datas): bool{
+    public function insertAgenda(AgendaMapping  $datas): bool{
         $prepare = $this->connect->prepare("INSERT INTO `agenda` (`agendaTitre`, `agendaDescription`, `agendaText`,`agendaImages`,`agendaDate`) VALUES (:agendaTitre, :agendaDescription, :agendaText , :agendaImage , :agendaDate");
         $prepare->bindValue(":actionTitre", $datas->getAgendaTitre(), PDO::PARAM_STR);
         $prepare->bindValue(":actionDescription", $datas->getAgendaDescription(), PDO::PARAM_STR);
@@ -85,7 +85,7 @@ class AgendaManager implements ManagerInterface
      * @param \model\MappingClass\AgendaMapping $datas
      * @return bool
      */
-    public function  updateAction(AgendaMapping $datas):bool{
+    public function  updateAgenda(AgendaMapping $datas):bool{
         $prepare = $this->connect->prepare("UPDATE agenda SET agendaTitle=?,agendaDescription=?,agendaText=?,agendaImages=?,agendaDate=? WHERE idAgenda = :idAgenda");
         $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getAgendaTitre()), ENT_QUOTES)), PDO::PARAM_STR);
         $prepare->bindValue(2, htmlspecialchars(strip_tags(trim($datas->getAgendaDescription()), ENT_QUOTES)), PDO::PARAM_STR);
@@ -107,7 +107,7 @@ class AgendaManager implements ManagerInterface
      * @param \model\MappingClass\AgendaMapping $id
      * @return bool
      */
-    public function deleteAction(AgendaMapping $id):bool{
+    public function deleteAgenda(AgendaMapping $id):bool{
         $prepare= $this->connect->prepare("DELETE FROM agenda WHERE idAgenda =  :idAgenda");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         header("Location:./");

@@ -60,7 +60,7 @@ class  FormationManager implements ManagerInterface{
      * @param \model\MappingClass\FormationMapping $datas
      * @return bool
      */
-    public function insertAction(FormationMapping  $datas): bool{
+    public function insertFormation(FormationMapping  $datas): bool{
         $prepare = $this->connect->prepare("INSERT INTO `formation` (`formationTitre`, `formationDescription`, `formationText`,`formationImage`,`formationDate`) VALUES (:formationTitre, :formationDescription, :formationText , :formationImage , :formationDate");
         $prepare->bindValue(":actionTitre", $datas->getFormationTitre(), PDO::PARAM_STR);
         $prepare->bindValue(":actionDescription", $datas->getFormationDescription(), PDO::PARAM_STR);
@@ -82,7 +82,7 @@ class  FormationManager implements ManagerInterface{
      * @param \model\MappingClass\FormationMapping $datas
      * @return bool
      */
-    public function  updateAction(FormationMapping $datas):bool
+    public function  updateFormation(FormationMapping $datas):bool
     {
         $prepare = $this->connect->prepare("UPDATE formation SET formationTitle=?,formationDescription=?,formationText=?,formationImage=?,formationDate=? WHERE idFormation = :idFormation");
         $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getFormationTitre()), ENT_QUOTES)), PDO::PARAM_STR);
@@ -105,7 +105,7 @@ class  FormationManager implements ManagerInterface{
      * @param \model\MappingClass\FormationMapping $id
      * @return bool
      */
-    public function deleteAction(FormationMapping $id):bool
+    public function deleteFormation(FormationMapping $id):bool
     {
         $prepare= $this->connect->prepare("DELETE FROM formation WHERE idFormation=  :idFormation");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
