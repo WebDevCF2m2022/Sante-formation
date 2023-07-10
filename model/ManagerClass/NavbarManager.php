@@ -16,6 +16,10 @@ class NavbarManager implements ManagerInterface{
         $this->connect = $connection;
     }
 
+    /**request for on id
+     * @param int $id
+     * @return NavbarMapping|void
+     */
     public function getOneById(int $id)
     {
         $prepare = $this->connect->prepare("SELECT * FROM navbar WHERE `idNavbar` = :id");
@@ -30,6 +34,9 @@ class NavbarManager implements ManagerInterface{
         }
     }
 
+    /**request for all
+     * @return array|void
+     */
     public function getAll()
     {
         $prepare =$this->connect->prepare("SELECT * FROM  navbar");
