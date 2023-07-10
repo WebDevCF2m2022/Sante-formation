@@ -2,6 +2,7 @@
 
 namespace model\ManagerClass;
 
+use model\InterfaceClass\AgendaInterface;
 use model\InterfaceClass\ManagerInterface;
 use model\MappingClass\AgendaMapping;
 use model\TraitsClass\TestTrait;
@@ -9,7 +10,7 @@ use model\TraitsClass\TestTrait;
 use PDO;
 use Exception;
 
-class AgendaManager implements ManagerInterface
+class AgendaManager implements ManagerInterface ,AgendaInterface
 {
 
 
