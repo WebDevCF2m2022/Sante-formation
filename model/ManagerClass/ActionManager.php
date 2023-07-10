@@ -3,13 +3,14 @@
  namespace  model\ManagerClass;
 
 
+ use model\InterfaceClass\ActionInterface;
  use model\MappingClass\ActionMapping;
  use model\InterfaceClass\ManagerInterface;
  use model\TraitsClass\TestTrait;
  use PDO;
  use Exception;
 
-class ActionManager implements ManagerInterface{
+class ActionManager implements ManagerInterface,ActionInterface {
 
     protected PDO $connect;
 
