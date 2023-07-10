@@ -1,30 +1,35 @@
-
-
-
-<div class="navigation">
-
+<header>
         <div class="logo">
-               <a id="homepage"href="?view=homepage" class="navi"><img src="img/logoSanteFormation.png" alt="logo" class="img"></a>
+          <a href="./"><img src="img/logoSanteFormation.png" alt="Logo"></a>
         </div>
-
-               <!--<button class="menubtn">hamburgermenuOn</button>-->     
-                 <a href="#"class="menubtn"> <img src="img/menu.png" alt="close" class="buttonopen"></a>
-               <!--<button class="menubtn">hamburgermenuOff</button>-->
-                  <a href="#"class="menubtn"> <img src="img/close.png" alt="close" class="buttonclose"></a>
-          
-            <a id="asbl" href="?view=asbl" class="navi">L'ASBL</a>
-            <a id="action" href="?view=action" class="navi">Actions</a>
-            <a id="formation" href="?view=formation" class="navi">Formations</a>
-            <a id="agenda" href="?view=agenda" class="navi">Agenda</a>
-            <a id="contact" href="?view=contact" class="navi">Contact</a>
-            <button id="don" class="navibutton"><a href="?view=donation" class="navilien">Faire un don</a></button>
-            <!-- BOUTON CHANGEMENT DE LANGUES -->
-            <input id="country_selector" class= "navilangue" type="text">
-
-
-    </div>
-        
-
-
-
-
+        <nav class="menu"> <!-- Déplacer la classe 'menu' ici -->
+          <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="?view=asbl">ASBL</a></li>
+            <li><a href="?view=action">Actions</a></li>
+            <li><a href="?view=formation">Formations</a></li>
+            <li><a href="?view=agenda">Agenda</a></li>
+            <li><a href="?view=contact">Contact</a></li>
+            <li><a href="?view=donation">Faire un don</a></li>
+          </ul>
+        </nav>
+        <div id="langueNavDesktop" class="language-selector">
+            <div class="selected-language">
+                <img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p><i class="fas fa-caret-down"></i>
+            </div>
+            <ul class="language-options">
+            <li data-lang="fr">
+                <img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p></li>
+            <li data-lang="en">
+                <img class="flag-icon" src="img/icons8-great-britain-48.png" alt="American Flag"><p>EN</p></li>
+            <li data-lang="nl">
+                <img class="flag-icon" src="img/icons8-netherlands-48.png" alt="American Flag"><p>NL</p></li>
+            <li data-lang="ar">
+                <img class="flag-icon" src="img/icons8-saudi-arabia-48.png" alt="American Flag"><p>AR</p></li>
+            </ul>
+        </div>
+      </header>

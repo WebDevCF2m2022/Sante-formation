@@ -1,316 +1,172 @@
-
-/* button langue*/
-.country-select {
-    justify-self: center;
-    grid-area: langue;
-    width: 30%;
-    margin-left: 40%;
-    border-radius: 15px 15px;
-    margin-right: 40%;
+header {
+  display: flex;
+  grid-area: menu;
+  align-items: center;
+  background-color: #14939c;
+  height: 100px;
+}
+  
+.logo {
+    z-index: 1;
 }
 
-#country_selector {
-    width: 100%;
-}
-.navigation{
-    color: white;
-    list-style: none;
+  .logo img {
+    width: 150px; 
+    margin-top: 100px; 
+    margin-left: 25px;
+ }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu {
+    flex-grow: 1;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    list-style-type: none;
+    margin-right: 25px;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+
+  /* FAIRE UN DON  */
+  .menu li:last-child {
+    background-color: #94B9C580;
+    /* padding: 10px 20px ; */
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px;
+    border: black solid 2px;
+  }
+  /*               */
+
+  .menu li a {
+    text-decoration: none;
+    font-size: larger;
+    line-height: 35px;
+    height: 35px;
+    color: #fff;
+  }
+
+  .language-selector {
+    background-color: #fff;
+    margin-right: 50px;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+}
+
+.selected-language {
+    padding: 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
 }
 
-
-.navibutton {
-    border: 2px solid black;
-    border-radius: 15px 15px;
-    background-color:  #095C76;
+.selected-language i {
+    margin-left: 5px;
 }
 
-.navilien {
-    text-decoration: none;
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
-.navi{
-    color: white;
-    /*margin-right: 20px;*/
-    margin: 0 44px 0 20px;
+.language-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    padding: 0;
     list-style: none;
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
 }
 
-
-/* RESPONSIVE POUR LE MOBILE*/
-@media screen and (max-width: 599px) {
-
-    .country-select {
-    width: 9%;
-    }
-
-    .navigation{
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        padding: 25px;
-        background-image:url(../img/bouloulou.jpg) ;
-        background-attachment: fixed;
-        background-position: bottom;
-        font-size: larger;
-
-    }
-
-    .logo,.img{
-        display: none;
-    }
-
-    .navi{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .navigation.active2{
-        right: 0;
-        transition: 0.9s;
-    }
-
-    .menubtn{
-        flex-direction: column;
-        width: 25px;
-        height: 20px;
-        position: absolute;
-        right: 26px;
-    }
-
-
-
-    .navibutton{
-
-        padding: 5px 9px;
-        /*box-shadow:0px -2px 5px #095C76;*/
-        width: 130px;
-        position: inherit;
-        margin-left: 37%;
-
-    }
-
-
-
-    .buttonopen{
-        display: none;
-    }
-
-
-
-    .buttonclose{
-        width: 30px;
-    }
-
-    #lightbox{
-        display: none;
-    }
-
-
+.language-options li {
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-/* RESPONSIVE POUR LA TABLET */
-@media screen and (min-width: 600px) and (max-width: 1022px) {
-
-    /* button langue*/
-    .country-select {
-        justify-self: center;
-        /*grid-area: langue;*/
-        width: 30%;
-       margin-left: 21%;
-        border-radius: 15px 15px;
-    }
-
-    .navigation {
-        /*display: grid;
-        grid-template-columns: 50px repeat(7, 1fr);
-        grid-template-areas:
-    "img asbl action formation agenda contact don langue";
-        grid-template-rows: 100px;*/
-        display: flex;
-        flex-direction: row;
-        font-family: 'Inter', sans-serif;
-        /*font-size: 10px;*/
-        justify-content: space-between;
-        align-items: center;
-        background-color: #14939c;
-    }
-
-
-
-    .navibutton{
-
-        padding: 8px 12px;
-        box-shadow: 10px 5px 5px #095C76;
-    }
-
-
-    .navilangue{
-        border-radius: 15px 15px;
-        margin-right: 8px;
-    }
-
-
-
-    .buttonopen {
-        display: none;
-    }
-
-    .buttonclose {
-        display: none;
-    }
-
-    .logo {
-        z-index: 1;
-        margin-top: 6px;
-        margin-left: -10px;
-    }
-
-    .logo img {
-        grid-area: img;
-        width: 125px;
-    }
-
-    .navi{
-        margin: 0 3%;
-    }
-
-    /*#asbl {
-        justify-self: center;
-        grid-area: asbl;
-    }
-
-    #action {
-        justify-self: center;
-        grid-area: action;
-    }
-
-    #formation {
-        justify-self: center;
-        grid-area: formation;
-    }
-
-    #agenda {
-        justify-self: center;
-        grid-area: agenda;
-    }
-
-    /*#contact {
-        justify-self: center;
-        grid-area: contact;
-    }
-
-    #don {
-        justify-self: center;
-        grid-area: don;
-    }
-
-   #langue {
-        justify-self: center;
-        grid-area: langue;
-    }*/
+.language-options li:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
 }
 
-
-
-
-/*RESPONSIVE DESKTOP*/
-
-@media screen and (min-width: 1023px) {
-    .navigation{
-        display: grid;
-        grid-template-columns: 380px repeat(7, 1fr);
-        grid-template-columns: 245px repeat(7, 1fr);
-        grid-template-areas:
-    "img asbl action formation agenda contact don langue"
-    ;
-        grid-template-rows: 100px;
-        font-family: 'Inter', sans-serif;
-        font-size: large;
-        background-color: #14939c;
-    }
-
-    .logo {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-
-
-    .logo img {
-        grid-area: img;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        z-index: 1;
-        margin-top: 20%;
-    }
-
-
-
-    /*.navi:nth-child(1){
-        margin-left: 150px;*/
-
-
-    .navibutton{
-
-        padding: 8px 12px;
-        box-shadow: 10px 5px 5px #095C76;
-    }
-
-
-    .navilangue{
-        border-radius: 15px 15px;
-        margin-right: 8px;
-    }
-    .buttonopen{
-        display: none;
-    }
-
-    .buttonclose{
-        display: none;
-    }
-
-    #asbl {
-        justify-self: center;
-        grid-area: asbl;
-    }
-
-    #action {
-        justify-self: center;
-        grid-area: action;
-    }
-
-    #formation {
-        justify-self: center;
-        grid-area: formation;
-    }
-
-    #agenda {
-        justify-self: center;
-        grid-area: agenda;
-    }
-
-    #contact {
-        justify-self: center;
-        grid-area: contact;
-    }
-
-    #don {
-        justify-self: center;
-        grid-area: don;
-    }
-
-    .country_select {
-        justify-self: center;
-        grid-area: langue;
-    }
-
+.flag-icon {
+    margin-right: 5px;
+    width: 20px;
 }
+  
+  /* Styles du menu pour les versions tablette et mobile */
+  @media screen and (max-width: 768px) {
+    .menu .active {
+      
+    }
+  
+    .menu-icon {
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .menu-icon .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin-bottom: 5px;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .menu-icon.active .bar:first-child {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .menu-icon.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-icon.active .bar:last-child {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .menu.active ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      padding: 20px;
+      z-index: 2;
+    }
+  
+    .menu.active ul li {
+      margin: 10px 0;
+    }
+  }
+  
