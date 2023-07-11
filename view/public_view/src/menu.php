@@ -32,4 +32,4 @@
                 <img class="flag-icon" src="img/icons8-saudi-arabia-48.png" alt="American Flag"><p>AR</p></li>
             </ul>
         </div>
-      </header>
+</header>

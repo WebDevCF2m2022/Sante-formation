@@ -99,16 +99,6 @@
 
 
 
-<!--script langue-->
-<script>
-    $("#country_selector").countrySelect({
-        defaultCountry: "fr",
-        onlyCountries: ['gb', 'fr', 'nl', 'sa'],
-        preferredCountries: [],
-        localizedCountries:{'gb': 'EN', 'fr': 'FR', 'nl': 'NL', 'sa': 'AR'}
-    });
-</script>
-
     <!-- INCLUDE DU CONTACT DANS LA PAGE -->
     <?php
     include_once "../view/public_view/src/contactPage.php";

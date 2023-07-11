@@ -19,17 +19,6 @@
 </nav>
 
 
-
-
-<!--script langue-->
-<script>
-    $("#country_selector").countrySelect({
-        defaultCountry: "fr",
-        onlyCountries: ['gb', 'fr', 'nl', 'sa'],
-        preferredCountries: [],
-        localizedCountries:{'gb': 'EN', 'fr': 'FR', 'nl': 'NL', 'sa': 'AR'}
-    });
-</script>
 <footer>
     <!-- INCLUDE DU FOOTER -->
     <?php

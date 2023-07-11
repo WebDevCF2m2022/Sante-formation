@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function updateMenu() {
       var windowWidth = $(window).width();
-      if (windowWidth > 768) {
+      if (windowWidth > 600) {
         $('nav.menu').removeClass('active'); // Modifier la sélection de la classe 'menu'
         $('.menu ul').show();
       } else {

@@ -18,11 +18,9 @@
 <body>
 <div id="gridAccueil">
     <!-- INCLUDE DU MENU -->
-    <nav>
     <?php
         include "../view/public_view/src/menu.php";
     ?>
-    </nav>
 
     <!-- INCLUDE DU CAROUSEL -->
     <?php
@@ -113,18 +111,6 @@
 </div>
     <a id="savoirPlusAgenda" href="?view=agenda" target="_blank">En savoir plus</a>
 </div>
-
-
-
-    <!--script langue-->
-<script>
-    $("#country_selector").countrySelect({
-        defaultCountry: "fr",
-        onlyCountries: ['gb', 'fr', 'nl', 'sa'],
-        preferredCountries: [],
-        localizedCountries:{'gb': 'EN', 'fr': 'FR', 'nl': 'NL', 'sa': 'AR'}
-    });
-</script>
 
 
     <!-- INCLUDE DE "NOS VALEUR -->
