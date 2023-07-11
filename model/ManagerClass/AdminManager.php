@@ -2,6 +2,7 @@
 
 namespace model\ManagerClass;
 
+use model\InterfaceClass\AdminInterface;
 use model\MappingClass\AdminMapping;
 use model\InterfaceClass\ManagerInterface;
 use model\InterfaceClass\SecuriteInterface;
@@ -10,7 +11,7 @@ use PDO ;
 use Exception;
 
 class
-AdminManager implements ManagerInterface,SecuriteInterface
+AdminManager implements ManagerInterface,SecuriteInterface,AdminInterface
 {
 
     protected PDO $connect;
