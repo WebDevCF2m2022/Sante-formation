@@ -50,7 +50,7 @@ body {
 #aProposAcc img {
     grid-area: img;
     width: 100%;
-    height: 425px;
+    height: 100%;
 }
 
 #text1Accueil {
@@ -289,4 +289,106 @@ body {
 
 #savoirPlusAgenda:hover {
     background-color: #095C76;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .carteAction {
+        width: 300px;
+    }
+
+    .carteAction img {
+        width: 300px;
+    }
+
+    .carteFormation {
+        width: 300px;
+    }
+
+    .carteFormation img {
+        width: 300px;
+    }
+
+    .carteAgenda {
+        grid-template-rows: auto 50px 40px 150px 60px;
+    }
+
+    .carteAgenda img {
+        height: 225px;
+    }
+
+    .carteAgenda a {
+        margin: 20px 10px 10px 0;
+    }
+  }
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 600px) {
+    #lightbox {
+        display: none;
+    }
+    #aProposAcc {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas:
+        "img"
+        "h1"
+        "h3";
+    }
+
+    #aProposAcc img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #actionAccueil {
+        grid-auto-rows: auto;
+        grid-template-rows: 30px 40px 50px auto 60px;
+    } 
+
+    #positionAction {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carteAction {
+        width: 85%;
+        height: 400px;
+        margin-bottom: 100px;
+    }
+
+    .carteAction img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #formationAccueil {
+        grid-auto-rows: auto;
+        grid-template-rows: 30px 40px 50px auto 60px;
+    } 
+
+    #positionFormation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carteFormation {
+        width: 85%;
+        height: 400px;
+        margin-bottom: 100px;
+    }
+
+    .carteFormation img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #positionAgenda {
+        grid-template-columns: 1fr;
+        margin-bottom: 15px;
+    }
+
+    .carteAgenda {
+        margin-bottom: 30px;
+    }
 }

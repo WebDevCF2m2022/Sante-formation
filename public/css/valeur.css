@@ -271,4 +271,10 @@
         "valeur6"
         ;
     }
+
+    #valeur1, #valeur2, #valeur3, #valeur4, #valeur5, #valeur6{
+        width: 400px;
+        height: 400px;
+        grid-template-rows: 50px 100px 250px;
+    }
   }
