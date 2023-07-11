@@ -1,6 +1,7 @@
 <?php
 
 namespace model\ManagerClass;
+use model\InterfaceClass\FormationInterface;
 use model\MappingClass\FormationMapping;
 use model\InterfaceClass\ManagerInterface;
 use model\TraitsClass\TestTrait;
@@ -8,7 +9,7 @@ use model\TraitsClass\TestTrait;
 use PDO;
 use Exception;
 
-class  FormationManager implements ManagerInterface{
+class  FormationManager implements ManagerInterface, FormationInterface {
 
     protected PDO $connect;
 
