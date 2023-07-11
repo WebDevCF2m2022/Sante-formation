@@ -48,6 +48,15 @@
                     <input type="mail" id="email" name="mail" placeholder="" required>
                 </div>
                 <div class="boxLabelInputContact">
+                    <label for="mail"> Categorie :</label>
+                    <select >
+                        <option>Administration</option>
+                        <option>Donation</option>
+                        <option>Benevole</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+                <div class="boxLabelInputContact">
                     <label for="message">Message :</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
