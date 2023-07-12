@@ -21,7 +21,7 @@ class AsblManager implements ManagerInterface
     /** 
      * request get one by id
      * @param int $id
-     * @return \model\MappingClass\AsblMapping;
+     * @return \model\MappingClass\AsblMapping|void
      */
     public function getOneById(int $id)
     {
@@ -36,9 +36,24 @@ class AsblManager implements ManagerInterface
             exit;
         }
     }
-
-    public function getAll()
+    /**
+     * request get all of db
+     * @return array
+     */
+    public function getAll(): array
     {
-        // TODO: Implement getAll() method.
+        $prepare = $this->connect->prepare("SELECT * FROM asbl");
+        try {
+            $prepare->execute();
+            $result = $prepare->fetchAll();
+            $all = [];
+            foreach ($result as $row) {
+                $all[] = new AsblMapping($row);
+            }
+            return $all;
+        } catch (Exception $e) {
+            echo "Erreur de requête : " . $e->getMessage();
+            exit;
+        }
     }
 }
