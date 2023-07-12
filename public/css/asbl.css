@@ -143,3 +143,48 @@ body {
     justify-self: center;
     text-align: center;
 }
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 600px) {
+    #gridASBL{
+        grid-template-rows: none;
+        grid-auto-rows: auto;
+    }
+
+    #lightbox {
+        display: none;
+    }
+
+    #quiSommeNous {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "imgQuiSommeNous"
+        "titreQuiSommeNous"
+        "descriptionQuiSommeNous"
+    ;
+    }
+
+    #historique {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "imgHistorique"
+        "titreHistorique"
+        "descriptionHistorique"
+    ;
+    }
+
+    #objectif {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "imgObjectif"
+        "titreObjectif"
+        "descriptionObjectif"
+    ;
+}
+}

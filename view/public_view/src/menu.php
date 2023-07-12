@@ -10,8 +10,8 @@
           </div>
           <ul>
             <li><a href="?view=asbl">ASBL</a></li>
-            <li><a href="?view=action">Actions</a></li>
-            <li><a href="?view=formation">Formations</a></li>
+            <li><a href="?view=actions">Actions</a></li>
+            <li><a href="?view=formations">Formations</a></li>
             <li><a href="?view=agenda">Agenda</a></li>
             <li><a href="?view=contact">Contact</a></li>
             <li><a href="?view=donation">Faire un don</a></li>

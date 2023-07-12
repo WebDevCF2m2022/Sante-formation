@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logoSanteFormation.png">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/lightbox.css">
@@ -31,7 +32,7 @@
     <div id="quiSommeNous">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
         <h1>Qui sommes nous ?</h1>
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt voluptates unde molestias minima optio? Molestiae sit id aperiam facere facilis? Magnam sed laborum itaque sunt ducimus ea necessitatibus animi! Tenetur, soluta natus rerum, quia quas delectus cupiditate neque blanditiis similique accusamus quos saepe recusandae tempora rem dolor laboriosam. Doloribus omnis voluptatem quisquam, nisi eveniet debitis ipsa! Illo mollitia sint fuga enim tenetur suscipit quam expedita, voluptatum deserunt similique minima libero, inventore dolorum quae tempore?</h3>
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nostrum quia quaerat eius vero qui nesciunt ad, veritatis nihil, ex earum eos libero consequatur aspernatur enim culpa autem aperiam ipsum hic repudiandae obcaecati beatae. Asperiores enim obcaecati id commodi similique, impedit dolor quia voluptate iste temporibus architecto, et hic laboriosam.</h3>
     </div>
 
             <div id="text1">
@@ -45,7 +46,7 @@
     <div id="historique">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
         <h1>Historique</h1>
-        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ut facere velit nobis, saepe perferendis architecto eum provident eius excepturi consectetur. Pariatur exercitationem facilis, hic, incidunt eligendi laboriosam, tempora sapiente neque nam rerum similique suscipit? Non, tempore! Magni totam et officia, consequuntur vitae, ipsum aspernatur iusto nulla sit ipsam fuga dolores suscipit pariatur corporis nisi beatae velit a minus adipisci id! Ducimus similique iure, vel autem vitae soluta suscipit beatae, doloremque eveniet, nisi dolor quam.</h3>
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nostrum quia quaerat eius vero qui nesciunt ad, veritatis nihil, ex earum eos libero consequatur aspernatur enim culpa autem aperiam ipsum hic repudiandae obcaecati beatae. Asperiores enim obcaecati id commodi similique, impedit dolor quia voluptate iste temporibus architecto, et hic laboriosam.</h3>
     </div>
 
             <div id="text2">
@@ -59,7 +60,7 @@
     <div id="objectif">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
         <h1>Objectif</h1>
-        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium expedita totam inventore est, placeat quibusdam repellat ipsa quod eum dolorem alias, obcaecati, fugit laudantium sint quam cupiditate blanditiis necessitatibus nihil voluptates? Non natus similique illum, ratione quidem eius eaque blanditiis accusantium tempora corrupti repellendus eligendi quis numquam tempore possimus ducimus aspernatur perspiciatis atque magni vel architecto ea amet! Quisquam reprehenderit eum soluta maiores rem repellat deleniti nostrum voluptatem accusamus numquam. Corrupti molestiae dolor eius consequatur!</h3>
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nostrum quia quaerat eius vero qui nesciunt ad, veritatis nihil, ex earum eos libero consequatur aspernatur enim culpa autem aperiam ipsum hic repudiandae obcaecati beatae. Asperiores enim obcaecati id commodi similique, impedit dolor quia voluptate iste temporibus architecto, et hic laboriosam.</h3>
     </div>
 
             <div id="text3">
