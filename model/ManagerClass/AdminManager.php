@@ -6,6 +6,7 @@ use model\InterfaceClass\AdminInterface;
 use model\MappingClass\AdminMapping;
 use model\InterfaceClass\ManagerInterface;
 use model\InterfaceClass\SecuriteInterface;
+use model\TraitsClass\TestTrait;
 
 use PDO ;
 use Exception;

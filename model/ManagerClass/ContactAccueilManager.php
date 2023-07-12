@@ -42,7 +42,7 @@ class ContactAccueilManager implements ManagerInterface{
             $result = $prepare->fetchAll();
             $all = [];
             foreach ($result as $row) {
-                $all[] = new AContactAccueilMapping($row);
+                $all[] = new ContactAccueilMapping($row);
             }
             return $all;
         } catch (Exception $e) {
