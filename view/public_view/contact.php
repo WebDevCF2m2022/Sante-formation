@@ -49,15 +49,15 @@
                     <label for="mail" class="contactuslabel">Mail :</label>
                     <input type="mail" id="email" name="mail" placeholder="" required class="contactusinput">
                     <label for="mail" class="contactuslabel"> Categorie :</label>
-                    <select >
+                    <select class="contactusselect">
                         <option>Administration</option>
                         <option>Donation</option>
                         <option>Benevole</option>
                         <option>Autre</option>
                     </select>
                     <label for="message" class="contactuslabel">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit" class="contactusbutton">Envoyer mon message.</button>
+                    <textarea id="message" name="message" required class="contactustxtarea"></textarea>
+                    <button type="submit" class="contactusbutton">Envoyer</button>
 
             </form>
         </div>
