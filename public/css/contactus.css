@@ -7,8 +7,9 @@
     align-content: stretch;
     justify-content: space-evenly;
     align-items: center;
-    background-image:url("../img/route.png");
-    background-position: bottom;
+    background-image:url("../img/lol.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
     color: white;
     border-radius: 20px;
     width: 80%;
