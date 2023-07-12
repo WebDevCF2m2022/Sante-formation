@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 .container {
     display: flex;
     flex-direction: row;
@@ -6,12 +8,13 @@
     justify-content: space-evenly;
     align-items: center;
     background-image:url("../img/route.png");
-    background-position: center;
+    background-position: bottom;
     color: white;
     border-radius: 20px;
     width: 80%;
     padding: 8%;
     margin: 1% 2% 1% 2%;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -25,7 +28,7 @@
     flex-direction: column;
     width: 40%;
     display: flex;
-    margin: -7% 14% 1% 0%;
+    margin: -16% 14% 1% 0%;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -71,9 +74,36 @@ contactuspar {
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 2%;
 }
 
 .contactusinput{
-    border-radius: 12%;
+    border-radius: 10px;
     width: 100%;
+    background-color: #D9D9D9;
+  height: 30px;
+    margin-top: 2%;
+}
+
+.contactusselect{
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    height: 30px;
+    width: 70%;
+}
+
+.contactustxtarea {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 100px;
+    margin-top: 2%;
+}
+
+.contactusbutton{
+    margin-top: 10%;
+    width: 34%;
+    border-radius: 10px;
+    margin-left: 65%;
+   background-color: #14939c;
+    height: 25px;
 }
