@@ -40,7 +40,7 @@ class AccueilManager implements ManagerInterface
 
 
     /***request for get all
-     * @return array of accueil
+     * @return array of all  home page
      */
     public function getAll():array {
         $prepare =$this->connect->prepare("SELECT * FROM  accueil");

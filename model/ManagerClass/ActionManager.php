@@ -39,7 +39,7 @@ class ActionManager implements ManagerInterface,ActionInterface {
 
     /**
      * request for get all
-     * @return array
+     * @return array of all action
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM action");

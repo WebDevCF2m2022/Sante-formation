@@ -37,7 +37,7 @@ class FooterManager implements ManagerInterface
 
     /**
      * request for get all
-     * @return array
+     * @return array of  all footer
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM footer");

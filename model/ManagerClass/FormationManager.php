@@ -38,7 +38,7 @@ class  FormationManager implements ManagerInterface, FormationInterface {
 
     /**
      * request for get all
-     * @return array
+     * @return array of all training
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM formation");
@@ -85,7 +85,7 @@ class  FormationManager implements ManagerInterface, FormationInterface {
      */
     public function  updateFormation(FormationMapping $datas):bool
     {
-        $prepare = $this->connect->prepare("UPDATE formation SET formationTitle=?,formationDescription=?,formationText=?,formationImage=?,formationDate=? WHERE idFormation = :idFormation");
+        $prepare = $this->connect->prepare("UPDATE formation SET formationTitre=?,formationDescription=?,formationText=?,formationImage=?,formationDate=? WHERE idFormation = :idFormation");
         $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getFormationTitre()), ENT_QUOTES)), PDO::PARAM_STR);
         $prepare->bindValue(2, htmlspecialchars(strip_tags(trim($datas->getFormationDescription()), ENT_QUOTES)), PDO::PARAM_STR);
         $prepare->bindValue(3, htmlspecialchars(strip_tags(trim($datas->getFormationText()), ENT_QUOTES)), PDO::PARAM_STR);

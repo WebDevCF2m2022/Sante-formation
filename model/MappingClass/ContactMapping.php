@@ -18,7 +18,7 @@ class ContactMapping extends AbstractsMapping
 
 
     /**getter
-     * @return int
+     * @return int id of contact page
      */
     public function getIdContact(): int
     {
@@ -26,7 +26,7 @@ class ContactMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string title of contact page
      */
     public function getContactTitre(): string
     {
@@ -34,7 +34,7 @@ class ContactMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string text of contact page
      */
     public function getContactText(): string
     {
@@ -42,7 +42,7 @@ class ContactMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string name of contact page
      */
     public function getContactName(): string
     {
@@ -50,7 +50,7 @@ class ContactMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string name of contact page
      */
     public function getContactEmail(): string
     {
@@ -58,7 +58,7 @@ class ContactMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string category of contact page
      */
     public function getContactCategorie(): string
     {

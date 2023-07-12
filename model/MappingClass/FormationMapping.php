@@ -14,7 +14,7 @@ class FormationMapping extends AbstractsMapping
 
 
     /**getter
-     * @return int
+     * @return int id of training
      */
     public function getIdFormation(): int
     {
@@ -22,7 +22,7 @@ class FormationMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string title of training
      */
     public function getFormationTitre(): string
     {
@@ -30,7 +30,7 @@ class FormationMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return mixed
+     * @return mixed date of training
      */
     public function getFormationDate(): mixed
     {
@@ -38,7 +38,7 @@ class FormationMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return mixed
+     * @return mixed description of training
      */
     public function getFormationDescription(): mixed
     {
@@ -46,7 +46,7 @@ class FormationMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string text of training
      */
     public function getFormationText(): string
     {
@@ -54,7 +54,7 @@ class FormationMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return mixed
+     * @return mixed pic of training
      */
     public function getFormationImage(): mixed
     {

@@ -14,7 +14,7 @@ class ValuersMapping extends AbstractsMapping
 
 
     /**getter
-     * @return int
+     * @return int id of values
      */
     public function getIdValeurs(): int
     {
@@ -22,7 +22,7 @@ class ValuersMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string title of values
      */
     public function getValeursTitre(): string
     {
@@ -30,7 +30,7 @@ class ValuersMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string text of values
      */
     public function getValeurText(): string
     {
@@ -38,7 +38,7 @@ class ValuersMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string logo of values
      */
     public function getValeurLogo(): string
     {
