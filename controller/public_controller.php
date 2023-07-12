@@ -9,7 +9,7 @@ if (isset($_GET['view'])) {
         case 'asbl':
             include "../view/public_view/asbl.php";
             break;
-        case 'action':
+        case 'actions':
             include "../view/public_view/action.php";
             break;
         case 'agenda':
@@ -21,7 +21,7 @@ if (isset($_GET['view'])) {
         case 'donation':
             include "../view/public_view/donation.php";
             break;
-        case 'formation':
+        case 'formations':
             include "../view/public_view/formation.php";
             break;
         case 'admin':
