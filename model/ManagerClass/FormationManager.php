@@ -38,7 +38,7 @@ class  FormationManager implements ManagerInterface, FormationInterface {
 
     /**
      * request for get all
-     * @return array
+     * @return array of all training
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM formation");

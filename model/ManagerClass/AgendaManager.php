@@ -41,7 +41,7 @@ class AgendaManager implements ManagerInterface ,AgendaInterface
 
     /**
      * request get all of db
-     * @return array
+     * @return array of all agenda(calendar)
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM agenda");

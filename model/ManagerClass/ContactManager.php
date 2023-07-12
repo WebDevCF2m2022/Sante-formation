@@ -35,7 +35,7 @@ class ContactManager implements ManagerInterface{
 
     /**
      * request for get all
-     * @return array
+     * @return array of all contact page
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM contact");

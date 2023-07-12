@@ -33,7 +33,7 @@ class ContactAccueilManager implements ManagerInterface{
     }
 
     /**request get all
-     * @return array
+     * @return array of all  contact home
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM contactaccueil");

@@ -17,7 +17,7 @@ class ContactAccueilMapping extends AbstractsMapping
 
 
     /**getter
-     * @return int
+     * @return int if of contact home
      */
     public function getIdContactAccueil(): int
     {
@@ -25,7 +25,7 @@ class ContactAccueilMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string title of contact home
      */
     public function getContactAccueilTitre(): string
     {
@@ -33,7 +33,7 @@ class ContactAccueilMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string description of contact home
      */
     public function getContactAccueilDescription(): string
     {
@@ -41,7 +41,7 @@ class ContactAccueilMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string name of contact home
      */
     public function getContactAccueilName(): string
     {
@@ -49,7 +49,7 @@ class ContactAccueilMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string mail of  contact home
      */
     public function getContactAccueilEmail(): string
     {
@@ -57,7 +57,7 @@ class ContactAccueilMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string msg of contact home
      */
     public function getContactAccueilMsg(): string
     {
@@ -66,7 +66,7 @@ class ContactAccueilMapping extends AbstractsMapping
 
 
     /**getter
-     * @return string
+     * @return string button of contact home
      */
     public function getContactAccueilButton(): string
     {

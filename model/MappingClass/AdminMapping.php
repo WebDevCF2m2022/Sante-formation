@@ -11,7 +11,7 @@ class AdminMapping extends AbstractsMapping
 
 
     /**getter
-     * @return int
+     * @return int id of root crud
      */
     public function getIdAdmin(): int
     {
@@ -19,7 +19,7 @@ class AdminMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string login of root crud
      */
     public function getLogin(): string
     {
@@ -27,7 +27,7 @@ class AdminMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string pwd of root crud
      */
     public function getPwd(): string
     {

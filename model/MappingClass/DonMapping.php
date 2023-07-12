@@ -16,7 +16,7 @@ class DonMapping extends AbstractsMapping
 
 
     /**getter
-     * @return int
+     * @return int id of don
      */
     public function getIdDon():int
     {
@@ -24,7 +24,7 @@ class DonMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string title of don
      */
     public function getDonTitre():string
     {
@@ -32,7 +32,7 @@ class DonMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string text of don
      */
     public function getDonText():string
     {
@@ -40,7 +40,7 @@ class DonMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string pack title of don
      */
     public function getDonPackTitre():string
     {
@@ -48,7 +48,7 @@ class DonMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string  pack text of don
      */
     public function getDonPackText():string
     {
@@ -56,7 +56,7 @@ class DonMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string pack pic of don
      */
     public function getDonPackImage():string
     {
@@ -64,7 +64,7 @@ class DonMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string pack button of don
      */
     public function getDonPackButton():string
     {
