@@ -37,7 +37,7 @@ class ValeursManager implements ManagerInterface
 
     /**
      * request for get all
-     * @return array
+     * @return array from all values
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM valuers");

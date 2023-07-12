@@ -18,7 +18,7 @@ class NavbarMapping extends AbstractsMapping
 
 
     /**getter
-     * @return int
+     * @return int id of navbar
      */
     public function getIdNavbar(): int
     {
@@ -26,7 +26,7 @@ class NavbarMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string asbl page  of navbar
      */
     public function getNavbarAsbl(): string
     {
@@ -34,7 +34,7 @@ class NavbarMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string action  page of navbar
      */
     public function getNavbarAction(): string
     {
@@ -42,7 +42,7 @@ class NavbarMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string training page of navbar
      */
     public function getNavbarFormation(): string
     {
@@ -50,7 +50,7 @@ class NavbarMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string agenda page of navbar
      */
     public function getNavbarAgenda(): string
     {
@@ -58,7 +58,7 @@ class NavbarMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string contact page of navbar
      */
     public function getNavbarContact(): string
     {
@@ -66,7 +66,7 @@ class NavbarMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string don page of navbar
      */
     public function getNavbarDon(): string
     {
@@ -74,7 +74,7 @@ class NavbarMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string the languages of navbar
      */
     public function getNavbarLangue(): string
     {

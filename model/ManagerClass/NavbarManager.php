@@ -35,7 +35,7 @@ class NavbarManager implements ManagerInterface{
     }
 
     /**request for all
-     * @return array|void
+     * @return array|void for all navbar
      */
     public function getAll()
     {

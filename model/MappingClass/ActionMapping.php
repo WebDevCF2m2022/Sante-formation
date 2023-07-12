@@ -15,14 +15,15 @@ class ActionMapping extends AbstractsMapping
 
 
     /**getter
-     * @return int
+     * @return int id of action
      */
-   public function getIdAction():int{
-       return $this->idAction;
-   }
+    public function getIdAction(): int
+    {
+        return $this->idAction;
+    }
 
     /**getter
-     * @return string
+     * @return string title of action
      */
     public function getActionTitre(): string
     {
@@ -30,7 +31,7 @@ class ActionMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string description of action
      */
     public function getActionDescription(): string
     {
@@ -38,7 +39,7 @@ class ActionMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string text of action
      */
     public function getActionText(): string
     {
@@ -46,17 +47,17 @@ class ActionMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return mixed
+     * @return mixed pic of action
      */
-    public function getActionImage()
+    public function getActionImage():mixed
     {
         return $this->actionImage;
     }
 
     /**getter
-     * @return mixed
+     * @return mixed date of action
      */
-    public function getActionDate()
+    public function getActionDate():mixed
     {
         return $this->actionDate;
     }

@@ -21,54 +21,54 @@ class AccueilMapping extends AbstractsMapping
 
     //methode
 
-    //getter
-    /**
-     * @return int
+
+    /**getter
+     * @return  int id of home page
      */
     public function getIdAccueil(): int
     {
         return $this->idAccueil;
     }
 
-    /**
-     * @return string
+    /**getter
+     * @return string title of home page
      */
     public function getAccueilTitre(): string{
         return $this->accueilTitre;
     }
 
-    /**
-     * @return string
+    /**getter
+     * @return string text of home page
      */
     public function getAccueilText(): string{
         return $this->accueilText;
     }
 
-    /**
-     * @return string
+    /**getter
+     * @return string description of home page
      */
     public function getAccueilDescription(): string{
         return $this->accueilDescription;
     }
 
-    /**
-     * @return string
+    /**getter
+     * @return string pic of home page
      */
     public function getAccueilImage(): string{
         return $this->accueilImage;
     }
 
-    /**
-     * @return string
+    /**getter
+     * @return string button of home page
      */
     public function getAccueilButton(): string{
         return $this->accueilButton;
     }
 
 
-    //setter
 
-    /**
+
+    /**setter
      * @param int $idAccueil
      */
     public function setIdAccueil(int $idAccueil): void
@@ -76,7 +76,7 @@ class AccueilMapping extends AbstractsMapping
         $this->idAccueil = $idAccueil;
     }
 
-    /**
+    /**setter
      * @param string $accueilTitre
      * @return void
      */
@@ -85,7 +85,7 @@ class AccueilMapping extends AbstractsMapping
         $this->accueilTitre =$accueilTitre;
     }
 
-    /**
+    /**setter
      * @param string $accueilText
      */
     public function setAccueilText(string $accueilText): void
@@ -93,7 +93,7 @@ class AccueilMapping extends AbstractsMapping
         $this->accueilText = $accueilText;
     }
 
-    /**
+    /**setter
      * @param string $accueilDescription
      * @return void
      */
@@ -102,7 +102,7 @@ class AccueilMapping extends AbstractsMapping
         $this->accueilDescription =$accueilDescription;
     }
 
-    /**
+    /**setter
      * @param string $accueilImage
      * @return void
      */
@@ -111,7 +111,7 @@ class AccueilMapping extends AbstractsMapping
         $this->accueilImage = $accueilImage;
     }
 
-    /**
+    /**setter
      * @param string $accueilButton
      * @return void
      */

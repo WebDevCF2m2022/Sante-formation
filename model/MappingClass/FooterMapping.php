@@ -36,7 +36,7 @@ class FooterMapping extends AbstractsMapping
 
 
     /** getter
-     * @return int
+     * @return int id of footer page
      */
     public function getIdFooter(): int
     {
@@ -44,7 +44,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string title of the make a donation in footer
      */
     public function getFooterFaireUnDonTitre(): string
     {
@@ -52,7 +52,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string text of the make a donation in footer
      */
     public function getFooterFaireUnDonText(): string
     {
@@ -60,7 +60,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string button of the make a donation in footer
      */
     public function getFooterFaireUnDonButton(): string
     {
@@ -68,7 +68,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string asbl in footer
      */
     public function getFooterAsbl(): string
     {
@@ -76,7 +76,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string training in  footer
      */
     public function getFooterFormation(): string
     {
@@ -84,7 +84,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string don in footer
      */
     public function getFooterDon(): string
     {
@@ -92,7 +92,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string agenda in footer
      */
     public function getFooterAgenda(): string
     {
@@ -100,7 +100,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string root in footer
      */
     public function getFooterAdmin(): string
     {
@@ -108,7 +108,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string mention in footer
      */
     public function getFooterMention(): string
     {
@@ -116,7 +116,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string politics in footer
      */
     public function getFooterPolitique(): string
     {
@@ -124,7 +124,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string title of footer
      */
     public function getFooterTitre(): string
     {
@@ -132,7 +132,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string description of footer
      */
     public function getFooterDescription(): string
     {
@@ -140,7 +140,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string details in footer
      */
     public function getFooterCoordonnee(): string
     {
@@ -148,7 +148,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string siege society in footer
      */
     public function getFooterSiegeSociete(): string
     {
@@ -156,7 +156,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string mail of footer
      */
     public function getFooterMail(): string
     {
@@ -164,7 +164,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string phone of footer
      */
     public function getFooterTelephone(): string
     {
@@ -172,7 +172,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string social networks of footer
      */
     public function getFooterReseauxSocial(): string
     {
@@ -180,7 +180,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string title contact in footer
      */
     public function getFooterContactTitre(): string
     {
@@ -188,7 +188,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string nam contact in footer
      */
     public function getFooterContactNom(): string
     {
@@ -196,7 +196,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string mail contact in footer
      */
     public function getFooterContactEmail(): string
     {
@@ -204,7 +204,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string msg contact in footer
      */
     public function getFooterContactMsg(): string
     {
@@ -212,7 +212,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string button contact in footer
      */
     public function getFooterContactButton(): string
     {
@@ -220,7 +220,7 @@ class FooterMapping extends AbstractsMapping
     }
 
     /**getter
-     * @return string
+     * @return string copyrigth of footer
      */
     public function getFooterCopyrigth(): string
     {

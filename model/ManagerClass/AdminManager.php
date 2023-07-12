@@ -6,6 +6,7 @@ use model\InterfaceClass\AdminInterface;
 use model\MappingClass\AdminMapping;
 use model\InterfaceClass\ManagerInterface;
 use model\InterfaceClass\SecuriteInterface;
+use model\TraitsClass\TestTrait;
 
 use PDO ;
 use Exception;
@@ -41,7 +42,7 @@ AdminManager implements ManagerInterface,SecuriteInterface,AdminInterface
 
     /**
      * request get all of db
-     * @return array
+     * @return array of all admin
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM admin");

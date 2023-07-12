@@ -37,7 +37,7 @@ class DonManager implements ManagerInterface
 
     /**
      * request for get all
-     * @return array
+     * @return array of all don
      */
     public function getAll(): array{
         $prepare = $this->connect->prepare("SELECT * FROM don");

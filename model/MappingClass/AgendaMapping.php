@@ -14,7 +14,7 @@ class AgendaMapping extends AbstractsMapping
 
 
     /** getter
-     * @return int
+     * @return int if of agenda
      */
     public function getIdAgenda(): int
     {
@@ -22,7 +22,7 @@ class AgendaMapping extends AbstractsMapping
     }
 
     /** getter
-     * @return string
+     * @return string title of agenda
      */
     public function getAgendaTitre(): string
     {
