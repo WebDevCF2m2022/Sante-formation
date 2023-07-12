@@ -17,23 +17,28 @@ html , body{
 body, .container{
     flex-grow: 1;
 }
-/*                          CSS Formulaire contact      */
+/*
+                        CSS Formulaire contact      */
+
+
 .pageContact{
     display: flex;
     justify-items: center;
     width: 90%;
     margin: 2.5% auto 5% ;
-    background-image: url("../img/fondContact.png");
+    background-image: url("../img/bouloulou.jpg");
     object-fit: cover;
     border: #574D4D 1px solid;
     border-radius: 15px;
 }
+
 .boxIntroContact{
     display: flex;
     justify-items: center;
 }
 .pageContact h1 {
     text-align: center;
+    color: white;
 }
 .pageContact p {
     text-align: justify;
