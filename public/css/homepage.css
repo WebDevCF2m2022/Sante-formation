@@ -17,7 +17,6 @@ body {
     "textAPropos"
     "actionAcc"
     "formationAcc"
-    "contact"
     "agendaAccueil"
     "valeur"
     "footer";
@@ -65,11 +64,11 @@ body {
     display: grid;
     grid-area: actionAcc;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 40px 75px 300px 50px;
+    grid-template-rows: 60px /* 40px 75px */ 300px 50px;
     grid-template-areas: 
     "titreAc titreAc titreAc"
-    "sloganAc sloganAc sloganAc"
-    "descAc descAc descAc"
+    /* "sloganAc sloganAc sloganAc"
+    "descAc descAc descAc" */
     "carteAc carteAc carteAc"
     "boutonAction boutonAction boutonAction"
     ;
@@ -84,6 +83,7 @@ body {
     font-size: x-large;
 }
 
+/*
 #actionAccueil h3 {
     grid-area: sloganAc;
     justify-self: center;
@@ -93,6 +93,7 @@ body {
     grid-area: descAc;
     justify-self: center;
 }
+*/
 
 #actionAccueil a {
     grid-area: boutonAction;
@@ -143,11 +144,11 @@ body {
     display: grid;
     grid-area: formationAcc;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 40px 75px 300px 50px;
+    grid-template-rows: 60px /* 40px 75px */ 300px 50px;
     grid-template-areas: 
     "titreFo titreFo titreFo"
-    "sloganFo sloganFo sloganFo"
-    "descFo descFo descFo"
+    /* "sloganFo sloganFo sloganFo"
+    "descFo descFo descFo" */
     "carteFo carteFo carteFo"
     "boutonFormation boutonFormation boutonFormation"
     ;
@@ -162,6 +163,7 @@ body {
     font-size: x-large;
 }
 
+/*
 #formationAccueil h3 {
     grid-area: sloganFo;
     justify-self: center;
@@ -171,6 +173,7 @@ body {
     grid-area: descFo;
     justify-self: center;
 }
+*/
 
 #formationAccueil a {
     grid-area: boutonFormation;
