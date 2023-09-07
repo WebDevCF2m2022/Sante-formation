@@ -86,7 +86,7 @@
  <footer>
      <!-- INCLUDE DU FOOTER -->
      <?php
-     include_once "../view/public_view/src/FR/footerFR.php";
+     include_once "../view/public_view/src/footer.php";
      ?>
  </footer>
  </div>

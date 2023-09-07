@@ -24,8 +24,8 @@
 <div id="coordoneeFooter">
     <h2>Coordonée</h2>
     <hr id="hrBleu">
-    <h4>Siège social:</h4>
-    <h4>Mail:</h4>
+    <h4>Siège social:<p>Avenue voltaire 138, 1030 Schaerbeek</p></h4>
+    <h4>Mail:<p>contact@sante-et-formation.org</p></h4>
     <h4>Tel:</h4>
     <h4>Réseaux sociaux</h4>
     <img src="img/icons8-facebook-nouveau-50.png" alt="">
@@ -36,12 +36,30 @@
 <div id="contactFooter">
     <h2>Contact</h2>
     <hr id="hrBleu">
-    <form id="formFooter" action="#">
-        <input id="nomFooter" type="text" name="nom" placeholder="Nom, prénom">
-        <input id="emailFooter" type="text" name="email" placeholder="Email *">
-        <input id="messageFooter" type="text" name="message" placeholder="Votre message *">
+<form id="formFooter" action="#">
+    <div class="input-container">
+        <input id="nomFooter" type="text" name="nom" placeholder="Nom, prénom *" required>
+    </div>
+    <div class="input-container">
+        <input id="emailFooter" type="text" name="email" placeholder="Email *" required>
+    </div>
+    <div class="input-container">
+        <select id="categorieFooter" name="categorie">
+            <option value="Administration">Administration</option>
+            <option value="Donation">Donation</option>
+            <option value="Bénévole">Bénévole</option>
+            <option value="Autre">Autre</option>
+        </select>
+    </div>
+    <div class="input-container textarea-container">
+        <textarea id="messageFooter" name="message" placeholder="Votre message *" required></textarea>
+    </div>
+    <div class="input-container">
         <input id="submitFooter" type="submit" name="envoyer" value="ENVOYER">
-    </form>
+    </div>
+</form>
+
+
 </div>
 
 <div id="copyright">

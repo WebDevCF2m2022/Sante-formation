@@ -138,15 +138,59 @@ footer {
 /* FORMULAIRE DE CONTACT DU FOOTER */
 #formFooter {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-template-areas: 
-    "nomFooter nomFooter"
-    "emailFooter emailFooter"
-    "messageFooter messageFooter"
-    ". submitFooter";
+    "nomFooter"
+    "emailFooter"
+    "messageFooter"
+    "submitFooter";
     grid-auto-rows: auto;
     margin-right: 30px;
 }
+
+
+input[type="text"], textarea, select {
+    max-width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+}
+
+#categorieFooter {
+    width: 100%;
+    margin-top: 20px; 
+}
+
+.textarea-container {
+    margin-top: 20px; 
+}
+
+#submitFooter {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#submitFooter:hover {
+    background-color: #2980b9;
+}
+
+/* Style pour les champs obligatoires */
+input[placeholder]:required::before {
+    content: "*";
+    color: red;
+    position: absolute;
+    left: -10px;
+}
+
 
 /* CONTACT FOOTER */
 #contactFooter {
@@ -213,6 +257,10 @@ form input {
     "donFooter donFooter donFooter"
     "menuFooter aboutFooter coordonneeFooter"
     "copyright copyright copyright";
+    }
+
+    #aboutFooter {
+        justify-self: left;
     }
 
     #contactFooter {
