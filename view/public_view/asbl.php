@@ -1,7 +1,3 @@
-<?php
-/*require_once "../model/ManagerClass/AsblMapping.php";*/
-use \model\ManagerClass\AsblManager;
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -32,39 +28,36 @@ use \model\ManagerClass\AsblManager;
     <?php
         include "../view/public_view/src/lightbox.php"
     ?>
-    <?php
-      $asbl =new AsblManager();
 
-    ?>
     <div id="quiSommeNous">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1><?=$asbl->getTitreSomme()?>/h1>
-        <h3><?=$asbl->getTextSomme()?></h3>
+        <h1><?=$recup->getTitreSomme()?></h1>
+        <h3><?=$recup->getTextSomme()?></h3>
     </div>
 
             <div id="text1">
-           <p><?=$asbl->getDescriptionSomme()?></p>
+           <p><?=$recup->getDescriptionSomme()?></p>
             </div>
 
     <div id="historique">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1><?=$asbl->getTitreHistory()?></h1>
-        <h3><?=$asbl->getTextHistory()?></h3>
+        <h1><?=$recup->getTitreHistory()?></h1>
+        <h3><?=$recup->getTextHistory()?></h3>
     </div>
 
             <div id="text2">
-             <p><?=$asbl->getDescriptionHistory()?></p>
+             <p><?=$recup->getDescriptionHistory()?></p>
             </div>
 
     <div id="objectif">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1><?=$asbl->getTitreObjectif()?></h1>
-        <h3><?=$asbl->getTextObjectif()?></h3>
+        <h1><?=$recup->getTitreObjectif()?></h1>
+        <h3><?=$recup->getTextObjectif()?></h3>
     </div>
 
             <div id="text3">
 
-                <p><?=$asbl->getDescriptionObjectif()?></p>
+                <p><?=$recup->getDescriptionObjectif()?></p>
             </div>
 
     <!-- INCLUDE DE "NOS VALEUR -->
