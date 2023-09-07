@@ -1,15 +1,15 @@
 <?php
 
-use model\ManagerClass\AdminManager;
+/*use model\ManagerClass\AdminManager;*/
 
 /* Utilisation du manager au BON endroit */
 use \model\ManagerClass\AsblManager;
 
 
 try {
-    $pdo = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=' . DB_CHARSET, DB_USER, DB_PWD);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $pdo->setAttribute(PDO::ATTR_CASE, PDO::CASE_LOWER);
+    $connection = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=' . DB_CHARSET, DB_USER, DB_PWD);
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $connection->setAttribute(PDO::ATTR_CASE, PDO::CASE_LOWER);
 
 } catch (PDOException $e) {
     echo "connection error " . $e->getMessage();
@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
         if(filter_var($_POST['username'],FILTER_VALIDATE_EMAIL)){
             if(isset($_POST['pwd']) and !empty($_POST['pwd'])){
                 $pwd = sha1($_POST['pwd']);
-                $getData = $pdo->prepare("SELECT login FROM admin WHERE login =? and pwd =? ");
+                $getData = $connection->prepare("SELECT login FROM admin WHERE login =? and pwd =? ");
                 $getData->execute(array($_POST['username'], $pwd));
                 $rows = $getData->rowCount();
                 if($rows ==true){
@@ -64,7 +64,7 @@ if (isset($_GET['view'])) {
             break;
         case 'asbl':
             /* Création d'un manager VALIDE avec sa connexion */
-            $asbl =new AsblManager($pdo);
+            $asbl =new AsblManager($connection);
             /* Instantiation du AsblMapping.php avec la méthod du manager */
             $recup = $asbl -> getOneById(1);
             include "../view/public_view/asbl.php";
