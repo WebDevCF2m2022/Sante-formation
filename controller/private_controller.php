@@ -1,26 +1,8 @@
 <?php
-/**
- use model\ManagerClass\AdminManager;
+ use model\ManagerClass\AsblManager;
 
-if(isset($_POST['login']) && isset($_POST['pwd'])) {
-    var_dump($_POST);
-    $login = htmlspecialchars(strip_tags(trim($_POST['login'])), ENT_QUOTES);
-    $pwd = htmlspecialchars(strip_tags(trim($_POST['pwd'])), ENT_QUOTES);
+ $categorieAsbl =new AsblManager();
+ $cat = $categorieAsbl->getOneById(1);
+ $catALL=$categorieAsbl->getAll();
 
-
-    $userConnect = new AdminManager();
-    $userLog = $userConnect->connectAdmin("sante_formation", "ana", "test1234");
-    if (is_string($userLog)) {
-        $erreur = $userLog;
-    }
-
-    // redirection si connexion ok
-    if ($userLog === true) {
-        // redirection sur index.php
-        header("Location: ./view/logAdmin.php");
-    } else if (isset($_GET['disconnect'])) {
-        $userLog = $userConnect->disconnect();
-        header("Location: ./");
-        exit();
-    }
-}*/
+ var_dump($categorieAsbl, $catALL);

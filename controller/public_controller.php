@@ -2,6 +2,9 @@
 
 use model\ManagerClass\AdminManager;
 
+/* Utilisation du manager au BON endroit */
+use \model\ManagerClass\AsblManager;
+
 
 try {
     $pdo = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=' . DB_CHARSET, DB_USER, DB_PWD);
@@ -60,6 +63,10 @@ if (isset($_GET['view'])) {
             include "../view/public_view/homepage.php";
             break;
         case 'asbl':
+            /* Création d'un manager VALIDE avec sa connexion */
+            $asbl =new AsblManager($pdo);
+            /* Instantiation du AsblMapping.php avec la méthod du manager */
+            $recup = $asbl -> getOneById(1);
             include "../view/public_view/asbl.php";
             break;
         case 'actions':
