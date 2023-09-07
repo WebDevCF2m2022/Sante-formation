@@ -113,7 +113,7 @@ footer {
 
 /* Á PROPOS DU FOOTER */
 #aboutFooter {
-    justify-self: center;
+    justify-self: left;
     grid-area: aboutFooter;
     width: 80%;
 }
@@ -161,7 +161,7 @@ input[type="text"], textarea {
 }
 
 #categorieFooter {
-    width: 98.5%;
+    width: 98.9%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -254,6 +254,10 @@ form input {
     background-color: white;
 }
 
+#copyright p {
+    line-height: 7px;
+}
+
 /* RESPONSIVE FOOTER */
 @media screen and (max-width: 1024px) {
     footer {
@@ -263,10 +267,6 @@ form input {
     "donFooter donFooter donFooter"
     "menuFooter aboutFooter coordonneeFooter"
     "copyright copyright copyright";
-    }
-
-    #aboutFooter {
-        justify-self: left;
     }
 
     #contactFooter {
@@ -301,20 +301,17 @@ form input {
     }
 
     #coordoneeFooter {
+        text-align: center;
         margin-top: 20px;
     }
 
     #hrBleu {
         width: 60%;
-        margin-left: -20px;
+        margin-left: 60px;
     }
 
     #copyright {
         max-width: 70%;
         margin: auto;
-    }
-
-    #copyright p {
-        
     }
 }

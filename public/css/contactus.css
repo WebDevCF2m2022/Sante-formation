@@ -113,3 +113,9 @@ contactuspar {
    background-color: #14939c;
     height: 25px;
 }
+
+@media screen and (max-width: 600px) {
+    #lightbox {
+        display: none;
+    }
+}
