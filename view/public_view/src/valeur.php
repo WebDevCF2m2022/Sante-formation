@@ -3,22 +3,22 @@
     <div id="valeur1" class="valeur-item">
         <img src="img/icons8-balancer-64.png" alt="">
         <h4>Titre</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde officia maxime voluptatum dicta itaque repudiandae!</p>
+        <p>Equité sociale, économique et politique entre les genres.</p>
     </div>
     <div id="valeur2" class="valeur-item">
     <img src="img/icons8-balancer-64.png" alt="">
         <h4>Titre</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde officia maxime voluptatum dicta itaque repudiandae!</p>
+        <p>Promotion pour une meilleure justice sociale et économique.</p>
     </div>
     <div id="valeur3" class="valeur-item">
     <img src="img/icons8-balancer-64.png" alt="">
         <h4>Titre</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde officia maxime voluptatum dicta itaque repudiandae!</p>
+        <p>Respecter la dignité des personnes précaires.</p>
     </div>
     <div id="valeur4" class="valeur-item">
     <img src="img/icons8-balancer-64.png" alt="">
         <h4>Titre</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde officia maxime voluptatum dicta itaque repudiandae!</p>
+        <p>Oeuvrer pour une planète plus saine.</p>
     </div>
     <div id="valeur5" class="valeur-item">
     <img src="img/icons8-balancer-64.png" alt="">

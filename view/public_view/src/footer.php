@@ -5,10 +5,11 @@
 </div>
 
 <div id="menuFooter">
-    <a href="?view=homepage">L'ASBL</a>
-    <a href="?view=formation">Formation</a>
-    <a href="?view=donation">Don</a>
+    <a href="?view=asbl">L'ASBL</a>
+    <a href="?view=actions">Actions</a>
+    <a href="?view=formations">Formations</a>
     <a href="?view=agenda">Agenda</a>
+    <a href="?view=donation">Don</a>
     <a href="?view=admin" target="_blank">Admin</a>
     <a href="?view=don" target="_blank">Mention légales</a>
     <a href="?view=don" target="_blank">Politique de confidentialité</a>
@@ -17,8 +18,8 @@
 <div id="aboutFooter">
     <h2>Santé et formation</h2>
     <hr id="hrBleu">
-    <img src="img/logoSanteFormation.png" width="60px" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus provident hic, voluptatum consequatur modi labore est, illum vitae ab, aperiam magni? Modi ducimus provident commodi aspernatur deserunt tenetur eaque!</p>
+    <img src="img/logoSanteFormation.png"  alt="">
+    <p>Notre Association "Santé & Formation" contribue activement à la formation, l’éducation et l’insertion professionnelle des personnes précaires. Nos activités sont axées sur la santé physique et mentale, l’information et la prévention.</p>
 </div>
 
 <div id="coordoneeFooter">
