@@ -17,47 +17,61 @@
 </head>
 
 <body>
+    <div id="gridContact">
     <!--include menu-->
-    <nav>
-        <?php
-        include "../view/public_view/src/menu.php";
-        ?>
+    
+    <?php
+    include "../view/public_view/src/menu.php";
+    ?>
 
-    </nav>
   <!--ligthbox-->
     <?php
     include_once "../view/public_view/src/lightbox.php"
     ?>
 
-
-    <div class="container">
-
-            <div class ="container1">
-                <h1 class = "contactush1"><?=$recupContact->getContactTitre()?></h1>
-                <p class="contactuspar"><?=$recupContact->getContactText()?></p>
-            </div>
-        <div class="container2">
-
-            <form action="" method="post" class="formulaire ">
-
-                <label for="lastname" class="contactuslabel"><?=$recupContact->getContactName()?></label>
-                    <input type="text" id="lastname" name="lastname" placeholder="" required class="contactusinput">
-                    <label for="mail" class="contactuslabel"><?=$recupContact->getContactEmail()?></label>
-                    <input type="mail" id="email" name="mail" placeholder="" required class="contactusinput">
-                    <label for="mail" class="contactuslabel"><?=$recupContact->getContactCategorie()?></label>
-                    <select class="contactusselect">
-                        <option><?=$recupContact->getOption1()?></option>
-                        <option><?=$recupContact->getOption2()?></option>
-                        <option><?=$recupContact->getOption3()?></option>
-                        <option><?=$recupContact->getOption4()?></option>
-                    </select>
-                    <label for="message" class="contactuslabel"><?=$recupContact->getContactMessage()?></label>
-                    <textarea id="message" name="message" required class="contactustxtarea"></textarea>
-                    <button type="submit" class="contactusbutton"><?=$recupContact->getContactButton()?></button>
-
-            </form>
-        </div>
+<div id="coordonneContact">
+    <h1>Coordonné</h1>
+    <h4>Siège social:<br>Avenue voltaire 138, 1030 Schaerbeek</h4>
+    <h4>Mail:<br>contact@sante-et-formation.org</h4>
+    <h4>Tel:</h4>
+    <h4>Réseaux sociaux</h4>
+    <div id="social">
+    <img src="img/icons8-facebook-nouveau-50.png" alt="">
+    <img src="img/icons8-instagram-50.png" alt="">
+    <img src="img/icons8-linkedin-50.png" alt="">
     </div>
+</div>
+
+<div id="container">
+    <h1><?=$recupContact->getContactTitre()?></h1>
+    <p><?=$recupContact->getContactText()?></p>
+<form id="form" action="#">
+    <div class="input">
+        <label for=""><?=$recupContact->getContactName()?></label>
+        <input id="nom" type="text" name="nom" required>
+    </div>
+    <div class="input">
+        <label for=""><?=$recupContact->getContactEmail()?></label>
+        <input id="email" type="text" name="email" required>
+    </div>
+    <div class="input">
+        <label for=""><?=$recupContact->getContactCategorie()?></label><br>
+        <select id="categorie" name="categorie">
+            <option value="Administration"><?=$recupContact->getOption1()?></option>
+            <option value="Donation"><?=$recupContact->getOption2()?></option>
+            <option value="Bénévole"><?=$recupContact->getOption3()?></option>
+            <option value="Autre"><?=$recupContact->getOption4()?></option>
+        </select>
+    </div>
+    <div class="input textarea-container">
+        <label for=""><?=$recupContact->getContactMessage()?></label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="input">
+        <input id="submit" type="submit" name="envoyer" value="<?=$recupContact->getContactButton()?>">
+    </div>
+</form>
+</div>
 
 
     <footer>
@@ -66,6 +80,7 @@
      include_once "../view/public_view/src/footer.php";
      ?>
     </footer>
-</body>
 
+</div>
+</body>
 </html>
