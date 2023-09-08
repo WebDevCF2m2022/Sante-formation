@@ -15,7 +15,10 @@ class ContactMapping extends AbstractsMapping
     protected string $contactCategorie ;
     protected string $contactMessage ;
     protected string $contactButton ;
-
+    protected string $option1 ;
+    protected  string $option2 ;
+    protected  string $option3 ;
+    protected  string $option4;
 
     /**getter
      * @return int id of contact page
@@ -80,6 +83,34 @@ class ContactMapping extends AbstractsMapping
     public function getContactButton(): string
     {
         return $this->contactButton;
+    }
+
+    /**getter
+     * @return string
+     */public function getOption1(): string
+    {
+    return $this->option1;
+    }
+
+    /**getter
+     * @return string
+     */public function getOption2(): string
+    {
+    return $this->option2;
+    }
+
+    /**getter
+     * @return string
+     */public function getOption3(): string
+     {
+    return $this->option3;
+     }
+
+     /**getter
+      * @return string
+      */public function getOption4(): string
+    {
+    return $this->option4;
     }
 
 
@@ -149,9 +180,33 @@ class ContactMapping extends AbstractsMapping
         $this->contactButton = $contactButton;
     }
 
+   /**setter
+    * @param string $option1
+    */public function setOption1(string $option1): void
+     {
+    $this->option1 = $option1;
+     }
 
+    /**setter
+     * @param string $option2
+     */public function setOption2(string $option2): void
+     {
+    $this->option2 = $option2;
+     }
 
+     /**setter
+      * @param string $option3
+      */public function setOption3(string $option3): void
+     {
+    $this->option3 = $option3;
+     }
 
+     /**setter
+      * @param string $option4
+      */public function setOption4(string $option4): void
+     {
+    $this->option4 = $option4;
+     }
 
 
 }
