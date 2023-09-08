@@ -101,10 +101,12 @@ footer {
     margin-top: 30px;
     justify-self: left;
     margin-left: 50px;
+    margin-bottom: 30px;
 }
 
 /* LES LIENS DU MENU DU FOOTER */
 #menuFooter a {
+    font-size: 19px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -112,16 +114,22 @@ footer {
 
 /* Á PROPOS DU FOOTER */
 #aboutFooter {
-    justify-self: center;
+    justify-self: left;
     grid-area: aboutFooter;
-    width: 80%;
+    width: 84%;
 }
 
 /* LOGO */
 
 #aboutFooter img {
+    width: 85px;
     float: left;
     margin: 10px 15px 0 0;
+}
+
+#aboutFooter p {
+    font-size: 19px;
+    font-weight: 500;
 }
 
 /* COORDONEE DU FOOTER */ 
@@ -135,18 +143,72 @@ footer {
     border-radius: 20px;
 }
 
+#coordoneeFooter h4 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
 /* FORMULAIRE DE CONTACT DU FOOTER */
 #formFooter {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-template-areas: 
-    "nomFooter nomFooter"
-    "emailFooter emailFooter"
-    "messageFooter messageFooter"
-    ". submitFooter";
+    "nomFooter"
+    "emailFooter"
+    "messageFooter"
+    "submitFooter";
     grid-auto-rows: auto;
     margin-right: 30px;
 }
+
+
+input[type="text"], textarea {
+    max-width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+}
+
+#categorieFooter {
+    width: 98.9%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px; 
+}
+
+.textarea-container {
+    margin-top: 15px; 
+}
+
+#submitFooter {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#submitFooter:hover {
+    background-color: #2980b9;
+}
+
+/* Style pour les champs obligatoires */
+input[placeholder]:required::before {
+    content: "*";
+    color: red;
+    position: absolute;
+    left: -10px;
+}
+
 
 /* CONTACT FOOTER */
 #contactFooter {
@@ -204,6 +266,10 @@ form input {
     background-color: white;
 }
 
+#copyright p {
+    line-height: 7px;
+}
+
 /* RESPONSIVE FOOTER */
 @media screen and (max-width: 1024px) {
     footer {
@@ -247,20 +313,17 @@ form input {
     }
 
     #coordoneeFooter {
+        text-align: center;
         margin-top: 20px;
     }
 
     #hrBleu {
         width: 60%;
-        margin-left: -20px;
+        margin-left: 60px;
     }
 
     #copyright {
         max-width: 70%;
         margin: auto;
-    }
-
-    #copyright p {
-        
     }
 }

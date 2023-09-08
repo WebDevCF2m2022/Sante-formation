@@ -29,40 +29,45 @@
     ?>
 
 <div id="aProposAcc">
-        <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1>A propos de nous</h1>
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt voluptates unde molestias minima optio? Molestiae sit id aperiam facere facilis? Magnam sed laborum itaque sunt ducimus ea necessitatibus animi! Tenetur, soluta natus rerum, quia quas delectus cupiditate neque blanditiis similique accusamus quos saepe recusandae tempora rem dolor laboriosam. Doloribus omnis voluptatem quisquam, nisi eveniet debitis ipsa! Illo mollitia sint fuga enim tenetur suscipit quam expedita, voluptatum deserunt similique minima libero, inventore dolorum quae tempore?</h3>
+
+    <img src="img/accuile.png" alt="">
+        <h1><?=$recupHome->getAccueilTitre()?></h1>
+        <h3><?=$recupHome->getAccueilText()?></h3>
 </div>
 
 <div id="text1Accueil">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit nisi. Quia, incidunt ipsa. Eum voluptates harum animi aut est. Dolore est quasi reiciendis minima natus laudantium officiis? Perferendis distinctio facere quaerat consequuntur? Accusantium quam dicta sint neque ipsa expedita beatae blanditiis sunt necessitatibus dolor itaque voluptatum sed, deserunt, voluptas modi possimus dignissimos dolores temporibus labore, pariatur enim distinctio! Autem magni consequuntur ducimus sed, repudiandae rem nemo omnis illo, esse iure officia placeat neque illum, reiciendis id vel rerum atque a quibusdam nulla corrupti. Rerum in ratione, facere nobis ipsam officiis, velit ipsa suscipit quaerat libero cupiditate deleniti architecto magnam?</p>
+    <p><?=$recupHome->getAccueilDescription()?> </p>
 </div>
 
-                <div id="actionAccueil">
-                        <h1>Nos actions</h1>
-                        <h3>SLOGAN en long</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
-                <div id="positionAction">
-                    <div class="carteAction">
-                        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                        <h1>Actions</h1>
-                    </div>
-                    <div class="carteAction">
-                        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                        <h1>Actions</h1>
-                    </div>
-                    <div class="carteAction">
-                        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                        <h1>Actions</h1>
-                    </div>
-                </div>
-                    <a href="?view=action" target="_blank">En savoir plus</a>
-                </div>
+<div id="actionAccueil">
+        <h1>Nos actions</h1>
+        <!--
+        <h3>SLOGAN en long</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
+        -->
+<div id="positionAction">
+    <div class="carteAction">
+        <img src="img/caravan.png" alt="">
+        <h1>Caravane Medical </h1>
+    </div>
+    <div class="carteAction">
+        <img src="img/02.png" alt="">
+        <h1>Actions Humanitaires</h1>
+    </div>
+    <div class="carteAction">
+        <img src="img/05.jpg" alt="">
+        <h1>Aide aux familles </h1>
+    </div>
+</div>
+    <a href="?view=actions" target="_blank">En savoir plus</a>
+</div>
 
 <div id="formationAccueil">
         <h1>Nos formations</h1>
+        <!-- 
         <h3>SLOGAN en long</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p> 
+        -->
 <div id="positionFormation">
     <div class="carteFormation">
         <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
@@ -77,19 +82,17 @@
         <h1>Formation</h1>
     </div>
 </div>
-    <a href="?view=formation" target="_blank">En savoir plus</a>
+    <a href="?view=formations" target="_blank">En savoir plus</a>
 </div>
 
     <!-- INCLUDE DU CONTACT DANS LA PAGE -->
-    <?php
-    include_once "../view/public_view/src/contactPage.php";
-    ?>
+    
 
 <div id="agendaAccueil">
         <h1 class="centre">Agenda</h1>
 <div id="positionAgenda">
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/pexels-jack-redgate-2929227.jpg"  alt="">
         <h1>titre</h1>
         <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur nemo atque odio perferendis laudantium, eum non temporibus alias laborum distinctio maiores facilis et cumque?</p>
@@ -121,9 +124,9 @@
 
     <!-- INCLUDE DU FOOTER -->
     <footer>
-        <?php
-        include_once '../view/public_view/src/FR/footerFR.php';
-        ?>
+    <?php
+     include_once "../view/public_view/src/footer.php";
+    ?>
     </footer>
 
 

@@ -13,6 +13,8 @@ class ActionMapping extends AbstractsMapping
     protected mixed $actionImage;
     protected  mixed $actionDate;
 
+    protected string $actionImageText;
+
 
     /**getter
      * @return int id of action
@@ -62,6 +64,13 @@ class ActionMapping extends AbstractsMapping
         return $this->actionDate;
     }
 
+    /**getter
+     * @return string
+     */
+    public function getActionImageText(): string
+    {
+        return $this->actionImageText;
+    }
     /**setter
      * @param int $idAction
      */
@@ -109,5 +118,16 @@ class ActionMapping extends AbstractsMapping
     {
         $this->actionDate = $actionDate;
     }
+
+
+    /**setter
+     * @param string $actionImageText
+     */
+    public function setActionImageText(string $actionImageText): void
+    {
+        $this->actionImageText = $actionImageText;
+    }
+
+
 
 }

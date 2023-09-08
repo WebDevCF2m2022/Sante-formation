@@ -18,11 +18,9 @@
 <body>
         <div id="gridASBL">
     <!-- INCLUDE DU MENU -->
-    <nav>
     <?php
         include "../view/public_view/src/menu.php";
     ?>
-    </nav>
 
     <!-- INCLUDE DU CAROUSEL -->
     <?php
@@ -31,45 +29,34 @@
 
     <div id="quiSommeNous">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1>Qui sommes nous ?</h1>
-        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nostrum quia quaerat eius vero qui nesciunt ad, veritatis nihil, ex earum eos libero consequatur aspernatur enim culpa autem aperiam ipsum hic repudiandae obcaecati beatae. Asperiores enim obcaecati id commodi similique, impedit dolor quia voluptate iste temporibus architecto, et hic laboriosam.</h3>
+        <h1><?=$recup->getTitreSomme()?></h1>
+        <h3><?=$recup->getTextSomme()?></h3>
     </div>
 
             <div id="text1">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur magni, nisi natus deserunt dolore ab, inventore at veniam cupiditate, sit aliquid alias voluptates iusto ipsa eos placeat. Illo ex officia fuga doloremque ea et minima incidunt, excepturi deleniti ratione nisi quasi debitis dolores quaerat nobis hic praesentium exercitationem molestias adipisci?</p>
-                <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil dolorum? Asperiores harum totam quia maiores rem pariatur et, aperiam tempora nihil molestias voluptatum quaerat minus veritatis quo repellendus voluptatibus iusto alias obcaecati sed placeat iste ex corporis natus dolore! Blanditiis assumenda quibusdam quisquam obcaecati debitis nostrum. Nisi, ea reprehenderit!</p>
-                <br><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam beatae nemo veniam quaerat soluta accusantium necessitatibus sapiente recusandae sint temporibus facilis itaque esse blanditiis odit inventore, ratione dolores aperiam non nihil ipsum expedita sit? Qui, officia debitis ducimus explicabo quis porro aspernatur eum et libero adipisci, esse reiciendis, reprehenderit eligendi!</p>
+           <p><?=$recup->getDescriptionSomme()?></p>
             </div>
 
     <div id="historique">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1>Historique</h1>
-        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nostrum quia quaerat eius vero qui nesciunt ad, veritatis nihil, ex earum eos libero consequatur aspernatur enim culpa autem aperiam ipsum hic repudiandae obcaecati beatae. Asperiores enim obcaecati id commodi similique, impedit dolor quia voluptate iste temporibus architecto, et hic laboriosam.</h3>
+        <h1><?=$recup->getTitreHistory()?></h1>
+        <h3><?=$recup->getTextHistory()?></h3>
     </div>
 
             <div id="text2">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur magni, nisi natus deserunt dolore ab, inventore at veniam cupiditate, sit aliquid alias voluptates iusto ipsa eos placeat. Illo ex officia fuga doloremque ea et minima incidunt, excepturi deleniti ratione nisi quasi debitis dolores quaerat nobis hic praesentium exercitationem molestias adipisci?</p>
-                <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil dolorum? Asperiores harum totam quia maiores rem pariatur et, aperiam tempora nihil molestias voluptatum quaerat minus veritatis quo repellendus voluptatibus iusto alias obcaecati sed placeat iste ex corporis natus dolore! Blanditiis assumenda quibusdam quisquam obcaecati debitis nostrum. Nisi, ea reprehenderit!</p>
-                <br><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam beatae nemo veniam quaerat soluta accusantium necessitatibus sapiente recusandae sint temporibus facilis itaque esse blanditiis odit inventore, ratione dolores aperiam non nihil ipsum expedita sit? Qui, officia debitis ducimus explicabo quis porro aspernatur eum et libero adipisci, esse reiciendis, reprehenderit eligendi!</p>
+             <p><?=$recup->getDescriptionHistory()?></p>
             </div>
 
     <div id="objectif">
         <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
-        <h1>Objectif</h1>
-        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nostrum quia quaerat eius vero qui nesciunt ad, veritatis nihil, ex earum eos libero consequatur aspernatur enim culpa autem aperiam ipsum hic repudiandae obcaecati beatae. Asperiores enim obcaecati id commodi similique, impedit dolor quia voluptate iste temporibus architecto, et hic laboriosam.</h3>
+        <h1><?=$recup->getTitreObjectif()?></h1>
+        <h3><?=$recup->getTextObjectif()?></h3>
     </div>
 
             <div id="text3">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur magni, nisi natus deserunt dolore ab, inventore at veniam cupiditate, sit aliquid alias voluptates iusto ipsa eos placeat. Illo ex officia fuga doloremque ea et minima incidunt, excepturi deleniti ratione nisi quasi debitis dolores quaerat nobis hic praesentium exercitationem molestias adipisci?</p>
-                <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil dolorum? Asperiores harum totam quia maiores rem pariatur et, aperiam tempora nihil molestias voluptatum quaerat minus veritatis quo repellendus voluptatibus iusto alias obcaecati sed placeat iste ex corporis natus dolore! Blanditiis assumenda quibusdam quisquam obcaecati debitis nostrum. Nisi, ea reprehenderit!</p>
-                <br><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam beatae nemo veniam quaerat soluta accusantium necessitatibus sapiente recusandae sint temporibus facilis itaque esse blanditiis odit inventore, ratione dolores aperiam non nihil ipsum expedita sit? Qui, officia debitis ducimus explicabo quis porro aspernatur eum et libero adipisci, esse reiciendis, reprehenderit eligendi!</p>
-            </div>    
+
+                <p><?=$recup->getDescriptionObjectif()?></p>
+            </div>
 
     <!-- INCLUDE DE "NOS VALEUR -->
     <?php
@@ -80,8 +67,8 @@
     <!-- INCLUDE DU FOOTER -->
     <footer>
         <?php
-        include_once '../view/public_view/src/FR/footerFR.php';
-        ?>
+     include_once "../view/public_view/src/footer.php";
+     ?>
     </footer>
 
 

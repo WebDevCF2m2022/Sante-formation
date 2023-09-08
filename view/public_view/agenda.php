@@ -19,81 +19,80 @@
 <body>
     <div id="gridAgenda">
 <!--include menu-->
-<nav>
     <?php
     include "../view/public_view/src/menu.php";
     ?>
-</nav>
 
     <?php
     include_once "../view/public_view/src/lightbox.php"
     ?>
 
 <div id="agendaBloc">
-        <h1 class="centre">Agenda</h1>
+        <h1 class="centre"><?=$recupAgenda->getAgendaTitre()?></h1>
+       <h3 class="centre"><?=$recupAgenda->getAgendaDescription()?></h3>
 <div id="positionAgenda">
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur nemo atque odio perferendis laudantium, eum non temporibus alias laborum distinctio maiores facilis et cumque?</p>
-        <a href="">Detail</a>
+        <?=$recupAgenda->getAgendaImages()?>
+        <h1><?=$recupAgenda->getAgendaTextDetail()?></h1>
+
+        <p><?=$recupAgenda->getAgendaText()?></p>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur autem ipsam hic provident quod molestiae ducimus distinctio exercitationem cumque enim. Magnam laborum ipsa eaque omnis!</p>
-        <a href="">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
 </div>
 </div>
@@ -111,8 +110,8 @@
 <footer>
     <!-- INCLUDE DU FOOTER -->
     <?php
-    include_once '../view/public_view/src/FR/footerFR.php';
-    ?>
+     include_once "../view/public_view/src/footer.php";
+     ?>
 </footer>
 </div>
 </body>

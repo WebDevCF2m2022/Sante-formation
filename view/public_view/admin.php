@@ -10,22 +10,27 @@
 </head>
 <body>
 <div class="blocAdmin">
-    <form class="form" action="login.php" method="POST">
+    <form class="form" action="" method="POST">
       <div class="logo">
         <img src="img/logoSanteFormation.png" alt="Logo">
       </div>
+
+        <?php if(isset($erreur)){echo $erreur; }?>
       <div class="form-group">
         <label for="username">Nom d'utilisateur:</label>
         <input type="text" id="username" name="username" required>
       </div>
       <div class="form-group">
         <label for="password">Mot de passe:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="pwd" required>
       </div>
       <div class="form-group">
-        <input type="submit" value="Se connecter">
+          <button type="submit" name="submit">Se connecter</button>
       </div>
-    </form>
+
+    </form><br>
+        <a href="./"><button id="buttonAdmin">Retour sur notre site...</button></a>
+
   </div>
 </body>
 </html>

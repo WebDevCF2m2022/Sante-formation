@@ -17,59 +17,72 @@
 </head>
 
 <body>
+    <div id="gridContact">
     <!--include menu-->
-    <nav>
-        <?php
-        include "../view/public_view/src/menu.php";
-        ?>
+    
+    <?php
+    include "../view/public_view/src/menu.php";
+    ?>
 
-    </nav>
   <!--ligthbox-->
     <?php
     include_once "../view/public_view/src/lightbox.php"
     ?>
 
-
-    <div class="container">
-
-            <div class ="container1">
-                <h1 class = "contactush1">Contactez-nous</h1>
-                <p class="contactuspar">Une envie de nous envoyer un message ?<br>
-                  Une question à nous poser ?<br>
-                 Un problème rencontré lors de votre visite ?<br>
-                Veuillez utiliser ce formulaire pour prendre contact avec nous !<br>
-               Je me ferai un plaisir de vous répondre dans les plus brefs délais .</p>
-            </div>
-        <div class="container2">
-
-            <form action="" method="post" class="formulaire ">
-
-                <label for="lastname" class="contactuslabel"> Nom: </label>
-                    <input type="text" id="lastname" name="lastname" placeholder="" required class="contactusinput">
-                    <label for="mail" class="contactuslabel">Mail :</label>
-                    <input type="mail" id="email" name="mail" placeholder="" required class="contactusinput">
-                    <label for="mail" class="contactuslabel"> Categorie :</label>
-                    <select class="contactusselect">
-                        <option>Administration</option>
-                        <option>Donation</option>
-                        <option>Benevole</option>
-                        <option>Autre</option>
-                    </select>
-                    <label for="message" class="contactuslabel">Message :</label>
-                    <textarea id="message" name="message" required class="contactustxtarea"></textarea>
-                    <button type="submit" class="contactusbutton">Envoyer</button>
-
-            </form>
-        </div>
+<div id="container">
+<div id="coordonneContact">
+    <h1>Coordonné</h1>
+    <h4>Siège social:<br>Avenue voltaire 138, 1030 Schaerbeek</h4>
+    <h4>Mail:<br>contact@sante-et-formation.org</h4>
+    <h4>Tel:</h4>
+    <h4>Réseaux sociaux</h4>
+    <div id="social">
+    <img src="img/icons8-facebook-nouveau-50.png" alt="">
+    <img src="img/icons8-instagram-50.png" alt="">
+    <img src="img/icons8-linkedin-50.png" alt="">
     </div>
+</div>
+
+<div id="formulaireettext">
+    <h1><?=$recupContact->getContactTitre()?></h1>
+    <p><?=$recupContact->getContactText()?></p>
+<form id="form" action="#">
+    <div class="input">
+        <label for=""><?=$recupContact->getContactName()?></label>
+        <input id="nom" type="text" name="nom" required>
+    </div>
+    <div class="input">
+        <label for=""><?=$recupContact->getContactEmail()?></label>
+        <input id="email" type="text" name="email" required>
+    </div>
+    <div class="input">
+        <label for=""><?=$recupContact->getContactCategorie()?></label><br>
+        <select id="categorie" name="categorie">
+            <option value="Administration"><?=$recupContact->getOption1()?></option>
+            <option value="Donation"><?=$recupContact->getOption2()?></option>
+            <option value="Bénévole"><?=$recupContact->getOption3()?></option>
+            <option value="Autre"><?=$recupContact->getOption4()?></option>
+        </select>
+    </div>
+    <div class="input textarea-container">
+        <label for=""><?=$recupContact->getContactMessage()?></label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="input">
+        <input id="submit" type="submit" name="envoyer" value="<?=$recupContact->getContactButton()?>">
+    </div>
+</form>
+</div>
+</div>
 
 
     <footer>
         <!-- INCLUDE DU FOOTER -->
         <?php
-        include_once '../view/public_view/src/FR/footerFR.php';
-        ?>
+     include_once "../view/public_view/src/footer.php";
+     ?>
     </footer>
-</body>
 
+</div>
+</body>
 </html>

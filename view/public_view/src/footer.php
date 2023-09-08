@@ -5,10 +5,11 @@
 </div>
 
 <div id="menuFooter">
-    <a href="?view=homepage">L'ASBL</a>
-    <a href="?view=formation">Formation</a>
-    <a href="?view=donation">Don</a>
+    <a href="?view=asbl">L'ASBL</a>
+    <a href="?view=actions">Actions</a>
+    <a href="?view=formations">Formations</a>
     <a href="?view=agenda">Agenda</a>
+    <a href="?view=donation">Don</a>
     <a href="?view=admin" target="_blank">Admin</a>
     <a href="?view=don" target="_blank">Mention légales</a>
     <a href="?view=don" target="_blank">Politique de confidentialité</a>
@@ -17,15 +18,15 @@
 <div id="aboutFooter">
     <h2>Santé et formation</h2>
     <hr id="hrBleu">
-    <img src="img/logoSanteFormation.png" width="60px" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus provident hic, voluptatum consequatur modi labore est, illum vitae ab, aperiam magni? Modi ducimus provident commodi aspernatur deserunt tenetur eaque!</p>
+    <img src="img/logoSanteFormation.png"  alt="">
+    <p>Notre Association "Santé & Formation" contribue activement à la formation, l’éducation et l’insertion professionnelle des personnes précaires. Nos activités sont axées sur la santé physique et mentale, l’information et la prévention.</p>
 </div>
 
 <div id="coordoneeFooter">
     <h2>Coordonée</h2>
     <hr id="hrBleu">
-    <h4>Siège social:</h4>
-    <h4>Mail:</h4>
+    <h4>Siège social:<p>Avenue voltaire 138, 1030 Schaerbeek</p></h4>
+    <h4>Mail:<p>contact@sante-et-formation.org</p></h4>
     <h4>Tel:</h4>
     <h4>Réseaux sociaux</h4>
     <img src="img/icons8-facebook-nouveau-50.png" alt="">
@@ -36,12 +37,30 @@
 <div id="contactFooter">
     <h2>Contact</h2>
     <hr id="hrBleu">
-    <form id="formFooter" action="#">
-        <input id="nomFooter" type="text" name="nom" placeholder="Nom, prénom">
-        <input id="emailFooter" type="text" name="email" placeholder="Email *">
-        <input id="messageFooter" type="text" name="message" placeholder="Votre message *">
+<form id="formFooter" action="#">
+    <div class="input-container">
+        <input id="nomFooter" type="text" name="nom" placeholder="Nom, prénom *" required>
+    </div>
+    <div class="input-container">
+        <input id="emailFooter" type="text" name="email" placeholder="Email *" required>
+    </div>
+    <div class="input-container">
+        <select id="categorieFooter" name="categorie">
+            <option value="Administration">Administration</option>
+            <option value="Donation">Donation</option>
+            <option value="Bénévole">Bénévole</option>
+            <option value="Autre">Autre</option>
+        </select>
+    </div>
+    <div class="input-container textarea-container">
+        <textarea id="messageFooter" name="message" placeholder="Votre message *" required></textarea>
+    </div>
+    <div class="input-container">
         <input id="submitFooter" type="submit" name="envoyer" value="ENVOYER">
-    </form>
+    </div>
+</form>
+
+
 </div>
 
 <div id="copyright">
