@@ -55,7 +55,7 @@
         <h3>IBAN: BE32 7340 2599 5302</h3>
         <h5>Communication: Aide pour les soins de santé</h5>
     </div>
-    <div id="carteDon autre">
+    <div id="carteDon">
     <img src="img/consultation.jpg" alt="Aide pour les soins de santé / Consultations-Médicaments" id="photoDon">
         <h1 id="titreDon">Aide pour les soins de santé:<br>Consultations-Médicaments</h1>
         <p id="montantDon">50€/enfant</p>
