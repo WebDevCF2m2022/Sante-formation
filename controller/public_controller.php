@@ -84,6 +84,7 @@ if (isset($_GET['view'])) {
             $action =new ActionManager($connection);
             /* Instantiation du AsblMapping.php avec la méthod du manager */
             $recupAction = $action-> getOneById(1);
+            $recupAllAction= $action->getAll();
             include "../view/public_view/action.php";
             break;
         case 'agenda':
