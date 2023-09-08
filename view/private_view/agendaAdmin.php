@@ -32,7 +32,7 @@
         <hr>
         <a href="?p=agenda" class="lien">AGENDA</a>
         <hr>
-        <a href="" class="deco">DÉCONNEXION</a>
+        <a href=""./?disconnect" class="deco">DÉCONNEXION</a>
         <hr>
     </div>
   </div>
