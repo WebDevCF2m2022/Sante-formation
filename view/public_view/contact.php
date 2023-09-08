@@ -33,31 +33,27 @@
     <div class="container">
 
             <div class ="container1">
-                <h1 class = "contactush1">Contactez-nous</h1>
-                <p class="contactuspar">Une envie de nous envoyer un message ?<br>
-                  Une question à nous poser ?<br>
-                 Un problème rencontré lors de votre visite ?<br>
-                Veuillez utiliser ce formulaire pour prendre contact avec nous !<br>
-               Je me ferai un plaisir de vous répondre dans les plus brefs délais .</p>
+                <h1 class = "contactush1"><?=$recupContact->getContactTitre()?></h1>
+                <p class="contactuspar"><?=$recupContact->getContactText()?></p>
             </div>
         <div class="container2">
 
             <form action="" method="post" class="formulaire ">
 
-                <label for="lastname" class="contactuslabel"> Nom: </label>
+                <label for="lastname" class="contactuslabel"><?=$recupContact->getContactName()?></label>
                     <input type="text" id="lastname" name="lastname" placeholder="" required class="contactusinput">
-                    <label for="mail" class="contactuslabel">Mail :</label>
+                    <label for="mail" class="contactuslabel"><?=$recupContact->getContactEmail()?></label>
                     <input type="mail" id="email" name="mail" placeholder="" required class="contactusinput">
-                    <label for="mail" class="contactuslabel"> Categorie :</label>
+                    <label for="mail" class="contactuslabel"><?=$recupContact->getContactCategorie()?></label>
                     <select class="contactusselect">
-                        <option>Administration</option>
-                        <option>Donation</option>
-                        <option>Benevole</option>
-                        <option>Autre</option>
+                        <option><?=$recupContact->getOption1()?></option>
+                        <option><?=$recupContact->getOption2()?></option>
+                        <option><?=$recupContact->getOption3()?></option>
+                        <option><?=$recupContact->getOption4()?></option>
                     </select>
-                    <label for="message" class="contactuslabel">Message :</label>
+                    <label for="message" class="contactuslabel"><?=$recupContact->getContactMessage()?></label>
                     <textarea id="message" name="message" required class="contactustxtarea"></textarea>
-                    <button type="submit" class="contactusbutton">Envoyer</button>
+                    <button type="submit" class="contactusbutton"><?=$recupContact->getContactButton()?></button>
 
             </form>
         </div>
