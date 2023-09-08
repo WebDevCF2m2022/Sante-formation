@@ -30,29 +30,30 @@
     ?>
 
             <div id="actionBloc">
-                    <h1>Nos actions</h1>
-                    <h3>SLOGAN en long</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
+                    <h1><?=$recupAction->getActionTitre()?></h1>
+                    <h3><?=$recupAction->getActionDescription()?></h3>
+                    <p><?=$recupAction->getActionText()?></p>
             <div id="positionAction">
                 <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
+                    <img src="img/caravan.png" alt="">
+                    <h1><?=$recupAction->getActionImageText()?> - <?=$recupAction->getActionDate()?></h1>
+
+                </div>
+                <div class="carteAction">
+                    <img src="img/01.png" alt="">
+                    <h1><?=$recupAction->getActionImageText()?> - <?=$recupAction->getActionDate()?></h1>
+                </div>
+                <div class="carteAction">
+                    <img src="img/02.png" alt="">
+                    <h1><?=$recupAction->getActionImageText()?>- <?=$recupAction->getActionDate()?></h1>
+                </div>
+                <div class="carteAction">
+                    <img src="img/05.jpg" alt="">
+                    <h1><?=$recupAction->getActionImageText()?><?=$recupAction->getActionDate()?></h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
+                    <h1><?=$recupAction->getActionImageText()?><?=$recupAction->getActionDate()?></h1>
                 </div>
                 <div class="carteAction">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
