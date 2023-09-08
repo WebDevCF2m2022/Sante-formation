@@ -19,11 +19,9 @@
 <body>
     <div id="gridAction">
     <!-- INCLUDE DU MENU -->
-    <nav>
         <?php
         include "../view/public_view/src/menu.php";
         ?>
-    </nav>
     <!-- INCLUDE DU CAROUSEL -->
     <?php
     include "../view/public_view/src/lightbox.php"

@@ -19,11 +19,11 @@
 <body>
     <div id="gridFormation">
 <!--include menu-->
-<nav>
+
     <?php
     include "../view/public_view/src/menu.php";
     ?>
-</nav>
+
 
     <?php
     include_once "../view/public_view/src/lightbox.php"

@@ -18,11 +18,9 @@
 <body>
         <div id="gridASBL">
     <!-- INCLUDE DU MENU -->
-    <nav>
     <?php
         include "../view/public_view/src/menu.php";
     ?>
-    </nav>
 
     <!-- INCLUDE DU CAROUSEL -->
     <?php
