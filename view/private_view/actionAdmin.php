@@ -23,7 +23,7 @@
   </div>
   <div class="menu">
     <div class="logo">
-        <a href="?p=home"><img src="logo.png" alt=""></a>
+        <a href="?p=home"><img src="img/logoSanteFormation.png" alt=""></a>
     </div>
     <div class="liens">
       <a href="?p=action" class="lien">ACTIONS</a>
@@ -32,7 +32,7 @@
       <hr>
       <a href="?p=agenda" class="lien">AGENDA</a>
       <hr>
-      <a href="./" class="deco">DÉCONNEXION</a>
+      <a href="./?disconnect" class="deco">DÉCONNEXION</a>
       <hr>
     </div>
   </div>
