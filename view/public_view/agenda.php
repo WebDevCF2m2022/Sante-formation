@@ -35,66 +35,66 @@
 <div id="positionAgenda">
     <div class="carteAgenda">
         <?=$recupAgenda->getAgendaImages()?>
-        <h1><?=$recupAgenda->getAgendaTitreImage()?></h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
-        <p><?=$recupAgenda->getAgendaTextDetail()?></p>
-        <a href="">Detail</a>
+        <h1><?=$recupAgenda->getAgendaTextDetail()?></h1>
+
+        <p><?=$recupAgenda->getAgendaText()?></p>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur autem ipsam hic provident quod molestiae ducimus distinctio exercitationem cumque enim. Magnam laborum ipsa eaque omnis!</p>
-        <a href="">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
+        <img src="img/r.png" alt="">
         <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
+
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
+
     </div>
 </div>
 </div>
