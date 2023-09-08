@@ -19,12 +19,15 @@ body {
 
 #containeurDon {
     grid-area: carteDon;
-    width: 100%;
+    width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
     justify-self: center;
-    row-gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    column-gap: 20px;
+    row-gap: 50px;
 }
 
 #carteDon {
@@ -32,16 +35,16 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    width: 85%;
     margin: 0 auto;
-    width: 100%;
 }
 
 #photoDon {
     display: flex;
     justify-content: center;
-    max-width: 90%;
-    height: 240px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
     margin: auto;
     border-radius: 10px;
 }
