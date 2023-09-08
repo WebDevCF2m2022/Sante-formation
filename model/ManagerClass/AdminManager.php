@@ -11,9 +11,7 @@ use model\TraitsClass\TestTrait;
 use PDO ;
 use Exception;
 
-class
-AdminManager implements ManagerInterface,SecuriteInterface,AdminInterface
-{
+class AdminManager implements ManagerInterface,SecuriteInterface,AdminInterface {
 
     protected PDO $connect;
 
@@ -102,23 +100,24 @@ AdminManager implements ManagerInterface,SecuriteInterface,AdminInterface
     /**  connexion admin
      *
      */
-  /*  public function connectAdmin (pdo $connect, string $login, string $pwd): string {
+
+    public function connectAdmin (pdo $connect, string $login, string $pwd): string|bool {
         try{
-            $sqlAdmin=$connect->query("SELECT login, pwd FROM admin WHERE login='$login'");
+            $sqlAdmin=$connect->query("SELECT login FROM admin WHERE login='$login' AND pwd = '$pwd'");
         }catch(Exception $e){
           echo " erreur " .$e->getMessage();
         }
         $recup = $sqlAdmin->fetch(PDO::FETCH_ASSOC);
 
-        if(password_verify($pwd , $recup['pwd'])){
+      if(!empty ($recup )){
             $_SESSION = $recup;
             unset($_SESSION['pwd']);
             $_SESSION['idAdmin'] = session_id();
             #echo "<h1>Admin connecté</h1>";
-            // on envoie vraie si la connexion est une réussite
+            // on envoie vraie si la connexion est une réussite*/
             return true;
         }else{
-            echo  "Login ou mot de passe incorrecte" ;
+            return  "Login ou mot de passe incorrecte" ;
         }
 
     }

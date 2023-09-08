@@ -14,7 +14,7 @@
       <div class="logo">
         <img src="img/logoSanteFormation.png" alt="Logo">
       </div>
-        <?php include_once "../controller/public_controller.php"; ?>
+
         <?php if(isset($erreur)){echo $erreur; }?>
       <div class="form-group">
         <label for="username">Nom d'utilisateur:</label>
