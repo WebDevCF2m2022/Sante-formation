@@ -16,28 +16,24 @@ use \model\ManagerClass\NavbarManager;
 use \model\ManagerClass\ValeursManager;
 
 
-try {
-    $connection = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=' . DB_CHARSET, DB_USER, DB_PWD);
-    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $connection->setAttribute(PDO::ATTR_CASE, PDO::CASE_LOWER);
 
-} catch (PDOException $e) {
-    echo "connection error " . $e->getMessage();
-}
 
 
 //conection admin
-if(isset($_POST['submit'])){
+
+
+    /*
     if(isset($_POST['username']) and !empty($_POST['username'])){
         if(filter_var($_POST['username'],FILTER_VALIDATE_EMAIL)){
             if(isset($_POST['pwd']) and !empty($_POST['pwd'])){
                 $pwd = sha1($_POST['pwd']);
-                $getData = $connection->prepare("SELECT login FROM admin WHERE login =? and pwd =? ");
+                var_dump($pwd);
+                $recupAdmin =  connectAdmin($conne)
                 $getData->execute(array($_POST['username'], $pwd));
                 $rows = $getData->rowCount();
                 if($rows ==true){
                     $_SESSION['admin']=$_POST['username'];
-                    header("Location:../view/public_view/logAdmin.php");
+                  header("Location:../view/public_view/logAdmin.php");
 
                 }else{
                     $e ="username ou mot de pass inconue  ";
@@ -60,7 +56,7 @@ if(isset($_POST['submit'])){
 
 };
 
-
+*/
 
 
 
@@ -122,7 +118,14 @@ if (isset($_GET['view'])) {
             /* Création d'un manager VALIDE avec sa connexion */
             $admin =new AdminManager($connection);
             /* Instantiation du AsblMapping.php avec la méthod du manager */
-            $recupAdmin = $admin-> getOneById(1);
+               if(isset($_POST['username']) and !empty($_POST['username'])){
+                   $pwd = sha1($_POST['pwd']);
+                   $login = $_POST['username'];
+            echo $recupAdmin = $admin-> connectAdmin($connection, $login, $pwd);
+            if($recupAdmin === true ){
+                header("Location: ./");
+            }
+            }
             include "../view/public_view/admin.php";
             break;
 /*

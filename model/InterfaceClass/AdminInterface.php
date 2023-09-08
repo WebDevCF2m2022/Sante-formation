@@ -10,8 +10,9 @@ use Exception;
 interface AdminInterface
 {
     public function getUserByLogin(string $login);
-    public function connectAdmin(pdo $connect, string $login, string $pwd) ;
+
     public function VerifyPassword(string $pwd, string $hash):bool;
     public function HashPassword(string $pwd): string;
-    public function disconnect();
+ /*   public function connectAdmin(pdo $connect, string $login, string $pwd) ;
+    public function disconnect();*/
 }

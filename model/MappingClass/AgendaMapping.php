@@ -13,6 +13,7 @@ class AgendaMapping extends AbstractsMapping
     protected mixed $agendaImages;
     protected string $agendaTitreImage ;
     protected  string $agendaTextDetail ;
+    protected  string $agendaDetail;  // pour detail dans en futur :))
 
 
     /** getter
@@ -71,6 +72,22 @@ class AgendaMapping extends AbstractsMapping
     public function getAgendaTextDetail(): string
     {
         return $this->agendaTextDetail;
+    }
+
+    /**getter
+     * @return mixed
+     */
+    public function getAgendaImages()
+    {
+        return $this->agendaImages;
+    }
+
+    /**getter
+     * @return string
+     */
+    public function getAgendaDetail(): string
+    {
+        return $this->agendaDetail;
     }
 
     /**setter
@@ -136,6 +153,14 @@ class AgendaMapping extends AbstractsMapping
     public function setAgendaTextDetail(string $agendaTextDetail): void
     {
         $this->agendaTextDetail = $agendaTextDetail;
+    }
+
+    /**
+     * @param string $agendaDetail
+     */
+    public function setAgendaDetail(string $agendaDetail): void
+    {
+        $this->agendaDetail = $agendaDetail;
     }
 
 
