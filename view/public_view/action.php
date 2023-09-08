@@ -32,11 +32,16 @@
                     <h3><?=$recupAction->getActionDescription()?></h3>
                     <p><?=$recupAction->getActionText()?></p>
             <div id="positionAction">
+                <?php foreach ($recupAllAction as $item){?>
                 <div class="carteAction">
+
                     <img src="img/caravan.png" alt="">
-                    <h1><?=$recupAction->getActionImageText()?> - <?=$recupAction->getActionDate()?></h1>
+                    <h1><?=$item->getActionImageText()?> - <?=$item->getActionDate()?></h1>
+
 
                 </div>
+                <?php }?>
+
                 <div class="carteAction">
                     <img src="img/01.png" alt="">
                     <h1><?=$recupAction->getActionImageText()?> - <?=$recupAction->getActionDate()?></h1>
