@@ -17,9 +17,9 @@
             <h3>Ici, vous pouvez ajouter, modifier, supprimer vos articles</h3>
         </div>
         <div class="liens">
-          <a href="actionAdmin.php" class="lien">ACTIONS</a>
-          <a href="formationAdmin.php" class="lien">FORMATIONS</a>
-          <a href="agendaAdmin.php" class="lien">AGENDA</a>
+          <a href="?p=action" class="lien">ACTIONS</a>
+          <a href="?p=formation" class="lien">FORMATIONS</a>
+          <a href="?p=agenda" class="lien">AGENDA</a>
         </div>
       </div>
 </body>

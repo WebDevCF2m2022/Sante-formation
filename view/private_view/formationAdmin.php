@@ -23,16 +23,16 @@
   </div>
   <div class="menu">
     <div class="logo">
-        <a href="homeAdmin.php"><img src="logo.png" alt=""></a>
+        <a href="?p=home"><img src="logo.png" alt=""></a>
     </div>
     <div class="liens">
-      <a href="actionAdmin.php" class="lien">ACTIONS</a>
+      <a href="?p=action" class="lien">ACTIONS</a>
       <hr>
-      <a href="formationAdmin.php" class="lien">FORMATIONS</a>
+      <a href="?p=formation" class="lien">FORMATIONS</a>
       <hr>
-      <a href="agendaAdmin.php" class="lien">AGENDA</a>
+      <a href="?p=agenda" class="lien">AGENDA</a>
       <hr>
-      <a href="" class="deco">DÉCONNEXION</a>
+      <a href="./" class="deco">DÉCONNEXION</a>
       <hr>
     </div>
   </div>
