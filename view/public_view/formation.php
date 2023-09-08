@@ -30,13 +30,13 @@
     ?>
 
             <div id="formationBloc">
-                    <h1>Nos Formations</h1>
-                    <h3>SLOGAN en long</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
+                    <h1><?=$recupFormation->getFormationTitre()?></h1>
+                    <h3><?=$recupFormation->getFormationDescription()?></h3>
+
             <div id="positionFormation">
                 <div class="carteFormation">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Formations</h1>
+                    <?= $recupFormation->getFormationImage()?>
+                    <h1><?=$recupFormation->getFormationText()?></h1>
                 </div>
                 <div class="carteFormation">
                     <img src="img/pexels-jack-redgate-2929227.jpg" alt="">

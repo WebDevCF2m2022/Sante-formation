@@ -30,13 +30,14 @@
     ?>
 
 <div id="agendaBloc">
-        <h1 class="centre">Agenda</h1>
+        <h1 class="centre"><?=$recupAgenda->getAgendaTitre()?></h1>
+       <h3 class="centre"><?=$recupAgenda->getAgendaDescription()?></h3>
 <div id="positionAgenda">
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>titre</h1>
+        <?=$recupAgenda->getAgendaImages()?>
+        <h1><?=$recupAgenda->getAgendaTitreImage()?></h1>
         <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur nemo atque odio perferendis laudantium, eum non temporibus alias laborum distinctio maiores facilis et cumque?</p>
+        <p><?=$recupAgenda->getAgendaTextDetail()?></p>
         <a href="">Detail</a>
     </div>
     <div class="carteAgenda">
