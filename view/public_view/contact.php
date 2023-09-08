@@ -29,6 +29,7 @@
     include_once "../view/public_view/src/lightbox.php"
     ?>
 
+<div id="container">
 <div id="coordonneContact">
     <h1>Coordonné</h1>
     <h4>Siège social:<br>Avenue voltaire 138, 1030 Schaerbeek</h4>
@@ -42,7 +43,7 @@
     </div>
 </div>
 
-<div id="container">
+<div id="formulaireettext">
     <h1><?=$recupContact->getContactTitre()?></h1>
     <p><?=$recupContact->getContactText()?></p>
 <form id="form" action="#">
@@ -71,6 +72,7 @@
         <input id="submit" type="submit" name="envoyer" value="<?=$recupContact->getContactButton()?>">
     </div>
 </form>
+</div>
 </div>
 
 

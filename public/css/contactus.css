@@ -8,21 +8,30 @@ body {
 
 #gridContact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-auto-rows: auto;
     grid-template-areas: 
-    "menu menu"
-    "lightbox lightbox"
-    "coordonne formulaire"
-    "footer footer"
+    "menu"
+    "lightbox"
+    "containerForm"
+    "footer"
     ;
 }
 
-
 #container {
+    grid-area: containerForm;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "coordonne formulaireContact"
+    ;
+}
+
+#formulaireettext {
     display: grid;
     justify-self: center;
-    grid-area: formulaire;
+    grid-area: formulaireContact;
     text-align: center;
     max-width: 100%;
     width: 100%;
@@ -114,12 +123,54 @@ select[required]::before {
     margin-right: 5px;
 }
 
-
 #coordonneContact {
     grid-area: coordonne;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#coordonneContact h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#coordonneContact h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#social img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
 }
 
 @media screen and (max-width: 600px) {
+    #gridContact {
+        grid-auto-rows: none;
+        grid-template-rows: 100px auto auto;
+        grid-template-areas: 
+        "menu"
+        "containerForm"
+        "footer";
+    }
+
+    #coordonneContact {
+        height: auto;
+    }
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-auto-rows: none;
+        grid-template-areas: 
+        "coordonne"
+        "formulaireContact"
+    ;
+    }
     #lightbox {
         display: none;
     }
