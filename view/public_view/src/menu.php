@@ -9,12 +9,12 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="?view=asbl">ASBL</a></li>
-            <li><a href="?view=actions">Actions</a></li>
-            <li><a href="?view=formations">Formations</a></li>
-            <li><a href="?view=agenda">Agenda</a></li>
-            <li><a href="?view=contact">Contact</a></li>
-            <li><a href="?view=donation">Faire un don</a></li>
+            <li><a href="?view=asbl"><?=$recupNav->getNavbarAsbl()?></a></li>
+            <li><a href="?view=actions"><?=$recupNav->getNavbarAction()?></a></li>
+            <li><a href="?view=formations"><?=$recupNav->getNavbarFormation()?></a></li>
+            <li><a href="?view=agenda"><?=$recupNav->getNavbarAgenda()?></a></li>
+            <li><a href="?view=contact"><?=$recupNav->getNavbarContact()?></a></li>
+            <li><a href="?view=donation"><?=$recupNav->getNavbarDon()?></a></li>
           </ul>
         </nav>
         <div id="langueNavDesktop" class="language-selector">

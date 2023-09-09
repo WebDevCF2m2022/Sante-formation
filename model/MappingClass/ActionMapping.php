@@ -10,11 +10,11 @@ class ActionMapping extends AbstractsMapping
     protected string $actionTitre;
     protected string $actionDescription;
     protected string $actionText;
-    protected mixed $actionImage;
+
     protected  mixed $actionDate;
 
     protected string $actionImageText;
-
+    protected string $actionImg;
 
     /**getter
      * @return int id of action
@@ -33,6 +33,14 @@ class ActionMapping extends AbstractsMapping
     }
 
     /**getter
+     * @return string
+     */
+    public function getActionImg(): string
+    {
+        return $this->actionImg;
+    }
+
+    /**getter
      * @return string description of action
      */
     public function getActionDescription(): string
@@ -46,14 +54,6 @@ class ActionMapping extends AbstractsMapping
     public function getActionText(): string
     {
         return $this->actionText;
-    }
-
-    /**getter
-     * @return mixed pic of action
-     */
-    public function getActionImage():mixed
-    {
-        return $this->actionImage;
     }
 
     /**getter
@@ -80,6 +80,13 @@ class ActionMapping extends AbstractsMapping
     }
 
     /**setter
+     * @param string $actionImg
+     */
+    public function setActionImg(string $actionImg): void
+    {
+        $this->actionImg = $actionImg;
+    }
+    /**setter
      * @param string $actionTitre
      */
     public function setActionTitre(string $actionTitre): void
@@ -103,13 +110,7 @@ class ActionMapping extends AbstractsMapping
         $this->actionText = $actionText;
     }
 
-    /**setter
-     * @param mixed $actionImage
-     */
-    public function setActionImage($actionImage): void
-    {
-        $this->actionImage = $actionImage;
-    }
+
 
     /**setter
      * @param mixed $actionDate

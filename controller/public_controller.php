@@ -1,8 +1,6 @@
 <?php
 
-
-
-
+/*
 $transport = Transport::fromDsn(MAILER_DSN);
 
 /* Utilisation du manager au BON endroit */
@@ -12,67 +10,36 @@ use \model\ManagerClass\AdminManager;
 use \model\ManagerClass\ActionManager;
 use \model\ManagerClass\AgendaManager;
 use \model\ManagerClass\ContactManager;
-use \model\ManagerClass\ContactAccueilManager;
 use \model\ManagerClass\DonManager;
 use \model\ManagerClass\FooterManager;
 use \model\ManagerClass\FormationManager;
 use \model\ManagerClass\NavbarManager;
 use \model\ManagerClass\ValeursManager;
 
+$value = new ValeursManager($connection);
+$recupValue = $value->getAll();
 
+$nav = new NavbarManager($connection);
+$recupNav = $nav->getOneById(1);
 
+$footer = new FooterManager($connection);
+$recupFooter = $footer->getOneById(1);
 
-
-//conection admin
-
-
-    /*
-    if(isset($_POST['username']) and !empty($_POST['username'])){
-        if(filter_var($_POST['username'],FILTER_VALIDATE_EMAIL)){
-            if(isset($_POST['pwd']) and !empty($_POST['pwd'])){
-                $pwd = sha1($_POST['pwd']);
-                var_dump($pwd);
-                $recupAdmin =  connectAdmin($conne)
-                $getData->execute(array($_POST['username'], $pwd));
-                $rows = $getData->rowCount();
-                if($rows ==true){
-                    $_SESSION['admin']=$_POST['username'];
-                  header("Location:../view/public_view/logAdmin.php");
-
-                }else{
-                    $e ="username ou mot de pass inconue  ";
-                }
-
-            }else{
-                $e = "veuillez introduire un  password correct ";
-            }
-
-
-        }else{
-            $e="veuillez saissir un email valide";
-        }
-
-    }
-
-
-}else{
-    $e ="veuillez saissir un username" ;
-
-};
-
-*/
-
+/** @var ca marche pas dans le menu*/
+$a = new AccueilManager($connection);
+$all=$a->getAll();
 
 
 
 // include menu dans toute la page
-if (isset($_GET['view'])) {
+if(isset($_GET['view'])) {
     switch ($_GET['view']) {
         case 'homepage':
             /* Création d'un manager VALIDE avec sa connexion */
             $home =new AccueilManager($connection);
             /* Instantiation du AccueilMapping.php avec la méthod du manager */
             $recupHome = $home-> getOneById(1);
+            $recupAllHome= $home->getAll();// ca marche pas
             include "../view/public_view/homepage.php";
             break;
         case 'asbl':
@@ -95,6 +62,7 @@ if (isset($_GET['view'])) {
             $agenda =new AgendaManager($connection);
             /* Instantiation du AsblMapping.php avec la méthod du manager */
             $recupAgenda = $agenda-> getOneById(1);
+            $recupAllAgenda = $agenda->getAll();
             include "../view/public_view/agenda.php";
             break;       
         case 'contact':
@@ -108,7 +76,7 @@ if (isset($_GET['view'])) {
             /* Création d'un manager VALIDE avec sa connexion */
             $donnation =new DonManager($connection);
             /* Instantiation du AsblMapping.php avec la méthod du manager */
-            $recupDonnation = $donnation-> getOneById(1);
+            $recupDonnation = $donnation-> getAll();
             include "../view/public_view/donation.php";
             break;
         case 'formations':
@@ -116,6 +84,7 @@ if (isset($_GET['view'])) {
             $formation =new FormationManager($connection);
             /* Instantiation du AsblMapping.php avec la méthod du manager */
             $recupFormation = $formation-> getOneById(1);
+            $recupAllFormation = $formation->getAll();
             include "../view/public_view/formation.php";
             break;
         case 'admin':
@@ -155,7 +124,7 @@ if (isset($_GET['view'])) {
 
 
 
-
+/*
  $mailer = new Mailer($transport);
 
 

@@ -77,7 +77,7 @@
       </thead>
       <tbody>
         <tr>
-          <td id="imgTable"><img src="logo.png" height="auto" width="200px" alt="Image 1"></td>
+          <td id="imgTable"><img src="img/logoSanteFormation.png" height="auto" width="200px" alt="Image 1"></td>
           <td id="titreTable">Titre 1</td>
           <td>Description 1</td>
           <td>Texte 1</td>
@@ -87,7 +87,7 @@
           </td>
         </tr>
         <tr>
-          <td id="imgTable"><img src="logo.png" height="auto" width="200px" alt="Image 2"></td>
+          <td id="imgTable"><img src="img/logoSanteFormation.png" height="auto" width="200px" alt="Image 2"></td>
           <td>Titre 1</td>
           <td>Description 1</td>
           <td>Texte 1</td>
