@@ -17,7 +17,9 @@ use \model\ManagerClass\NavbarManager;
 use \model\ManagerClass\ValeursManager;
 
 $value = new ValeursManager($connection);
+$val=$value->getOneById(1);
 $recupValue = $value->getAll();
+
 
 $nav = new NavbarManager($connection);
 $recupNav = $nav->getOneById(1);

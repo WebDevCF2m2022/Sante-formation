@@ -16,6 +16,7 @@ ini_set('sendmail_from', MAIL_FROM);
 */
 
 try {
+
     $connection = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=' . DB_CHARSET, DB_USER, DB_PWD);
     $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $connection->setAttribute(PDO::ATTR_CASE, PDO::CASE_LOWER);
