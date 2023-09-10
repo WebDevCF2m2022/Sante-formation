@@ -59,9 +59,7 @@
             </div>
 
     <!-- INCLUDE DE "NOS VALEUR -->
-    <?php
-        include "../view/public_view/src/valeur.php"
-    ?>
+    
 
 
     <!-- INCLUDE DU FOOTER -->

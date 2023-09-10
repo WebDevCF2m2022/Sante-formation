@@ -1,9 +1,12 @@
 header {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   grid-area: menu;
   align-items: center;
   background-color: #14939c;
-  height: 100px;
+  height: 125px;
 }
   
 .logo {
@@ -11,9 +14,9 @@ header {
 }
 
   .logo img {
-    width: 150px; 
-    margin-top: 90px; 
-    margin-left: 20px;
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 25px;
  }
   
   .menu-icon {
@@ -54,7 +57,7 @@ header {
 
   .menu li a {
     text-decoration: none;
-    font-size: larger;
+    font-size: 23px;
     line-height: 35px;
     height: 35px;
     color: #fff;
@@ -130,9 +133,15 @@ header {
       width: 100%;
       z-index: 10;
     }
+
     .menu {
       display: flex;
       justify-content: center;
+    }
+
+    .logo img {
+      margin-top: 100px;
+      width: 150px;
     }
   
     .menu-icon {
