@@ -93,9 +93,13 @@ body {
 }
 
 .logo {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
   display: flex;
   justify-content: center;
+}
+
+.logo img {
+  width: 200px;
 }
 
 .liens {
