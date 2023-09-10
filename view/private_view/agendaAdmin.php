@@ -82,7 +82,7 @@
           <td>Description 1</td>
           <td>Texte 1</td>
           <td id="buttonTable">
-            <a href="modifierAgenda.html" class="btn-modifier">Modifier</a>
+            <a href="?p=modifAgenda" class="btn-modifier">Modifier</a>
             <button class="btn-supprimer">Supprimer</button>
           </td>
         </tr>
@@ -92,7 +92,7 @@
           <td>Description 1</td>
           <td>Texte 1</td>
           <td id="buttonTable">
-            <a href="modifierAgenda.html" class="btn-modifier">Modifier</a>
+            <a href="?p=modifAgenda" class="btn-modifier">Modifier</a>
             <button class="btn-supprimer">Supprimer</button>
           </td>
         </tr>

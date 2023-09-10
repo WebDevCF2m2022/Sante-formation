@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="./formationAdmin.php" class="back-button">← Retour</a>
+    <a href="?p=formation" class="back-button">← Retour</a>
 
     <form action="#" method="post" enctype="multipart/form-data">
         <label for="articleImage">Image de l'article</label>
