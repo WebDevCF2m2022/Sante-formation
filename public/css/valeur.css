@@ -1,280 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
+#gridValeur {
+    display: grid;
+    grid-area: valeur;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+}
+
+#gridValeur h1 {
+    text-align: center;
+}
+
 #valeur {
     display: grid;
-    gap: 50px;
-    grid-area: valeur;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    ". titreValeur ."
-    "valeur1 valeur2 valeur3"
-    "valeur4 valeur5 valeur6"
-    ;
-    width: 85%;
-    margin: auto auto 100px auto;
-    font-family: 'Inter', sans-serif;
+    justify-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 70px;
+    margin-bottom: 20px;
 }
 
 .valeur-item {
-    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), color 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    color: #333; /* Couleur du texte par défaut */
 }
 
+.valeur-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #94b9c5, #14939c);
+    opacity: 0.7;
+    z-index: -1;
+    transition: opacity 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+/* Ajoutez cette règle CSS pour changer la couleur du texte au survol */
 .valeur-item:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
+    color: #fff; /* Changez la couleur du texte en blanc */
 }
 
-#valeur h1 {
-    justify-self: center;
-    grid-area: titreValeur;
+/* Ajoutez cette règle CSS pour rendre la fin de l'animation plus fluide lorsque vous quittez le survol */
+.valeur-item:not(:hover) {
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), color 0.5s cubic-bezier(0.25, 0.45, 0.45, 0.95); /* Augmentez la durée de la transition de couleur */
 }
 
-#valeur1 {
-    display: grid;
-    grid-template-rows: 60px 75px auto;
-    grid-template-areas: 
-    "valeur1img"
-    "valeur1h4"
-    "valeur1p";
-    margin: auto;
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    grid-area: valeur1;
-    background-color: #D9D9D9;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
-
+.valeur-item:hover::before {
+    opacity: 1;
 }
 
-#valeur1 img {
-    margin-top: 15px;
-    justify-self: center;
-    grid-area: valeur1img;
+.valeur-item h4 {
+    font-size: 20px;
+    margin: 10px 0;
 }
 
-#valeur1 h4 {
-    justify-self: center;
-    grid-area: valeur1h4;
-    color: #0C9AEA;
-    font-size: xx-large;
+.valeur-item p {
+    font-size: 16px;
+    margin: 10px 0;
 }
-
-#valeur1 p {
-    justify-self: center;
-    text-align: center;
-    grid-area: valeur1p;
-    max-width: 65%;
-}
-
-#valeur2 {
-    display: grid;
-    grid-template-rows: 60px 75px auto;
-    grid-template-areas: 
-    "valeur2img"
-    "valeur2h4"
-    "valeur2p";
-    margin: auto;
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    grid-area: valeur2;
-    background-color: #D9D9D9;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
-}
-
-#valeur2 img {
-    margin-top: 15px;
-    justify-self: center;
-    grid-area: valeur2img;
-}
-
-#valeur2 h4 {
-    justify-self: center;
-    grid-area: valeur2h4;
-    color: #0C9AEA;
-    font-size: xx-large;
-}
-
-#valeur2 p {
-    justify-self: center;
-    text-align: center;
-    grid-area: valeur2p;
-    max-width: 65%;
-}
-
-#valeur3 {
-    display: grid;
-    grid-template-rows: 60px 75px auto;
-    grid-template-areas: 
-    "valeur3img"
-    "valeur3h4"
-    "valeur3p";
-    margin: auto;
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    grid-area: valeur3;
-    background-color: #D9D9D9;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
-}
-
-#valeur3 img {
-    margin-top: 15px;
-    justify-self: center;
-    grid-area: valeur3img;
-}
-
-#valeur3 h4 {
-    justify-self: center;
-    grid-area: valeur3h4;
-    color: #0C9AEA;
-    font-size: xx-large;
-}
-
-#valeur3 p {
-    justify-self: center;
-    text-align: center;
-    grid-area: valeur3p;
-    max-width: 65%;
-}
-
-#valeur4 {
-    display: grid;
-    grid-template-rows: 60px 75px auto;
-    grid-template-areas: 
-    "valeur4img"
-    "valeur4h4"
-    "valeur4p";
-    margin: auto;
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    grid-area: valeur4;
-    background-color: #D9D9D9;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
-}
-
-#valeur4 img {
-    margin-top: 15px;
-    justify-self: center;
-    grid-area: valeur4img;
-}
-
-#valeur4 h4 {
-    justify-self: center;
-    grid-area: valeur4h4;
-    color: #0C9AEA;
-    font-size: xx-large;
-}
-
-#valeur4 p {
-    justify-self: center;
-    text-align: center;
-    grid-area: valeur4p;
-    max-width: 65%;
-}
-
-#valeur5 {
-    display: grid;
-    grid-template-rows: 60px 75px auto;
-    grid-template-areas: 
-    "valeur5img"
-    "valeur5h4"
-    "valeur5p";
-    margin: auto;
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    grid-area: valeur5;
-    background-color: #D9D9D9;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
-}
-
-#valeur5 img {
-    margin-top: 15px;
-    justify-self: center;
-    grid-area: valeur5img;
-}
-
-#valeur5 h4 {
-    justify-self: center;
-    grid-area: valeur5h4;
-    color: #0C9AEA;
-    font-size: xx-large;
-}
-
-#valeur5 p {
-    justify-self: center;
-    text-align: center;
-    grid-area: valeur5p;
-    max-width: 65%;
-}
-
-#valeur6 {
-    display: grid;
-    grid-template-rows: 60px 75px auto;
-    grid-template-areas: 
-    "valeur6img"
-    "valeur6h4"
-    "valeur6p";
-    margin: auto;
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    grid-area: valeur6;
-    background-color: #D9D9D9;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre de boîte */
-}
-
-#valeur6 img {
-    margin-top: 15px;
-    justify-self: center;
-    grid-area: valeur6img;
-}
-
-#valeur6 h4 {
-    justify-self: center;
-    grid-area: valeur6h4;
-    color: #0C9AEA;
-    font-size: xx-large;
-}
-
-#valeur6 p {
-    justify-self: center;
-    text-align: center;
-    grid-area: valeur6p;
-    max-width: 65%;
-}
+  
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-    #valeur{
+    #valeur {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "titreValeur titreValeur"
-        "valeur1 valeur2" 
-        "valeur3 valeur4"
-        "valeur5 valeur6"
-        ;
     }
   }
 
   @media screen and (max-width: 600px) {
-    #valeur{
+    #valeur {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "titreValeur"
-        "valeur1" 
-        "valeur2" 
-        "valeur3" 
-        "valeur4"
-        "valeur5"
-        "valeur6"
-        ;
-    }
-
-    #valeur1, #valeur2, #valeur3, #valeur4, #valeur5, #valeur6{
-        width: 400px;
-        height: 400px;
-        grid-template-rows: 50px 100px 250px;
     }
   }
