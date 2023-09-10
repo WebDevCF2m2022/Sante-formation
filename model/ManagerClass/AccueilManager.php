@@ -14,18 +14,20 @@ class AccueilManager implements ManagerInterface
 {
 
 
-    protected PDO $connect ;
+    protected PDO $connect;
 
 
-    public function __construct(PDO $connection){
-      $this->connect = $connection ;
+    public function __construct(PDO $connection)
+    {
+        $this->connect = $connection;
     }
 
     /** request for on by id
      * @param int $id the id of  accueil
      * @return AccueilMapping|void  class
      */
-    public  function getOneById(int $id){
+    public function getOneById(int $id)
+    {
         $prepare = $this->connect->prepare("SELECT * FROM accueil WHERE `idAccueil` = :id");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         try {
@@ -42,32 +44,23 @@ class AccueilManager implements ManagerInterface
     /***request for get all
      * @return array of all  home page
      */
-    public function getAll():array {
-        $prepare =$this->connect->prepare("SELECT * FROM  accueil");
-        try{
+    public function getAll(): array
+    {
+        $prepare = $this->connect->prepare("SELECT * FROM  accueil");
+        try {
             $prepare->execute();
             $result = $prepare->fetchAll();
             $all = [];
-            foreach ($result as $row ){
+            foreach ($result as $row) {
                 $all[] = new AccueilMapping($row);
             }
-            return $all ;
+            return $all;
 
-        }catch (Exception $e){
-            echo "erreur  : " .$e->getMessage();
+        } catch (Exception $e) {
+            echo "erreur  : " . $e->getMessage();
             exit;
         }
 
 
-
-
     }
-
-
-
-
-
-
-
-
 }

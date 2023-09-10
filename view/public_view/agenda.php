@@ -31,78 +31,21 @@
         <h1 class="centre"><?=$recupAgenda->getAgendaTitre()?></h1>
        <h3 class="centre"><?=$recupAgenda->getAgendaDescription()?></h3>
 <div id="positionAgenda">
+     <?php foreach ($recupAllAgenda as $key){?>
     <div class="carteAgenda">
-        <?=$recupAgenda->getAgendaImages()?>
-        <h1><?=$recupAgenda->getAgendaTextDetail()?></h1>
-
-        <p><?=$recupAgenda->getAgendaText()?></p>
+        <?=$key->getAgendaImages()?>
+        <h1><?=$key->getAgendaTextDetail()?></h1>
+        <p><?=$key->getAgendaText()?></p>
 
     </div>
-    <div class="carteAgenda">
-        <img src="img/r.png" alt="">
-        <h1>titre</h1>
+    <?php } ?>
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur autem ipsam hic provident quod molestiae ducimus distinctio exercitationem cumque enim. Magnam laborum ipsa eaque omnis!</p>
 
-    </div>
-    <div class="carteAgenda">
-        <img src="img/r.png" alt="">
-        <h1>titre</h1>
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-
-    </div>
-    <div class="carteAgenda">
-        <img src="img/r.png" alt="">
-        <h1>titre</h1>
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-
-    </div>
-    <div class="carteAgenda">
-        <img src="img/r.png" alt="">
-        <h1>titre</h1>
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-
-    </div>
-    <div class="carteAgenda">
-        <img src="img/r.png" alt="">
-        <h1>titre</h1>
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-
-    </div>
-    <div class="carteAgenda">
-        <img src="img/r.png" alt="">
-        <h1>titre</h1>
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-
-    </div>
-    <div class="carteAgenda">
-        <img src="img/r.png" alt="">
-        <h1>titre</h1>
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-
-    </div>
-    <div class="carteAgenda">
-        <img src="img/r.png" alt="">
-        <h1>titre</h1>
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-
-    </div>
 </div>
 </div>
 
 
 
-    <!-- INCLUDE DU CONTACT DANS LA PAGE -->
-    <?php
-    include_once "../view/public_view/src/contactPage.php";
-    ?>
     <!-- INCLUDE DES VALEURS -->
     <?php
     include_once "../view/public_view/src/valeur.php";

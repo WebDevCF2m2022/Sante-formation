@@ -28,17 +28,17 @@
     ?>
 
     <div id="quiSommeNous">
-        <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
+        <img src="img/03.png" alt="">
         <h1><?=$recup->getTitreSomme()?></h1>
         <h3><?=$recup->getTextSomme()?></h3>
     </div>
 
             <div id="text1">
-           <p><?=$recup->getDescriptionSomme()?></p>
+                <p><?=$recup->getDescriptionSomme()?></p>
             </div>
 
     <div id="historique">
-        <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
+        <img src="img/05.jpg" alt="">
         <h1><?=$recup->getTitreHistory()?></h1>
         <h3><?=$recup->getTextHistory()?></h3>
     </div>
@@ -48,7 +48,7 @@
             </div>
 
     <div id="objectif">
-        <img src="img/pexels-murilo-fonseca-17239050.jpg" alt="">
+        <img src="img/17.PNG" alt="">
         <h1><?=$recup->getTitreObjectif()?></h1>
         <h3><?=$recup->getTextObjectif()?></h3>
     </div>

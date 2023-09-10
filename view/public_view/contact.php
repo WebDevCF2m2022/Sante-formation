@@ -31,11 +31,11 @@
 
 <div id="container">
 <div id="coordonneContact">
-    <h1>Coordonné</h1>
-    <h4>Siège social:<br>Avenue voltaire 138, 1030 Schaerbeek</h4>
-    <h4>Mail:<br>contact@sante-et-formation.org</h4>
-    <h4>Tel:</h4>
-    <h4>Réseaux sociaux</h4>
+    <h1><?=$recupContact->getContactCoor()?></h1>
+    <h4><?=$recupContact->getContactSiege()?></h4>
+    <h4><?=$recupContact->getContactMailCoo()?></h4>
+    <h4><?=$recupContact->getContactTel()?></h4>
+    <h4><?=$recupContact->getContactReseaux()?></h4>
     <div id="social">
     <img src="img/icons8-facebook-nouveau-50.png" alt="">
     <img src="img/icons8-instagram-50.png" alt="">

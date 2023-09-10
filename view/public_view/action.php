@@ -34,53 +34,14 @@
             <div id="positionAction">
                 <?php foreach ($recupAllAction as $item){?>
                 <div class="carteAction">
-
-                    <img src="img/caravan.png" alt="">
-                    <h1><?=$item->getActionImageText()?> - <?=$item->getActionDate()?></h1>
-
-
+                       <?=$item->getActionImg()?>
+                    <h1><?=$item->getActionImageText()?> </h1>
                 </div>
                 <?php }?>
 
-                <div class="carteAction">
-                    <img src="img/01.png" alt="">
-                    <h1><?=$recupAction->getActionImageText()?> - <?=$recupAction->getActionDate()?></h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/02.png" alt="">
-                    <h1><?=$recupAction->getActionImageText()?>- <?=$recupAction->getActionDate()?></h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/05.jpg" alt="">
-                    <h1><?=$recupAction->getActionImageText()?><?=$recupAction->getActionDate()?></h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1><?=$recupAction->getActionImageText()?><?=$recupAction->getActionDate()?></h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
-                </div>
-                <div class="carteAction">
-                    <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-                    <h1>Actions</h1>
-                </div>
             </div>
             </div>
 
-    <!-- INCLUDE DU CONTACT DANS LA PAGE -->
-    <?php
-    include_once "../view/public_view/src/contactPage.php";
-    ?>
 
 
     <!-- INCLUDE DES VALEURS -->

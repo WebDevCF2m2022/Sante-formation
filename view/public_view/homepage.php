@@ -40,80 +40,59 @@
 </div>
 
 <div id="actionAccueil">
-        <h1>Nos actions</h1>
+        <h1><?=$recupHome->getTitreAction()?></h1>
         <!--
         <h3>SLOGAN en long</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p>
         -->
 <div id="positionAction">
+    <?php  foreach($all as $key) {?>
     <div class="carteAction">
-        <img src="img/caravan.png" alt="">
-        <h1>Caravane Medical </h1>
+        <?=$key->getPhotoAction()?>
+        <h1> <?=$key->getTextAction()?></h1>
     </div>
-    <div class="carteAction">
-        <img src="img/02.png" alt="">
-        <h1>Actions Humanitaires</h1>
-    </div>
-    <div class="carteAction">
-        <img src="img/05.jpg" alt="">
-        <h1>Aide aux familles </h1>
-    </div>
+
+    <?php }?>
+
+
 </div>
-    <a href="?view=actions" target="_blank">En savoir plus</a>
+    <a href="?view=actions" target="_blank"><?=$recupHome->getButtonAction()?></a>
 </div>
 
 <div id="formationAccueil">
-        <h1>Nos formations</h1>
+        <h1><?=$recupHome->getTitreFormation()?></h1>
         <!-- 
         <h3>SLOGAN en long</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illo?</p> 
         -->
 <div id="positionFormation">
+    <?php  foreach($all as $key) {?>
     <div class="carteFormation">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>Formation</h1>
+        <?=$key->getPhotoFormation()?>
+        <h1><?=$key->getTextFormation()?></h1>
     </div>
-    <div class="carteFormation">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>Formation</h1>
-    </div>
-    <div class="carteFormation">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>Formation</h1>
-    </div>
+    <?php }?>
+
 </div>
-    <a href="?view=formations" target="_blank">En savoir plus</a>
+    <a href="?view=formations" target="_blank"><?=$recupHome->getButtonFormation()?></a>
 </div>
 
     <!-- INCLUDE DU CONTACT DANS LA PAGE -->
     
 
 <div id="agendaAccueil">
-        <h1 class="centre">Agenda</h1>
+            <h1 class="centre"><?=$recupHome->getTitreAgenda()?></h1>
 <div id="positionAgenda">
+    <?php  foreach($all as $key) {?>
     <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg"  alt="">
-        <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur nemo atque odio perferendis laudantium, eum non temporibus alias laborum distinctio maiores facilis et cumque?</p>
-        <a href="">Detail</a>
+        <?=$key->getPhotoAgenda()?>
+        <h1><?=$key->getTextAgenda()?></h1>
+        <p><?=$key->getDescriptionAgenda()?></p>
     </div>
-    <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur autem ipsam hic provident quod molestiae ducimus distinctio exercitationem cumque enim. Magnam laborum ipsa eaque omnis!</p>
-        <a href="">Detail</a>
-    </div>
-    <div class="carteAgenda">
-        <img src="img/pexels-jack-redgate-2929227.jpg" alt="">
-        <h1>titre</h1>
-        <p id="date"><?php echo date("l, j F Y H:i:s"); ?></p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam nesciunt inventore libero excepturi facere sapiente, dolore, delectus nobis laudantium natus laborum incidunt quidem? Maxime.</p>
-        <a href="#">Detail</a>
-    </div>
+    <?php }?>
+
 </div>
-    <a id="savoirPlusAgenda" href="?view=agenda" target="_blank">En savoir plus</a>
+    <a id="savoirPlusAgenda" href="?view=agenda" target="_blank"><?=$recupHome->getButtonAction()?></a>
 </div>
 
 

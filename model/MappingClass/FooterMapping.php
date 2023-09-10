@@ -33,6 +33,12 @@ class FooterMapping extends AbstractsMapping
      protected string $footerContactButton;
      protected string $footerCopyrigth ;
 
+     protected string $footerAction ;
+     protected string $footerOp1;
+     protected string $footerOp2;
+     protected string $footerOp3;
+     protected string $footerOp4;
+
 
 
     /** getter
@@ -226,8 +232,46 @@ class FooterMapping extends AbstractsMapping
     {
         return $this->footerCopyrigth;
     }
-    
 
+    /**getter
+     * @return string
+     */
+    public function getFooterAction(): string
+    {
+        return $this->footerAction;
+    }
+
+    /**getter
+     * @return string
+     */
+    public function getFooterOp1(): string
+    {
+        return $this->footerOp1;
+    }
+
+    /**getter
+     * @return string
+     */
+    public function getFooterOp2(): string
+    {
+        return $this->footerOp2;
+    }
+
+    /**getter
+     * @return string
+     */
+    public function getFooterOp3(): string
+    {
+        return $this->footerOp3;
+    }
+
+    /**getter
+     * @return string
+     */
+    public function getFooterOp4(): string
+    {
+        return $this->footerOp4;
+    }
     /**setter
      * @param int $idFooter
      */
@@ -422,6 +466,46 @@ class FooterMapping extends AbstractsMapping
     public function setFooterCopyrigth(string $footerCopyrigth): void
     {
         $this->footerCopyrigth = $footerCopyrigth;
+    }
+
+    /**setter
+     * @param string $footerAction
+     */
+    public function setFooterAction(string $footerAction): void
+    {
+        $this->footerAction = $footerAction;
+    }
+
+    /**setter
+     * @param string $footerOp1
+     */
+    public function setFooterOp1(string $footerOp1): void
+    {
+        $this->footerOp1 = $footerOp1;
+    }
+
+    /**setter
+     * @param string $footerOp2
+     */
+    public function setFooterOp2(string $footerOp2): void
+    {
+        $this->footerOp2 = $footerOp2;
+    }
+
+    /**setter
+     * @param string $footerOp3
+     */
+    public function setFooterOp3(string $footerOp3): void
+    {
+        $this->footerOp3 = $footerOp3;
+    }
+
+    /**setter
+     * @param string $footerOp4
+     */
+    public function setFooterOp4(string $footerOp4): void
+    {
+        $this->footerOp4 = $footerOp4;
     }
 
 

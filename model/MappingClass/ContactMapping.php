@@ -19,6 +19,11 @@ class ContactMapping extends AbstractsMapping
     protected  string $option2 ;
     protected  string $option3 ;
     protected  string $option4;
+    protected  string $contactCoor ;
+    protected string $contactSiege ;
+    protected string $contactMailCoo ;
+    protected  string $contactTel ;
+    protected  string $contactReseaux ;
 
     /**getter
      * @return int id of contact page
@@ -113,6 +118,46 @@ class ContactMapping extends AbstractsMapping
     return $this->option4;
     }
 
+    /**getter
+     * @return string
+     */
+    public function getContactCoor(): string
+    {
+        return $this->contactCoor;
+    }
+
+    /**getter
+     * @return string
+     */
+    public function getContactMailCoo(): string
+    {
+        return $this->contactMailCoo;
+    }
+
+    /**getter
+     * @return string
+     */
+    public function getContactReseaux(): string
+    {
+        return $this->contactReseaux;
+    }
+
+    /**getter
+     * @return string
+     */
+    public function getContactSiege(): string
+    {
+        return $this->contactSiege;
+    }
+
+
+    /**getter
+     * @return string
+     */
+    public function getContactTel(): string
+    {
+        return $this->contactTel;
+    }
 
     /**setter
      * @param int $idContact
@@ -154,7 +199,6 @@ class ContactMapping extends AbstractsMapping
     {
         $this->contactEmail = $contactEmail;
     }
-
 
     /**setter
      * @param string $contactCategorie
@@ -208,5 +252,44 @@ class ContactMapping extends AbstractsMapping
     $this->option4 = $option4;
      }
 
+    /**setter
+     * @param string $contactCoor
+     */
+    public function setContactCoor(string $contactCoor): void
+    {
+        $this->contactCoor = $contactCoor;
+    }
+
+    /**setter
+     * @param string $contactMailCoo
+     */
+    public function setContactMailCoo(string $contactMailCoo): void
+    {
+        $this->contactMailCoo = $contactMailCoo;
+    }
+
+    /**setter
+     * @param string $contactReseaux
+     */
+    public function setContactReseaux(string $contactReseaux): void
+    {
+        $this->contactReseaux = $contactReseaux;
+    }
+
+    /**setter
+     * @param string $contactSiege
+     */
+    public function setContactSiege(string $contactSiege): void
+    {
+        $this->contactSiege = $contactSiege;
+    }
+
+    /**setter
+     * @param string $contactTel
+     */
+    public function setContactTel(string $contactTel): void
+    {
+        $this->contactTel = $contactTel;
+    }
 
 }

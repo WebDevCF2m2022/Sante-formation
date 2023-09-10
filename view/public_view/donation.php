@@ -27,40 +27,16 @@
     include_once "../view/public_view/src/lightbox.php"
     ?>
 <div id="containeurDon">
+    <?php foreach ($recupDonnation as $item){ ?>
     <div id="carteDon">
-    <img id="photoDon" src="img/back-to-school.jpg" alt="Fourniture pour rentrée scolaire">
-        <h1 id="titreDon">Fournitures pour rentrée scolaire</h1>
-        <p id="montantDon">30€/enfant</p>
-        <h3>IBAN: BE32 7340 2599 5302</h3>
-        <h5>Communication: Fournitures pour rentrée scolaire</h5>
+   <?=$item->getDonPackImage()?>
+        <h1 id="titreDon"><?=$item->getDonTitre()?></h1>
+        <p id="montantDon"><?=$item->getDonPackTitre()?></p>
+        <h3><?=$item->getDonPackText()?></h3>
+        <h5><?=$item->getDonText()?></h5>
     </div>
-    <div id="carteDon">
-    <img src="img/vetement-enfant.jpg" alt="Vêtement pour rentrée scolaire" id="photoDon">
-        <h1 id="titreDon">Vêtement pour rentrée scolaire</h1>
-        <p id="montantDon">30€/enfant</p>
-        <h3>IBAN: BE32 7340 2599 5302</h3>
-        <h5>Communication: Vêtement pour rentrée scolaire</h5>
-    </div>
-    <div id="carteDon">
-    <img src="img/famille.jpg" alt="Aide Alimentaire pour 1 famille et 3 enfants" id="photoDon">
-        <h1 id="titreDon">Aide Alimentaire pour<br> 1 famille et 3 enfants</h1>
-        <p id="montantDon">30€/enfant</p>
-        <h3>IBAN: BE32 7340 2599 5302</h3>
-        <h5>Communication: Aide Alimentaire pour 1 famille et 3 enfants</h5>
-    </div>
-    <div id="carteDon">
-    <img src="img/consultation.jpg" alt="Aide pour les soins de santé / Consultations-Médicaments" id="photoDon">
-        <h1 id="titreDon">Aide pour les soins de santé:<br>Consultations-Médicaments</h1>
-        <p id="montantDon">50€/enfant</p>
-        <h3>IBAN: BE32 7340 2599 5302</h3>
-        <h5>Communication: Aide pour les soins de santé</h5>
-    </div>
-    <div id="carteDon">
-    <img src="img/consultation.jpg" alt="Aide pour les soins de santé / Consultations-Médicaments" id="photoDon">
-        <h1 id="titreDon">Aide pour les soins de santé:<br>Consultations-Médicaments</h1>
-        <p id="montantDon">50€/enfant</p>
-        <button id="boutonDon">Faire un don</button>
-    </div>
+    <?php } ?>
+
 </div>
 
 <footer>
@@ -71,3 +47,4 @@
 </footer>
 </body>
 </html>
+

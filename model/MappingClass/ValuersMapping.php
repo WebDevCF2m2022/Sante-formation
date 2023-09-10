@@ -9,8 +9,10 @@ class ValuersMapping extends AbstractsMapping
 
     protected int $idValeurs ;
     protected string $valeursTitre ;
-    protected string $valeurText ;
+
     protected string $valeurLogo ;
+
+    protected string $valueDescription;
 
 
     /**getter
@@ -29,13 +31,6 @@ class ValuersMapping extends AbstractsMapping
         return $this->valeursTitre;
     }
 
-    /**getter
-     * @return string text of values
-     */
-    public function getValeurText(): string
-    {
-        return $this->valeurText;
-    }
 
     /**getter
      * @return string logo of values
@@ -45,6 +40,13 @@ class ValuersMapping extends AbstractsMapping
         return $this->valeurLogo;
     }
 
+    /**getter
+     * @return string
+     */
+    public function getValueDescription(): string
+    {
+        return $this->valueDescription;
+    }
     /**setter
      * @param int $idValeurs
      */
@@ -61,13 +63,6 @@ class ValuersMapping extends AbstractsMapping
         $this->valeursTitre = $valeursTitre;
     }
 
-    /**setter
-     * @param string $valeurText
-     */
-    public function setValeurText(string $valeurText): void
-    {
-        $this->valeurText = $valeurText;
-    }
 
     /**setter
      * @param string $valeurLogo
@@ -75,6 +70,14 @@ class ValuersMapping extends AbstractsMapping
     public function setValeurLogo(string $valeurLogo): void
     {
         $this->valeurLogo = $valeurLogo;
+    }
+
+    /**setter
+     * @param string $valueDescription
+     */
+    public function setValueDescription(string $valueDescription): void
+    {
+        $this->valueDescription = $valueDescription;
     }
 
 }

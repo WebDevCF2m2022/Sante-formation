@@ -14,7 +14,7 @@ class NavbarMapping extends AbstractsMapping
     protected string $navbarAgenda ;
     protected string $navbarContact ;
     protected string $navbarDon ;
-    protected string $navbarLangue ;
+
 
 
     /**getter
@@ -73,13 +73,6 @@ class NavbarMapping extends AbstractsMapping
         return $this->navbarDon;
     }
 
-    /**getter
-     * @return string the languages of navbar
-     */
-    public function getNavbarLangue(): string
-    {
-        return $this->navbarLangue;
-    }
 
 
     /**setter
@@ -139,13 +132,7 @@ class NavbarMapping extends AbstractsMapping
         $this->navbarDon = $navbarDon;
     }
 
-    /**setter
-     * @param string $navbarLangue
-     */
-    public function setNavbarLangue(string $navbarLangue): void
-    {
-        $this->navbarLangue = $navbarLangue;
-    }
+
 
 
 }

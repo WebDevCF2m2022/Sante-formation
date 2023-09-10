@@ -1,62 +1,62 @@
 <div id="donFooter">
-    <h1>Faire un don</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quis delectus odio hic cupiditate recusandae magnam vel totam doloribus, alias aspernatur dolorum omnis sint amet optio nihil beatae eaque debitis vitae fuga temporibus. Dolore in molestias soluta officia eius consequuntur veritatis molestiae. Totam excepturi veritatis aperiam iure quisquam pariatur voluptatum assumenda, voluptatibus illo quas ipsam dicta ad porro, obcaecati at laboriosam sunt placeat expedita. Aliquid, sint a aspernatur veritatis voluptatum minima deserunt? Distinctio voluptatibus, voluptatem totam, necessitatibus consequuntur ab maxime iure eligendi deserunt laborum doloribus repellat rem vero deleniti debitis illo cumque ipsam? Quisquam aspernatur ratione harum nostrum beatae quidem!</p>
-    <button><a href="index.php?view=donation">Donation</a></button>
+    <h1><?=$recupFooter->getFooterFaireUnDonTitre()?></h1>
+    <p> <?=$recupFooter->getFooterFaireUnDonText() ?> </p>
+    <button><a href="index.php?view=donation"><?=$recupFooter->getFooterFaireUnDonButton() ?></a></button>
 </div>
 
 <div id="menuFooter">
-    <a href="?view=asbl">L'ASBL</a>
-    <a href="?view=actions">Actions</a>
-    <a href="?view=formations">Formations</a>
-    <a href="?view=agenda">Agenda</a>
-    <a href="?view=donation">Don</a>
-    <a href="?view=admin" target="_blank">Admin</a>
-    <a href="?view=don" target="_blank">Mention légales</a>
-    <a href="?view=don" target="_blank">Politique de confidentialité</a>
+    <a href="?view=asbl"><?=$recupFooter->getFooterAsbl()?></a>
+    <a href="?view=actions"><?=$recupFooter->getFooterAction()?></a>
+    <a href="?view=formations"><?=$recupFooter->getFooterFormation()?></a>
+    <a href="?view=agenda"><?=$recupFooter->getFooterAgenda()?></a>
+    <a href="?view=donation"><?=$recupFooter->getFooterDon()?></a>
+    <a href="?view=admin" target="_blank"><?=$recupFooter->getFooterAdmin()?></a>
+    <a href="?view=don" target="_blank"><?=$recupFooter->getFooterMention()?></a>
+    <a href="?view=don" target="_blank"><?=$recupFooter->getFooterPolitique()?></a>
 </div>
 
 <div id="aboutFooter">
-    <h2>Santé et formation</h2>
+    <h2><?=$recupFooter->getFooterTitre()?></h2>
     <hr id="hrBleu">
     <img src="img/logoSanteFormation.png"  alt="">
-    <p>Notre Association "Santé & Formation" contribue activement à la formation, l’éducation et l’insertion professionnelle des personnes précaires. Nos activités sont axées sur la santé physique et mentale, l’information et la prévention.</p>
+    <p><?=$recupFooter->getFooterDescription()?></p>
 </div>
 
 <div id="coordoneeFooter">
-    <h2>Coordonée</h2>
+    <h2><?=$recupFooter->getFooterCoordonnee()?></h2>
     <hr id="hrBleu">
-    <h4>Siège social:<p>Avenue voltaire 138, 1030 Schaerbeek</p></h4>
-    <h4>Mail:<p>contact@sante-et-formation.org</p></h4>
-    <h4>Tel:</h4>
-    <h4>Réseaux sociaux</h4>
+    <h4><?=$recupFooter->getFooterSiegeSociete()?></h4>
+    <h4><?=$recupFooter->getFooterMail()?></h4>
+    <h4><?=$recupFooter->getFooterTelephone()?></h4>
+    <h4><?=$recupFooter->getFooterReseauxSocial()?></h4>
     <img src="img/icons8-facebook-nouveau-50.png" alt="">
     <img src="img/icons8-instagram-50.png" alt="">
     <img src="img/icons8-linkedin-50.png" alt="">
 </div>
 
 <div id="contactFooter">
-    <h2>Contact</h2>
+    <h2><?=$recupFooter->getFooterContactTitre()?></h2>
     <hr id="hrBleu">
 <form id="formFooter" action="#">
     <div class="input-container">
-        <input id="nomFooter" type="text" name="nom" placeholder="Nom, prénom *" required>
+        <input id="nomFooter" type="text" name="nom" placeholder="<?=$recupFooter->getFooterContactNom()?>" required>
     </div>
     <div class="input-container">
-        <input id="emailFooter" type="text" name="email" placeholder="Email *" required>
+        <input id="emailFooter" type="text" name="email" placeholder="<?=$recupFooter->getFooterContactEmail()?>" required>
     </div>
     <div class="input-container">
         <select id="categorieFooter" name="categorie">
-            <option value="Administration">Administration</option>
-            <option value="Donation">Donation</option>
-            <option value="Bénévole">Bénévole</option>
-            <option value="Autre">Autre</option>
+            <option value="Administration"><?=$recupFooter->getFooterOp1()?></option>
+            <option value="Donation"><?=$recupFooter->getFooterOp2()?></option>
+            <option value="Bénévole"><?=$recupFooter->getFooterOp3()?></option>
+            <option value="Autre"><?=$recupFooter->getFooterOp4()?></option>
         </select>
     </div>
     <div class="input-container textarea-container">
-        <textarea id="messageFooter" name="message" placeholder="Votre message *" required></textarea>
+        <textarea id="messageFooter" name="message" placeholder="<?=$recupFooter->getFooterContactMsg()?>" required></textarea>
     </div>
     <div class="input-container">
-        <input id="submitFooter" type="submit" name="envoyer" value="ENVOYER">
+        <input id="submitFooter" type="submit" name="envoyer" value="<?=$recupFooter->getFooterContactButton()?>">
     </div>
 </form>
 
@@ -65,5 +65,5 @@
 
 <div id="copyright">
     <hr>
-    <p>&copy; <?php echo date("Y"); ?> Santé-et-formation</p>
+    <p>&copy; <?php echo date("Y"); ?> <?=$recupFooter->getFooterCopyrigth()?></p>
 </div>

@@ -23,7 +23,7 @@
   </div>
   <div class="menu">
     <div class="logo">
-        <a href="?p=home"><img src="logo.png" alt=""></a>
+        <a href="?p=home"><img src="img/logoSanteFormation.png" alt=""></a>
     </div>
     <div class="liens">
         <a href="?p=action" class="lien">ACTIONS</a>
@@ -32,7 +32,7 @@
         <hr>
         <a href="?p=agenda" class="lien">AGENDA</a>
         <hr>
-        <a href=""./?disconnect" class="deco">DÉCONNEXION</a>
+        <a href="./?disconnect" class="deco">DÉCONNEXION</a>
         <hr>
     </div>
   </div>
@@ -77,7 +77,7 @@
       </thead>
       <tbody>
         <tr>
-          <td id="imgTable"><img src="logo.png" height="auto" width="200px" alt="Image 1"></td>
+          <td id="imgTable"><img src="img/logoSanteFormation.png" height="auto" width="200px" alt="Image 1"></td>
           <td id="titreTable">Titre 1</td>
           <td>Description 1</td>
           <td>Texte 1</td>
@@ -87,7 +87,7 @@
           </td>
         </tr>
         <tr>
-          <td id="imgTable"><img src="logo.png" height="auto" width="200px" alt="Image 2"></td>
+          <td id="imgTable"><img src="img/logoSanteFormation.png" height="auto" width="200px" alt="Image 2"></td>
           <td>Titre 1</td>
           <td>Description 1</td>
           <td>Texte 1</td>
