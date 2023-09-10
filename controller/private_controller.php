@@ -23,6 +23,7 @@ if (isset($_GET['p'])) {
             break;
         case "agenda" :
             include_once "../view/private_view/agendaAdmin.php";
+            break;
         default :
             include_once "../view/private_view/homeAdmin.php";
             break;

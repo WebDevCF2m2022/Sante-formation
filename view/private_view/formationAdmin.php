@@ -11,13 +11,13 @@
   <div class="color-bar">
     <div id="langueNavDesktop" class="language-selector">
       <div class="selected-language">
-          <img class="flag-icon" src="icons8-french-flag-48.png" alt="French Flag"><p>FR</p><i class="fas fa-caret-down"></i>
+          <img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p><i class="fas fa-caret-down"></i>
       </div>
       <ul class="language-options">
       <li data-lang="fr">
-          <img class="flag-icon" src="icons8-french-flag-48.png" alt="French Flag"><p>FR</p></li>
+          <img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p></li>
       <li data-lang="en">
-          <img class="flag-icon" src="icons8-great-britain-48.png" alt="American Flag"><p>EN</p></li>
+          <img class="flag-icon" src="img/icons8-great-britain-48.png" alt="American Flag"><p>EN</p></li>
       </ul>
   </div>
   </div>
