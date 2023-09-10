@@ -18,11 +18,20 @@ if (isset($_GET['p'])) {
         case "action":
             include_once "../view/private_view/actionAdmin.php";
             break;
+        case "modifAction" :
+            include_once "../view/private_view/modifierAction.php";
+            break;
         case "formation" :
             include_once "../view/private_view/formationAdmin.php";
             break;
+        case "modifFormation" :
+            include_once "../view/private_view/modifierFormation.php";
+            break;
         case "agenda" :
             include_once "../view/private_view/agendaAdmin.php";
+            break;
+        case "modifAgenda":
+            include_once "../view/private_view/modifierAgenda.php";
             break;
         default :
             include_once "../view/private_view/homeAdmin.php";

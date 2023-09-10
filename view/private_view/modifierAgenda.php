@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="./agendaAdmin.php" class="back-button">← Retour</a>
+    <a href="?p=agenda" class="back-button">← Retour</a>
 
     <form action="#" method="post" enctype="multipart/form-data">
         <label for="articleImage">Image de l'article</label>
