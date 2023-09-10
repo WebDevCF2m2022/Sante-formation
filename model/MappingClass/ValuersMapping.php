@@ -14,6 +14,8 @@ class ValuersMapping extends AbstractsMapping
 
     protected string $valueDescription;
 
+    protected string $valeurT;
+
 
     /**getter
      * @return int id of values
@@ -31,6 +33,13 @@ class ValuersMapping extends AbstractsMapping
         return $this->valeursTitre;
     }
 
+    /**geetter
+     * @return string
+     */
+    public function getValeurT(): string
+    {
+        return $this->valeurT;
+    }
 
     /**getter
      * @return string logo of values
@@ -63,6 +72,13 @@ class ValuersMapping extends AbstractsMapping
         $this->valeursTitre = $valeursTitre;
     }
 
+    /**
+     * @param string $valeurT
+     */
+    public function setValeurT(string $valeurT): void
+    {
+        $this->valeurT = $valeurT;
+    }
 
     /**setter
      * @param string $valeurLogo

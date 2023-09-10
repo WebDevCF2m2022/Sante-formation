@@ -22,7 +22,7 @@ class ValeursManager implements ManagerInterface
      * @return  ValuersMapping|void
      */
     public  function getOneById(int $id){
-        $prepare = $this->connect->prepare("SELECT * FROM valuers WHERE `idValuers` = :id");
+        $prepare = $this->connect->prepare("SELECT * FROM valuers WHERE `idValeurs` = :id");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         try {
             $prepare->execute();
