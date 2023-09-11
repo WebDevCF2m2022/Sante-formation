@@ -22,14 +22,14 @@
                 <img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p><i class="fas fa-caret-down"></i>
             </div>
             <ul class="language-options">
-            <li data-lang="fr">
-                <img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p></li>
-            <li data-lang="en">
-                <img class="flag-icon" src="img/icons8-great-britain-48.png" alt="American Flag"><p>EN</p></li>
-            <li data-lang="nl">
-                <img class="flag-icon" src="img/icons8-netherlands-48.png" alt="American Flag"><p>NL</p></li>
-            <li data-lang="ar">
-                <img class="flag-icon" src="img/icons8-saudi-arabia-48.png" alt="American Flag"><p>AR</p></li>
+            <a href="?lang=fr"><li data-lang="fr">
+                <img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p></li></a>
+            <a href="?lang=en"><li data-lang="en">
+                <img class="flag-icon" src="img/icons8-great-britain-48.png" alt="American Flag"><p>EN</p></li></a>
+            <a href="?lang=nl"><li data-lang="nl">
+                <img class="flag-icon" src="img/icons8-netherlands-48.png" alt="American Flag"><p>NL</p></li></a>
+            <a href="?lang=ar"><li data-lang="ar">
+                <img class="flag-icon" src="img/icons8-saudi-arabia-48.png" alt="American Flag"><p>AR</p></li></a>
             </ul>
         </div>
 </header>
