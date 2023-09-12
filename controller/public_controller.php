@@ -1,7 +1,9 @@
 <?php
+use Symfony\Component\Mailer\Transport;
+use Symfony\Component\Mailer\Mailer;
+use Symfony\Component\Mime\Email;
 
-/*
-$transport = Transport::fromDsn(MAILER_DSN);
+
 
 /* Utilisation du manager au BON endroit */
 use \model\ManagerClass\AsblManager;
@@ -126,15 +128,15 @@ if(isset($_GET['view'])) {
 
 
 
-/*
- $mailer = new Mailer($transport);
+    $transport = Transport::fromDsn(MAILER_DSN);
+    $mailer = new Mailer($transport);
 
 
 
 // on veut envoyer un message
-if(isset($_POST['lastname'],$_POST['message'] )&&filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL)){
-   $firstname = htmlspecialchars(strip_tags(trim($_POST['lastname'])),ENT_QUOTES);
-    $mailCustomer = trim($_POST["mail"]);
+if(isset($_POST['nom'],$_POST['message'] )&&filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
+   $firstname = htmlspecialchars(strip_tags(trim($_POST['nom'])),ENT_QUOTES);
+    $mailCustomer = trim($_POST["email"]);
     $message = htmlspecialchars(strip_tags(trim($_POST['message'])),ENT_QUOTES);
 
 
@@ -154,7 +156,7 @@ if(isset($_POST['lastname'],$_POST['message'] )&&filter_var($_POST['mail'],FILTE
         $mail =(new Email())
             ->from(MAIL_FROM)
             ->to(MAIL_ADMIN)
-            ->subjet('Vous avez recu un message')
+            ->subject('Vous avez recu un message')
             ->text('Le message :'. $message . "posté par:".$mailCustomer)
             ->html("<p>Le message :". $message ."posté par :".$mailCustomer ."</p>");
         $mailer->send($mail);
