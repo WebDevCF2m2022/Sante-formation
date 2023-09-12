@@ -46,7 +46,7 @@
 <div id="formulaireettext">
     <h1><?=$recupContact->getContactTitre()?></h1>
     <p><?=$recupContact->getContactText()?></p>
-<form id="form" action="#">
+<form id="form" action="" name="lecontact" method="POST">
     <div class="input">
         <label for=""><?=$recupContact->getContactName()?></label>
         <input id="nom" type="text" name="nom" required>
