@@ -1,0 +1,16 @@
+ body{
+     display: flex;
+     flex-direction: row;
+     /* align-content: stretch; */
+     justify-content: space-evenly;
+     margin: 10% 23%;
+ }
+ button{
+     background-color: #14939c;
+     margin: 5% 23% 5%;
+ }
+
+ a{
+     text-decoration: none;
+     color: black;
+ }

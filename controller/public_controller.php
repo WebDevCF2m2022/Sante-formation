@@ -2,10 +2,6 @@
 use Symfony\Component\Mailer\Transport;
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mime\Email;
-
-
-
-/* Utilisation du manager au BON endroit */
 use \model\ManagerClass\AsblManager;
 use \model\ManagerClass\AccueilManager;
 use \model\ManagerClass\AdminManager;
@@ -105,11 +101,9 @@ if(isset($_GET['view'])) {
             }
             include "../view/public_view/admin.php";
             break;
-/*
-            case 'logAdmin':
-
-                include "../view/public_view/logAdmin.php";
-                break;*/
+        case "error":
+            include "../view/private_view/404.php";
+            break;
         default:
             /* Création d'un manager VALIDE avec sa connexion */
             $home =new AccueilManager($connection);
@@ -148,17 +142,17 @@ if(isset($_POST['nom'],$_POST['message'] )&&filter_var($_POST['email'],FILTER_VA
             ->to($mailCustomer)
             ->subject('Votre message a bien été posté ! ')
             ->text("Votre message : " . $message . "Merci de votre retour ")
-            ->html("<p>Votre message : " . $message . "Merci pour votre message </p>");
+            ->html("<p>Votre message : " . $message . "   <br>Merci pour votre message </p>");
         $mailer->send($mail);
 
 
-        //pour adnim
+        //pour admin
         $mail =(new Email())
             ->from(MAIL_FROM)
             ->to(MAIL_ADMIN)
             ->subject('Vous avez recu un message')
             ->text('Le message :'. $message . "posté par:".$mailCustomer)
-            ->html("<p>Le message :". $message ."posté par :".$mailCustomer ."</p>");
+            ->html("<p>Le message : ". $message ." <br> posté par :".$mailCustomer ."</p>");
         $mailer->send($mail);
         $e="Merci pour votre contribution";
 
@@ -183,60 +177,6 @@ if(isset($_POST['nom'],$_POST['message'] )&&filter_var($_POST['email'],FILTER_VA
 
 
 
-
-    /*if($mailCustomer==false || empty($messageDB)){
-        $message = "Mail et/ou message non valides, veuillez recommencer !";
-    }else{
-        $insert = insertMessages($connection,$mail,$messageDB);
-        if(is_string($insert)){
-            $message = $insert;
-        }else{
-            $message = "Votre message à bien été envoyé!";
-
-            // pour l'admin du site
-            $mailMessage = "Mail envoyé par $mail \r\n \r\n " . $messageMail;
-            $envoi = sendMail(MAIL_FROM, MAIL_ADMIN, "Message sur votre site", $mailMessage);
-
-            // pour l'utilisateur du site
-            $mailMessage = "Votre message a bien été envoyé sur le site http://mailmvc.webdev-cf2m.be/";
-            $envoi2 = sendMail(MAIL_FROM, $mail, "Message du site mailmvc.webdev-cf2m.be", $mailMessage);
-
-            if ($envoi === true && $envoi2 == true) {
-                $message .= "<br>Félicitation";
-            }
-        }
-    }
-
-}*/
-/**
- * fonction pour envoyer des mails
- * @param string $mailfrom
- * @param string $mailto
- * @param string $subject
- * @param string $message
- * @return bool
- */
-/*function sendMail(string $mailfrom, string $mailto, string $subject, string $message): bool {
-
-    // création des entêtes
-    $headers = array(
-        'From' => $mailfrom,
-        'Reply-To' => $mailfrom,
-        'X-Mailer' => 'PHP/' . phpversion()
-    );
-
-    // envoi réel du mail
-    $envoi = @mail($mailto, $subject, $message, $headers);
-    // mail envoyé
-    if($envoi){
-        // message de réussite de l'envoi
-        return true;
-    }else {
-        // problème de la fonction mail, erreur personnalisée
-        return false;
-    }
-}
-*/
 
 
 
