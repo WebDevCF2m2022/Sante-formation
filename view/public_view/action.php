@@ -44,10 +44,6 @@
 
 
 
-    <!-- INCLUDE DES VALEURS -->
-    <?php
-    include_once "../view/public_view/src/valeur.php";
-    ?>
  <footer>
      <!-- INCLUDE DU FOOTER -->
      <?php

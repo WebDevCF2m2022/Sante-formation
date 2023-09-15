@@ -15,14 +15,13 @@ body {
     "lightbox"
     "agenda"
     "contact"
-    "valeur"
     "footer";
 }
 
 #agendaBloc {
     display: grid;
     grid-area: agenda;
-    margin: 0 40px 0 40px;
+    margin: 0 40px 20px 40px;
 }
 
 .centre {

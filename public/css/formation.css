@@ -12,13 +12,12 @@ body {
     "menu"
     "lightbox"
     "action"
-    "contact"
-    "valeur"
     "footer";
 }
 
 #formationBloc {
     display: grid;
+    margin-bottom: 20px;
     grid-area: action;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 75px auto;
