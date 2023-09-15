@@ -11,8 +11,8 @@
     <a href="?view=agenda"><?=$recupFooter->getFooterAgenda()?></a>
     <a href="?view=donation"><?=$recupFooter->getFooterDon()?></a>
     <a href="?view=admin" target="_blank"><?=$recupFooter->getFooterAdmin()?></a>
-    <a href="?view=don" target="_blank"><?=$recupFooter->getFooterMention()?></a>
-    <a href="?view=don" target="_blank"><?=$recupFooter->getFooterPolitique()?></a>
+    <a href="?view=error" target="_blank"><?=$recupFooter->getFooterMention()?></a>
+    <a href="?view=error" target="_blank"><?=$recupFooter->getFooterPolitique()?></a>
 </div>
 
 <div id="aboutFooter">
@@ -37,7 +37,7 @@
 <div id="contactFooter">
     <h2><?=$recupFooter->getFooterContactTitre()?></h2>
     <hr id="hrBleu">
-<form id="formFooter" action="#">
+<form id="formFooter" action="" method="POST">
     <div class="input-container">
         <input id="nomFooter" type="text" name="nom" placeholder="<?=$recupFooter->getFooterContactNom()?>" required>
     </div>
