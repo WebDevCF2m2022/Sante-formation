@@ -12,5 +12,5 @@ interface ActionInterface
 {
     public function insertAction(ActionMapping  $datas);
     public function  updateAction(ActionMapping $datas);
-    public function deleteAction(ActionMapping $id);
+    public function deleteAction(int $id);
 }
