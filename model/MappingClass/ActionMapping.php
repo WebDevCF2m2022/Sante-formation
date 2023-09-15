@@ -19,7 +19,7 @@ class ActionMapping extends AbstractsMapping
     /**getter
      * @return int id of action
      */
-    public function getIdAction(): int
+    public function getIdAction() : int
     {
         return $this->idAction;
     }

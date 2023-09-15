@@ -3,22 +3,11 @@ use \model\ManagerClass\AdminManager;
 use \model\ManagerClass\ActionManager;
 use \model\ManagerClass\FormationManager;
 use \model\ManagerClass\AgendaManager;
+use model\MappingClass\ActionMapping;
 
 
 $adminConect = new AdminManager($connection);
 
-
-
-
-
-
-/*
-var_dump($_SESSION);
-
-
-//var_dump($adminConect);
-
-require "../view/private_view/HOMEAdmin.php";*/
 
 if (isset($_GET['p'])) {
 
@@ -31,17 +20,62 @@ if (isset($_GET['p'])) {
             /* Création d'un manager VALIDE avec sa connexion */
             $actionAdmin =new ActionManager($connection);
             /* Instantiation du AccueilMapping.php avec la méthod du manager */
-            $act = $actionAdmin-> getOneById(1);
+            $act = $actionAdmin-> getAll();
+            // $action = $actionAdmin->getOneById($_GET);
+
            // $actAll= $act->getAll();
+
+            if(isset($_POST['actionImageText'])){
+                   $insert = new ActionMapping($_POST);
+                //var_dump($insert);
+                   try{
+
+                     $a =  $actionAdmin->insertAction($insert);
+                     if($a===true){
+                         header("Location: ./?p=action&yes");
+                         die();
+                     }
+                   }catch (Exception $e){
+                       $e = throw new Exception ('Un problème est survenu lors de la inseration , veuillez réessayer');
+
+                   }
+               }
             include_once "../view/private_view/actionAdmin.php";
+
+    break;
+
+        case 'deleteAction' :
+                if(isset($_GET['idn'])) {
+                    try {
+                        $actionAdmin =new ActionManager($connection);
+                        $actionAdmin->deleteAction($_GET['idn']);
+                       // header("Refresh:2");
+                    } catch (Exception $e) {
+                        $e = throw new Exception ('Un problème est survenu lors de la supression, veuillez réessayer');
+                    }
+                }
+
 
             break;
         case "modifAction" :
             /* Création d'un manager VALIDE avec sa connexion */
             $modAction =new ActionManager($connection);
+
             /* Instantiation du AccueilMapping.php avec la méthod du manager */
-            $modAct = $modAction-> updateAction($connection);
-            include_once "../view/private_view/modifierAction.php";
+            if(isset($_GET['id'])):
+                if(isset($_POST['actionImg'])&&($_POST['articleDescription'])&&($_POST['actionImageText'])&& ($_POST['articleText'])){
+
+                    // update
+                    $updateAction = new ActionMapping($_POST);
+                    $modAction->updateAction($updateAction);
+                }else {
+                    $modAct = $modAction->getOneById($_GET['id']);
+                    include_once "../view/private_view/modifierAction.php";
+                }
+            else:
+                // sinon
+            endif;
+
             break;
         case "formation" :
             /* Création d'un manager VALIDE avec sa connexion */
@@ -55,7 +89,7 @@ if (isset($_GET['p'])) {
             /* Création d'un manager VALIDE avec sa connexion */
             $forAction =new FormationManager($connection);
             /* Instantiation du AccueilMapping.php avec la méthod du manager */
-            $forAdmin = $forAction -> updateFormation($connection);
+            $forAdmin = $forAction->updateFormation($connection);
             include_once "../view/private_view/modifierFormation.php";
             break;
         case "agenda" :
@@ -85,3 +119,4 @@ if (isset($_GET['p'])) {
 }else{
     include_once "../view/private_view/homeAdmin.php";
 }
+
