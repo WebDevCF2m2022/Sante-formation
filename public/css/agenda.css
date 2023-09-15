@@ -87,7 +87,8 @@ body {
     }
 
     #gridAgenda {
-        grid-template-rows: 100px auto;
+        grid-auto-rows: none;
+        grid-template-rows: 150px auto;
     }
 }
 

@@ -21,10 +21,9 @@ body {
     display: grid;
     grid-area: action;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 40px 75px auto;
+    grid-template-rows: 50px 75px auto;
     grid-template-areas:
         "titreAc"
-        "sloganAc"
         "descAc"
         "carteAc";
 }
@@ -38,11 +37,6 @@ body {
 }
 
 #formationBloc h3 {
-    grid-area: sloganAc;
-    justify-self: center;
-}
-
-#formationBloc p {
     grid-area: descAc;
     justify-self: center;
 }
@@ -88,11 +82,12 @@ body {
     }
 
     #positionFormation {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     #gridFormation {
-        grid-template-rows: 100px auto;
+        grid-auto-rows: none;
+        grid-template-rows: 150px auto;
     }
 
     .carteFormation img {

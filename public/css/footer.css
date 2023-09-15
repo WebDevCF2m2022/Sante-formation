@@ -18,7 +18,7 @@ footer {
 #donFooter {
     grid-area: donFooter;
     background-image: url(../img/photoDon.png);
-    background-size: 100%;
+    background-size: 100% 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 75px 1fr 50px;
