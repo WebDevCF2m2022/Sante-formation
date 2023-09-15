@@ -12,7 +12,7 @@
 
     <form action="#" method="post" enctype="multipart/form-data">
         <label for="articleImage">Image de l'article</label>
-        <input type="file" id="articleImage" name="articleImage" onchange="previewImage(this)">
+        <input type="text" id="formationImage" name="formationImage" onchange="previewImage(this)" value='<?=$formModi->getFormationImage()?>'>
 
         <!-- Ajoutez une div pour centrer l'image -->
         <div id="imagePreviewContainer">
@@ -20,14 +20,14 @@
         </div>
 
         <label for="articleTitle">Titre de l'article</label>
-        <input type="text" id="articleTitle" name="articleTitle">
+        <input type="text" id="articleTitle" name="formationText" value="<?=$formModi->getFormationText()?>" >
 
         <label for="articleDescription">Description de l'article</label>
-        <input type="text" id="articleDescription" name="articleDescription">
+        <input type="text" id="articleDescription" name="formationDescription" value="<?=$formModi->getFormationDescription()?>">
 
         <label for="articleText">Texte de l'article</label>
         <textarea id="articleText" name="articleText" rows="6"></textarea>
-
+        <input type="hidden" name ="idAction" value="<?=$formModi->getIdFormation()?>">
         <button type="submit">Modifier l'article</button>
     </form>
 </body>

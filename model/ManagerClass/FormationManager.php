@@ -85,12 +85,12 @@ class  FormationManager implements ManagerInterface, FormationInterface {
      */
     public function  updateFormation(FormationMapping $datas):bool
     {
-        $prepare = $this->connect->prepare("UPDATE formation SET formationTitre=?,formationDescription=?,formationText=?,formationImage=?,formationDate=? WHERE idFormation = :idFormation");
-        $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getFormationTitre()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(2, htmlspecialchars(strip_tags(trim($datas->getFormationDescription()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(3, htmlspecialchars(strip_tags(trim($datas->getFormationText()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(4, htmlspecialchars(strip_tags(trim($datas->getFormationImage()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(5, htmlspecialchars(strip_tags(trim($datas->getFormationDate()), ENT_QUOTES)), PDO::PARAM_STR);
+        $prepare = $this->connect->prepare("UPDATE formation SET ,formationDescription=?,formationText=?,formationImage=? WHERE idFormation = ?");
+        $prepare->bindValue(4, htmlspecialchars(strip_tags(trim($datas->getIdFormation()), ENT_QUOTES)), PDO::PARAM_STR);
+        $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getFormationDescription()), ENT_QUOTES)), PDO::PARAM_STR);
+        $prepare->bindValue(2, htmlspecialchars(strip_tags(trim($datas->getFormationText()), ENT_QUOTES)), PDO::PARAM_STR);
+        $prepare->bindValue(3, htmlspecialchars(strip_tags(trim($datas->getFormationImage()), ENT_QUOTES)), PDO::PARAM_STR);
+
 
         try {
             $prepare->execute();
@@ -103,10 +103,10 @@ class  FormationManager implements ManagerInterface, FormationInterface {
 
     /**
      * request delete of db
-     * @param \model\MappingClass\FormationMapping $id
+     * @param integer $id
      * @return bool
      */
-    public function deleteFormation(FormationMapping $id):bool
+    public function deleteFormation(int $id):bool
     {
         $prepare= $this->connect->prepare("DELETE FROM formation WHERE idFormation=  :idFormation");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);

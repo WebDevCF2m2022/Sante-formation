@@ -11,5 +11,5 @@ interface FormationInterface
 
     public function insertFormation(FormationMapping  $datas);
     public function  updateFormation(FormationMapping $datas);
-    public function deleteFormation(FormationMapping $id);
+    public function deleteFormation(int $id);
 }
