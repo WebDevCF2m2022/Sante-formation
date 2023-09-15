@@ -25,7 +25,21 @@
             ?>
         <div id="langueNavDesktop" class="language-selector">
             <div class="selected-language">
-                <img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p><i class="fas fa-caret-down"></i>
+                <?php
+                    switch ($_GET['lang']) {
+                        case "en":
+                            echo '<img class="flag-icon" src="img/icons8-great-britain-48.png" alt="American Flag"><p>EN</p><i class="fas fa-caret-down"></i>';
+                            break;
+                        case "nl":
+                            echo '<img class="flag-icon" src="img/icons8-netherlands-48.png" alt="American Flag"><p>NL</p><i class="fas fa-caret-down"></i>';
+                            break;
+                        case "ar":
+                            echo '<img class="flag-icon" src="img/icons8-saudi-arabia-48.png" alt="American Flag"><p>AR</p><i class="fas fa-caret-down"></i>';
+                            break;
+                        default:
+                            echo '<img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p><i class="fas fa-caret-down"></i>';
+                    }
+                ?>
             </div>
             <ul class="language-options">
             <a href="?<?=$URL2?>&lang=fr"><li data-lang="fr">
