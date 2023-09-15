@@ -77,7 +77,6 @@
       </thead>
       <tbody>
       <?php
-
       foreach($act as $item):
       ?>
         <tr>

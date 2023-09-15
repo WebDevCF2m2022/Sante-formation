@@ -93,3 +93,8 @@ button {
 button:hover {
     background-color: #50717c;
 }
+
+img{
+    width: 250px;
+
+}

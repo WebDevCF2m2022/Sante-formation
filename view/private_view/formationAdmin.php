@@ -44,7 +44,7 @@
           <h2>Nouvel article | Formations</h2>
           <form action="#" method="post" enctype="multipart/form-data">
             <label for="articleImage">Image de l'article</label>
-            <input type="file" id="articleImage" name="articleImage" onchange="previewImage(this)">
+            <input type="text" id="articleImage" name="formationImage" onchange="previewImage(this)">
     
             <!-- Ajoutez une div pour afficher et centrer l'image -->
             <div id="imagePreviewContainer">
@@ -52,13 +52,13 @@
             </div>
             
             <label for="title">Titre:</label>
-            <input type="text" id="title" name="title" required>
+            <input type="text" id="title" name="formationText" required>
         
             <label for="description">Description:</label>
-            <input type="text" id="description" name="description" required>
+            <input type="text" id="description" name="formationDescription" >
         
-            <label for="text">Texte:</label>
-            <textarea id="text" name="text" rows="4" required></textarea>
+           <!--<label for="text">Texte:</label>
+            <textarea id="text" name="" rows="4" ></textarea>-->
         
             <button type="submit">Ajouter</button>
             <button class="close-popup">Fermer</button>
@@ -70,7 +70,7 @@
       <tr>
         <th>Image</th>
         <th>Titre</th>
-        <th>Description</th>
+       <th>Description</th>
         <th>Texte</th>
         <th>Actions</th>
       </tr>

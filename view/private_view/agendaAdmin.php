@@ -44,7 +44,7 @@
             <h2>Nouvel article | Agenda</h2>
             <form action="#" method="post" enctype="multipart/form-data">
               <label for="articleImage">Image de l'article</label>
-              <input type="file" id="articleImage" name="articleImage" onchange="previewImage(this)">
+              <input type="text" id="articleImage" name="agendaImages" onchange="previewImage(this)">
       
               <!-- Ajoutez une div pour centrer l'image -->
               <div id="imagePreviewContainer">
@@ -52,10 +52,10 @@
               </div>
               
               <label for="title">Titre:</label>
-              <input type="text" id="title" name="title" required>
+              <input type="text" id="title" name="agendaTextDetail" required>
           
               <label for="description">Description:</label>
-              <input type="text" id="description" name="description" required>
+              <input type="text" id="description" name="agendaText" required>
           
               <label for="text">Texte:</label>
               <textarea id="text" name="text" rows="4" required></textarea>
@@ -76,16 +76,21 @@
         </tr>
       </thead>
       <tbody>
+      <?php
+      foreach ($agendaAll as $item){
+      ?>
         <tr>
-          <td id="imgTable"><img src="img/logoSanteFormation.png" height="auto" width="200px" alt="Image 1"></td>
-          <td id="titreTable">Titre 1</td>
-          <td>Description 1</td>
+          <td id="imgTable"><?=$item->getAgendaImages()?></td>
+          <td id="titreTable"><?=$item->getAgendaTextDetail()?></td>
+          <td><?=$item->getAgendaText()?></td>
           <td>Texte 1</td>
           <td id="buttonTable">
-            <a href="?p=modifAgenda" class="btn-modifier">Modifier</a>
-            <button class="btn-supprimer">Supprimer</button>
+            <a href="?p=modifAgenda&id=<?=$item->getIdAgenda()?>" class="btn-modifier">Modifier</a>
+            <button class="btn-supprimer" name="deleteAgenda" onclick=" let a = confirm('Voulez vous vraiment modifier article?'); if(a){ document.location.href='?p=deleteAction&idn=<?=$item->getIdAgenda()?>'; ">Supprimer</button>
           </td>
         </tr>
+      <?php } ?>
+      <!--
         <tr>
           <td id="imgTable"><img src="img/logoSanteFormation.png" height="auto" width="200px" alt="Image 2"></td>
           <td>Titre 1</td>
@@ -95,7 +100,7 @@
             <a href="?p=modifAgenda" class="btn-modifier">Modifier</a>
             <button class="btn-supprimer">Supprimer</button>
           </td>
-        </tr>
+        </tr>-->
       </tbody>
     </table>
   </div>
