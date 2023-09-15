@@ -10,5 +10,5 @@ interface AgendaInterface
 {
     public function insertAgenda(AgendaMapping  $datas);
     public function  updateAgenda(AgendaMapping $datas);
-    public function deleteAgenda(AgendaMapping $id);
+    public function deleteAgenda(int $id);
 }

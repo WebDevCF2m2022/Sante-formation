@@ -110,7 +110,7 @@ class AgendaManager implements ManagerInterface ,AgendaInterface
      * @param \model\MappingClass\AgendaMapping $id
      * @return bool
      */
-    public function deleteAgenda(AgendaMapping $id):bool{
+    public function deleteAgenda(int $id):bool{
         $prepare= $this->connect->prepare("DELETE FROM agenda WHERE idAgenda =  :idAgenda");
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         header("Location:./");
