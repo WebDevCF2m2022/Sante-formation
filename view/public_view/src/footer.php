@@ -5,11 +5,11 @@
 </div>
 
 <div id="menuFooter">
-    <a href="?view=asbl"><?=$recupFooter->getFooterAsbl()?></a>
-    <a href="?view=actions"><?=$recupFooter->getFooterAction()?></a>
-    <a href="?view=formations"><?=$recupFooter->getFooterFormation()?></a>
-    <a href="?view=agenda"><?=$recupFooter->getFooterAgenda()?></a>
-    <a href="?view=donation"><?=$recupFooter->getFooterDon()?></a>
+    <a href="?view=asbl<?=$URL?>"><?=$recupFooter->getFooterAsbl()?></a>
+    <a href="?view=actions<?=$URL?>"><?=$recupFooter->getFooterAction()?></a>
+    <a href="?view=formations<?=$URL?>"><?=$recupFooter->getFooterFormation()?></a>
+    <a href="?view=agenda<?=$URL?>"><?=$recupFooter->getFooterAgenda()?></a>
+    <a href="?view=donation<?=$URL?>"><?=$recupFooter->getFooterDon()?></a>
     <a href="?view=admin" target="_blank"><?=$recupFooter->getFooterAdmin()?></a>
     <a href="?view=error" target="_blank"><?=$recupFooter->getFooterMention()?></a>
     <a href="?view=error" target="_blank"><?=$recupFooter->getFooterPolitique()?></a>

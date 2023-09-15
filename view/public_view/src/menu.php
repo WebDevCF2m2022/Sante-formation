@@ -1,6 +1,9 @@
+<?php
+$URL = isset($_GET['lang'])? '&lang='.$_GET['lang']:"";
+?>
 <header>
         <div class="logo">
-          <a href="./"><img src="img/logoSanteFormation.png" alt="Logo"></a>
+          <a href="./?<?=$URL?>"><img src="img/logoSanteFormation.png" alt="Logo"></a>
         </div>
         <nav class="menu"> <!-- Déplacer la classe 'menu' ici -->
           <div class="menu-icon">
@@ -8,9 +11,6 @@
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
-          <?php
-        $URL = isset($_GET['lang'])? '&lang='.$_GET['lang']:"";
-            ?>
           <ul>
             <li><a href="?view=asbl<?=$URL?>"><?=$recupNav->getNavbarAsbl()?></a></li>
             <li><a href="?view=actions<?=$URL?>"><?=$recupNav->getNavbarAction()?></a></li>
