@@ -27,7 +27,7 @@ class  FormationManager implements ManagerInterface, FormationInterface {
         $prepare->bindValue(":id", $id, PDO::PARAM_INT);
         try {
             $prepare->execute();
-            $result = $prepare->fetchAll();
+            $result = $prepare->fetch();
             return new FormationMapping($result);
         } catch (Exception $e) {
             echo "Erreur de requête : " . $e->getMessage();
