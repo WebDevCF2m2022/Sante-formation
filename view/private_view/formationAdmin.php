@@ -57,8 +57,8 @@
             <label for="description">Description:</label>
             <input type="text" id="description" name="formationDescription" >
         
-           <!--<label for="text">Texte:</label>
-            <textarea id="text" name="" rows="4" ></textarea>-->
+           <label for="text">Texte:</label>
+            <textarea id="text" name="" rows="4" ></textarea>
         
             <button type="submit">Ajouter</button>
             <button class="close-popup">Fermer</button>

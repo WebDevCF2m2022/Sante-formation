@@ -12,7 +12,7 @@
 
     <form action="#" method="post" enctype="multipart/form-data">
         <label for="articleImage">Image de l'article</label>
-        <input type="file" id="articleImage" name="articleImage" onchange="previewImage(this)">
+        <input type="file" id="agendaImages" name="agendaImages" value='<?=$modAge->getAgendaImages()?>'>
 
         <!-- Ajoutez une div pour centrer l'image -->
         <div id="imagePreviewContainer">
@@ -20,13 +20,14 @@
         </div>
 
         <label for="articleTitle">Titre de l'article</label>
-        <input type="text" id="articleTitle" name="articleTitle">
+        <input type="text" id="agendaTextDetail" name="agendaTextDetail" value="<?=$modAge->getAgendaTextDetail()?>" >
 
         <label for="articleDescription">Description de l'article</label>
-        <input type="text" id="articleDescription" name="articleDescription">
+        <input type="text" id="agendaText" name="agendaText" value="<?=$modAge->getAgendaText()?>">
 
         <label for="articleText">Texte de l'article</label>
         <textarea id="articleText" name="articleText" rows="6"></textarea>
+        <input type="hidden" name ="idAgenda" value="<?=$modAge->getIdAgenda()?>">
 
         <button type="submit">Modifier l'article</button>
     </form>

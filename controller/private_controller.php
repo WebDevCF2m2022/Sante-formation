@@ -149,7 +149,7 @@ if (isset($_GET['p'])) {
         case "deleteAgenda" :
             if(isset($_GET['idn'])) {
                 try {
-                    $agenda =new ActionManager($connection);
+                    $agenda =new AgendaManager($connection);
                     $agenda->deleteAgenda($_GET['idn']);
                     // header("Refresh:2");
                 } catch (Exception $e) {

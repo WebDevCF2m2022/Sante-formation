@@ -55,7 +55,7 @@
               <input type="text" id="title" name="agendaTextDetail" required>
           
               <label for="description">Description:</label>
-              <input type="text" id="description" name="agendaText" required>
+              <input type="text" id="description" name="agendaText" >
           
               <label for="text">Texte:</label>
               <textarea id="text" name="text" rows="4" required></textarea>
@@ -86,7 +86,7 @@
           <td>Texte 1</td>
           <td id="buttonTable">
             <a href="?p=modifAgenda&id=<?=$item->getIdAgenda()?>" class="btn-modifier">Modifier</a>
-            <button class="btn-supprimer" name="deleteAgenda" onclick=" let a = confirm('Voulez vous vraiment modifier article?'); if(a){ document.location.href='?p=deleteAction&idn=<?=$item->getIdAgenda()?>'; ">Supprimer</button>
+            <button class="btn-supprimer" name="deleteAgenda" onclick=" let a = confirm('Voulez vous vraiment modifier article?'); if(a){ document.location.href='?p=deleteAgenda&idn=<?=$item->getIdAgenda()?>'} ">Supprimer</button>
           </td>
         </tr>
       <?php } ?>
