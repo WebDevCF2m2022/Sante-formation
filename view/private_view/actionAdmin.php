@@ -77,7 +77,9 @@
       </thead>
       <tbody>
       <?php
+
       foreach($act as $item):
+
       ?>
         <tr>
           <td id="imgTable"><?=$item->getActionImg()?></td>

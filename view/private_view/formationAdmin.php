@@ -44,7 +44,7 @@
           <h2>Nouvel article | Formations</h2>
           <form action="#" method="post" enctype="multipart/form-data">
             <label for="articleImage">Image de l'article</label>
-            <input type="text" id="articleImage" name="formationImage" onchange="previewImage(this)">
+            <input type="text" id="formationImage" name="formationImage" onchange="previewImage(this)">
     
             <!-- Ajoutez une div pour afficher et centrer l'image -->
             <div id="imagePreviewContainer">
@@ -52,10 +52,10 @@
             </div>
             
             <label for="title">Titre:</label>
-            <input type="text" id="title" name="formationText" required>
+            <input type="text" id="formationText" name="formationText" required>
         
             <label for="description">Description:</label>
-            <input type="text" id="description" name="formationDescription" >
+            <input type="text" id="formationDescription" name="formationDescription" >
         
            <label for="text">Texte:</label>
             <textarea id="text" name="" rows="4" ></textarea>
@@ -77,7 +77,7 @@
     </thead>
     <tbody>
     <?php
-    var_dump($formationAll);
+
     foreach($formationAll as $item):
 
     ?>
