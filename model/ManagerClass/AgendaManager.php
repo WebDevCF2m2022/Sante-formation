@@ -65,14 +65,11 @@ class AgendaManager implements ManagerInterface ,AgendaInterface
      * @return bool
      */
     public function insertAgenda(AgendaMapping  $datas): bool{
-        $prepare = $this->connect->prepare("INSERT INTO `agenda` (`agendaTitre`, `agendaDescription`, `agendaText`,`agendaImages`,`agendaDate`,`agendaTextDetail`,`agendaTitreImage`,) VALUES (:agendaTitre, :agendaDescription, :agendaText , :agendaImage , :agendaDate,:agendaTextDetail,:agendaTitreImage");
-        $prepare->bindValue(":actionTitre", $datas->getAgendaTitre(), PDO::PARAM_STR);
-        $prepare->bindValue(":actionDescription", $datas->getAgendaDescription(), PDO::PARAM_STR);
-        $prepare->bindValue(":actionText", $datas->getAgendaText(), PDO::PARAM_STR);
-        $prepare->bindValue(":actionImage",$datas->getAgendaImages(),PDO::PARAM_STR);
-        $prepare->bindValue(":actionDate", $datas->getAgendaDate(),PDO::PARAM_STR);
+        $prepare = $this->connect->prepare("INSERT INTO `agenda` ( `agendaText`,`agendaImages`,`agendaTextDetail`) VALUES ( :agendaText , :agendaImages ,:agendaTextDetail)");
+        $prepare->bindValue(":agendaText", $datas->getAgendaText(), PDO::PARAM_STR);
+        $prepare->bindValue(":agendaImages",$datas->getAgendaImages(),PDO::PARAM_STR);
         $prepare->bindValue(":agendaTextDetail", $datas->getAgendaTextDetail(),PDO::PARAM_STR);
-        $prepare->bindValue(":agendaTextDetail", $datas->getAgendaTitreImage(),PDO::PARAM_STR);
+
         try {
             $prepare->execute();
             return true;
@@ -88,14 +85,12 @@ class AgendaManager implements ManagerInterface ,AgendaInterface
      * @return bool
      */
     public function  updateAgenda(AgendaMapping $datas):bool{
-        $prepare = $this->connect->prepare("UPDATE agenda SET agendaTitre=?,agendaDescription=?,agendaText=?,agendaImages=?,agendaDate=? ,agendaTextDetail=?,agendaTitreImage =? WHERE idAgenda = :idAgenda");
-        $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getAgendaTitre()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(2, htmlspecialchars(strip_tags(trim($datas->getAgendaDescription()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(3, htmlspecialchars(strip_tags(trim($datas->getAgendaText()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(4, htmlspecialchars(strip_tags(trim($datas->getAgendaImages()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(5, htmlspecialchars(strip_tags(trim($datas->getAgendaDate()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(6, htmlspecialchars(strip_tags(trim($datas->getAgendaTextDetail()), ENT_QUOTES)), PDO::PARAM_STR);
-        $prepare->bindValue(7, htmlspecialchars(strip_tags(trim($datas->getAgendaTitreImage()), ENT_QUOTES)), PDO::PARAM_STR);
+        $prepare = $this->connect->prepare("UPDATE agenda SET agendaText=?,agendaImages=?,agendaTextDetail=? WHERE idAgenda = ?");
+
+        $prepare->bindValue(1, htmlspecialchars(strip_tags(trim($datas->getAgendaText()), ENT_QUOTES)), PDO::PARAM_STR);
+        $prepare->bindValue(2, htmlspecialchars(strip_tags(trim($datas->getAgendaImages()), ENT_QUOTES)), PDO::PARAM_STR);
+        $prepare->bindValue(3, htmlspecialchars(strip_tags(trim($datas->getAgendaTextDetail()), ENT_QUOTES)), PDO::PARAM_STR);
+        $prepare->bindValue(4, htmlspecialchars(strip_tags(trim($datas->getIdAgenda()), ENT_QUOTES)), PDO::PARAM_STR);
         try {
             $prepare->execute();
             return true;
@@ -112,7 +107,7 @@ class AgendaManager implements ManagerInterface ,AgendaInterface
      */
     public function deleteAgenda(int $id):bool{
         $prepare= $this->connect->prepare("DELETE FROM agenda WHERE idAgenda =  :idAgenda");
-        $prepare->bindValue(":id", $id, PDO::PARAM_INT);
+        $prepare->bindValue(":idAgenda", $id, PDO::PARAM_INT);
         header("Location:./");
 
         try {

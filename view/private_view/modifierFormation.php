@@ -20,14 +20,14 @@
         </div>
 
         <label for="articleTitle">Titre de l'article</label>
-        <input type="text" id="articleTitle" name="formationText" value="<?=$modForm->getFormationText()?>" >
+        <input type="text" id="formationText" name="formationText" value="<?=$modForm->getFormationText()?>" >
 
         <label for="articleDescription">Description de l'article</label>
-        <input type="text" id="articleDescription" name="formationDescription" value="<?=$modForm->getFormationDescription()?>">
+        <input type="text" id="formationDescription" name="formationDescription" value="<?=$modForm->getFormationDescription()?>">
 
         <label for="articleText">Texte de l'article</label>
         <textarea id="articleText" name="articleText" rows="6"></textarea>
-        <input type="hidden" name ="idAction" value="<?=$modForm->getIdFormation()?>">
+        <input type="hidden" name ="idFormation" value="<?=$modForm->getIdFormation()?>">
         <button type="submit">Modifier l'article</button>
     </form>
 </body>
