@@ -116,10 +116,12 @@ body {
 
 #positionAction {
     grid-area: carteAc;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 50px;
+    column-gap: 50px;
+    grid-auto-rows: auto;
+    row-gap: 30px;
 }
 
 .carteAction {
@@ -129,7 +131,7 @@ body {
 .carteAction img {
     border-radius: 30px 30px 0 0;
     justify-self: center;
-    width: 350px;
+    width: 100%;
     height: 200px;
 }
 
@@ -195,10 +197,12 @@ body {
 
 #positionFormation {
     grid-area: carteFo;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 50px;
+    column-gap: 50px;
+    grid-auto-rows: auto;
+    row-gap: 30px;
 }
 
 .carteFormation {
@@ -208,7 +212,7 @@ body {
 .carteFormation img {
     border-radius: 30px 30px 0 0;
     justify-self: center;
-    width: 350px;
+    width: 100%;
     height: 200px;
 }
 
@@ -236,13 +240,11 @@ body {
 .carteAgenda {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 50px 40px 150px 30px;
+    grid-auto-rows: max-content;
     grid-template-areas: 
     "imgAgenda"
     "titreAgenda"
-    "heureAgenda"
-    "textAgenda"
-    "detailAgenda";
+    "textAgenda";
     margin: 0 20px 0 20px;
     background-color: #FFFF;
     box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.4);
@@ -256,24 +258,14 @@ body {
 }
 
 .carteAgenda h1 {
+    font-size: x-large;
     grid-area: titreAgenda;
-    margin-left: 10px;
-}
-
-.carteAgenda #date {
-    grid-area: heureAgenda;
-    margin-left: 10px;
+    margin: 0 20px 20px 20px;
 }
 
 .carteAgenda p {
     grid-area: textAgenda;
-    margin-left: 10px;
-}
-
-.carteAgenda a {
-    grid-area: detailAgenda;
-    justify-self: right;
-    margin: 0 10px 10px 0;
+    margin: 0 20px 20px 20px;
 }
 
 #savoirPlusAgenda {
@@ -294,39 +286,12 @@ body {
     background-color: #095C76;
 }
 
-/* RESPONSIVE TABLET */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-    .carteAction {
-        width: 300px;
-    }
-
-    .carteAction img {
-        width: 300px;
-    }
-
-    .carteFormation {
-        width: 300px;
-    }
-
-    .carteFormation img {
-        width: 300px;
-    }
-
-    .carteAgenda {
-        grid-template-rows: auto 50px 40px 150px 60px;
-    }
-
-    .carteAgenda img {
-        height: 225px;
-    }
-
-    .carteAgenda a {
-        margin: 20px 10px 10px 0;
-    }
-  }
-
 /* RESPONSIVE MOBILE */
 @media screen and (max-width: 600px) {
+    #gridAccueil {
+        grid-auto-rows: none;
+        grid-template-rows: 125px auto;
+    }
     #lightbox {
         display: none;
     }
@@ -345,53 +310,59 @@ body {
     }
 
     #actionAccueil {
-        grid-auto-rows: auto;
-        grid-template-rows: 30px 40px 50px auto 60px;
-    } 
+        justify-self: center;
+        grid-template-rows: 60px auto 50px;
+    }
 
-    #positionAction {
-        flex-direction: column;
-        align-items: center;
+    #actionAccueil h1 {
+        width: 95%;
+        text-align: center;
     }
 
     .carteAction {
-        width: 85%;
-        height: 400px;
-        margin-bottom: 100px;
-    }
-
-    .carteAction img {
-        width: 100%;
-        height: 100%;
-    }
-
-    #formationAccueil {
-        grid-auto-rows: auto;
-        grid-template-rows: 30px 40px 50px auto 60px;
-    } 
-
-    #positionFormation {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .carteAction img {
+        height: -webkit-fill-available;
+        width: 95%;
+    }
+
+    #positionAction {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+
+    #formationAccueil {
+        justify-self: center;
+        grid-template-rows: 60px auto 50px;
+    }
+
+    #formationAccueil h1 {
+        width: 95%;
+        text-align: center;
+    }
+
     .carteFormation {
-        width: 85%;
-        height: 400px;
-        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .carteFormation img {
-        width: 100%;
-        height: 100%;
+        height: -webkit-fill-available;
+        width: 95%;
+    }
+
+    #positionFormation {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
     }
 
     #positionAgenda {
         grid-template-columns: 1fr;
-        margin-bottom: 15px;
-    }
-
-    .carteAgenda {
-        margin-bottom: 30px;
+        row-gap: 20px;
     }
 }
