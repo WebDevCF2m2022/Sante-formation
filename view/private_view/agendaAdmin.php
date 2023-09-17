@@ -44,7 +44,7 @@
             <h2>Nouvel article | Agenda</h2>
             <form action="#" method="post" enctype="multipart/form-data">
               <label for="articleImage">Image de l'article</label>
-              <input type="text" id="articleImage" name="agendaImages" onchange="previewImage(this)">
+              <input type="text" id="agendaImages" name="agendaImages" onchange="previewImage(this)">
       
               <!-- Ajoutez une div pour centrer l'image -->
               <div id="imagePreviewContainer">
@@ -52,13 +52,13 @@
               </div>
               
               <label for="title">Titre:</label>
-              <input type="text" id="title" name="agendaTextDetail" required>
+              <input type="text" id="agendaTextDetail" name="agendaTextDetail" required>
           
               <label for="description">Description:</label>
-              <input type="text" id="description" name="agendaText" required>
+              <input type="text" id="agendaText" name="agendaText" required>
           
               <label for="text">Texte:</label>
-              <textarea id="text" name="text" rows="4" required></textarea>
+              <textarea id="text" name="text" rows="4" ></textarea>
           
               <button type="submit">Ajouter</button>
               <button class="close-popup">Fermer</button>
@@ -86,7 +86,7 @@
           <td>Texte 1</td>
           <td id="buttonTable">
             <a href="?p=modifAgenda&id=<?=$item->getIdAgenda()?>" class="btn-modifier">Modifier</a>
-            <button class="btn-supprimer" name="deleteAgenda" onclick=" let a = confirm('Voulez vous vraiment modifier article?'); if(a){ document.location.href='?p=deleteAction&idn=<?=$item->getIdAgenda()?>'; ">Supprimer</button>
+            <button class="btn-supprimer" name="deleteAgenda" onclick=" let a = confirm('Voulez vous vraiment modifier article?'); if(a){ document.location.href='?p=deleteAgenda&idn=<?=$item->getIdAgenda()?>';} ">Supprimer</button>
           </td>
         </tr>
       <?php } ?>

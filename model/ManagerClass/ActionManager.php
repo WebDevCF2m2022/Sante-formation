@@ -99,7 +99,7 @@ class ActionManager implements ManagerInterface,ActionInterface {
 
     /**
      * request delete of db
-     * @param \model\MappingClass\ActionMapping $id
+     * @param integer $id
      * @return bool
      */
     public function deleteAction(int $id):bool
