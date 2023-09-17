@@ -65,7 +65,7 @@ class AgendaManager implements ManagerInterface ,AgendaInterface
      * @return bool
      */
     public function insertAgenda(AgendaMapping  $datas): bool{
-        $prepare = $this->connect->prepare("INSERT INTO `agenda` ( `agendaText`,`agendaImages`,`agendaTextDetail`) VALUES ( :agendaText , :agendaImages ,:agendaTextDetail)");
+        $prepare = $this->connect->prepare("INSERT INTO `agenda` ( `agendaText`,`agendaImages`,`agendaTextDetail`) VALUES ( :agendaText , :agendaImages ,:agendaTextDetail) ");
         $prepare->bindValue(":agendaText", $datas->getAgendaText(), PDO::PARAM_STR);
         $prepare->bindValue(":agendaImages",$datas->getAgendaImages(),PDO::PARAM_STR);
         $prepare->bindValue(":agendaTextDetail", $datas->getAgendaTextDetail(),PDO::PARAM_STR);

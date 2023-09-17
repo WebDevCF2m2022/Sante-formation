@@ -80,7 +80,7 @@
       foreach ($agendaAll as $item){
       ?>
         <tr>
-          <td id="imgTable"><?=$item->getAgendaImages()?></td>
+          <td id="imgTable"><img src="<?=$item->getAgendaImages()?>" height="auto" width="200px" alt="Image 2"></td>
           <td id="titreTable"><?=$item->getAgendaTextDetail()?></td>
           <td><?=$item->getAgendaText()?></td>
           <td>Texte 1</td>
@@ -90,17 +90,7 @@
           </td>
         </tr>
       <?php } ?>
-      <!--
-        <tr>
-          <td id="imgTable"><img src="img/logoSanteFormation.png" height="auto" width="200px" alt="Image 2"></td>
-          <td>Titre 1</td>
-          <td>Description 1</td>
-          <td>Texte 1</td>
-          <td id="buttonTable">
-            <a href="?p=modifAgenda" class="btn-modifier">Modifier</a>
-            <button class="btn-supprimer">Supprimer</button>
-          </td>
-        </tr>-->
+
       </tbody>
     </table>
   </div>

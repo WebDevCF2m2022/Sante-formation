@@ -36,7 +36,8 @@
             <div id="positionFormation">
                 <?php foreach ($recupAllFormation as $item){?>
                 <div class="carteFormation">
-                    <?= $item->getFormationImage()?>
+                    <img src="<?= $item->getFormationImage()?>" alt="">
+
                     <h1><?=$item->getFormationText()?></h1>
                 </div>
                 <?php }?>

@@ -29,7 +29,8 @@
 <div id="containeurDon">
     <?php foreach ($recupDonnation as $item){ ?>
     <div id="carteDon">
-   <?=$item->getDonPackImage()?>
+        <img id="photoDon" src="<?=$item->getDonPackImage()?>">
+
         <h1 id="titreDon"><?=$item->getDonTitre()?></h1>
         <p id="montantDon"><?=$item->getDonPackTitre()?></p>
         <h3><?=$item->getDonPackText()?></h3>

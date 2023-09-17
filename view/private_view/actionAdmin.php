@@ -82,7 +82,7 @@
 
       ?>
         <tr>
-          <td id="imgTable"><?=$item->getActionImg()?></td>
+          <td id="imgTable"><img src="<?=$item->getActionImg()?>" height="auto" width="200px" alt="Image 2"></td>
           <td id="titreTable"><?=$item->getActionImageText()?></td>
           <td>Description 1</td>
           <td>Texte 1</td>
@@ -94,17 +94,7 @@
       <?php
       endforeach;
       ?>
-        <!--
-        <tr>
-          <td id="imgTable"><img src="img/logoSanteFormation.png" height="auto" width="200px" alt="Image 2"></td>
-          <td>Titre 1</td>
-          <td>Description 1</td>
-          <td>Texte 1</td>
-          <td id="buttonTable">
-            <a href="?p=modifAction" class="btn-modifier">Modifier</a>
-            <button class="btn-supprimer">Supprimer</button>
-          </td>
-        </tr>-->
+
       </tbody>
     </table>
   </div>
