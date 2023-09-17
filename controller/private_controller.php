@@ -151,7 +151,7 @@ if (isset($_GET['p'])) {
                 try {
                     $agenda =new AgendaManager($connection);
                     $agenda->deleteAgenda($_GET['idn']);
-
+                    // header("Refresh:2");
                 } catch (Exception $e) {
                     $e = throw new Exception ('Un problème est survenu lors de la supression, veuillez réessayer');
                 }
