@@ -12,22 +12,22 @@
 
     <form action="#" method="post" enctype="multipart/form-data">
         <label for="articleImage">Image de l'article</label>
-        <input type="text" id="formationImage" name="formationImage" onchange="previewImage(this)" value='<?=$formModi->getFormationImage()?>'>
+        <input type="text" id="formationImage" name="formationImage"  value='<?=$modForm->getFormationImage()?>'>
 
         <!-- Ajoutez une div pour centrer l'image -->
         <div id="imagePreviewContainer">
-            <img id="imagePreview" width="200px" height="auto" src="#" alt="Aperçu de l'image">
+            <img id="imagePreview" width="200px" height="200px" src="#" alt="Aperçu de l'image">
         </div>
 
         <label for="articleTitle">Titre de l'article</label>
-        <input type="text" id="articleTitle" name="formationText" value="<?=$formModi->getFormationText()?>" >
+        <input type="text" id="articleTitle" name="formationText" value="<?=$modForm->getFormationText()?>" >
 
         <label for="articleDescription">Description de l'article</label>
-        <input type="text" id="articleDescription" name="formationDescription" value="<?=$formModi->getFormationDescription()?>">
+        <input type="text" id="articleDescription" name="formationDescription" value="<?=$modForm->getFormationDescription()?>">
 
         <label for="articleText">Texte de l'article</label>
         <textarea id="articleText" name="articleText" rows="6"></textarea>
-        <input type="hidden" name ="idAction" value="<?=$formModi->getIdFormation()?>">
+        <input type="hidden" name ="idAction" value="<?=$modForm->getIdFormation()?>">
         <button type="submit">Modifier l'article</button>
     </form>
 </body>

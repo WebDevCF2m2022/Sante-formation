@@ -5,6 +5,7 @@ use \model\ManagerClass\FormationManager;
 use \model\ManagerClass\AgendaManager;
 use \model\MappingClass\ActionMapping;
 use  \model\MappingClass\FormationMapping;
+use \model\MappingClass\AgendaMapping;
 
 
 
@@ -18,13 +19,14 @@ if (isset($_GET['p'])) {
 
             include_once "../view/private_view/homeAdmin.php";
             break;
+
         case "action":
-            /* Création d'un manager VALIDE avec sa connexion */
-            $actionAdmin =new ActionManager($connection);
-            /* Instantiation du AccueilMapping.php avec la méthod du manager */
-            $act = $actionAdmin-> getAll();
-            if(isset($_POST['actionImageText'])){
-                   $insert = new ActionMapping($_POST);
+                 /* Création d'un manager VALIDE avec sa connexion */
+                    $actionAdmin =new ActionManager($connection);
+                  /* Instantiation du AccueilMapping.php avec la méthod du manager */
+                    $act = $actionAdmin-> getAll();
+                if(isset($_POST['actionImageText'])){
+                    $insert = new ActionMapping($_POST);
                   //var_dump($insert);
                    try{
                        $a =  $actionAdmin->insertAction($insert);
@@ -36,34 +38,35 @@ if (isset($_GET['p'])) {
                        $e = throw new Exception ('Un problème est survenu lors de la inseration , veuillez réessayer');
 
                    }
+
             }
-            include_once "../view/private_view/actionAdmin.php";
-            break;
+         include_once "../view/private_view/actionAdmin.php";
+                break;
         case "deleteAction" :
-                if(isset($_GET['idn'])) {
-                    try {
+                 if(isset($_GET['idn'])) {
+                     try {
                         $actionAdmin =new ActionManager($connection);
                         $actionAdmin->deleteAction($_GET['idn']);
                        // header("Refresh:2");
-                    } catch (Exception $e) {
+                     } catch (Exception $e) {
                         $e = throw new Exception ('Un problème est survenu lors de la supression, veuillez réessayer');
-                    }
+                     }
                 }
 
 
             break;
         case "modifAction" :
-            /* Création d'un manager VALIDE avec sa connexion */
-            $modAction =new ActionManager($connection);
+               /* Création d'un manager VALIDE avec sa connexion */
+                $modAction =new ActionManager($connection);
 
             /* Instantiation du AccueilMapping.php avec la méthod du manager */
-            if(isset($_GET['id'])):
-                if(isset($_POST['actionImg'])&&($_POST['articleDescription'])&&($_POST['actionImageText'])&& ($_POST['articleText'])){
+                if(isset($_GET['id'])):
+                    if(isset($_POST['actionImg'])&&($_POST['articleDescription'])&&($_POST['actionImageText'])&& ($_POST['articleText'])){
 
                     // update
                     $updateAction = new ActionMapping($_POST);
                     $modAction->updateAction($updateAction);
-                }else {
+                    }else {
                     $modAct = $modAction->getOneById($_GET['id']);
                     include_once "../view/private_view/modifierAction.php";
                 }
@@ -74,18 +77,14 @@ if (isset($_GET['p'])) {
             break;
         case "formation" :
             /* Création d'un manager VALIDE avec sa connexion */
-            $formaAdmin =new FormationManager($connection);
+            $formationAdmin =new FormationManager($connection);
             /* Instantiation du AccueilMapping.php avec la méthod du manager */
-           /** $forma = $formaAdmin-> getOneById(1);*/
-            $formationAll = $formaAdmin-> getAll();
-            include_once "../view/private_view/formationAdmin.php";
-
-
+               $formationAll = $formationAdmin-> getAll();
             if(isset($_POST['formationText'])&& ($_POST['formationImage'])){
                 $insert = new FormationMapping($_POST);
                 //var_dump($insert);
                 try{
-                    $a =  $formaAdmin->insertAction($insert);
+                    $a =  $formationAdmin->insertFormation($insert);
                     if($a===true){
                         header("Location: ./?p=formation&yes");
                         die();
@@ -95,29 +94,63 @@ if (isset($_GET['p'])) {
 
                 }
             }
-            include_once "../view/private_view/actionAdmin.php";
+            include_once "../view/private_view/formationAdmin.php";
+            break;
+        case "deleteFormation" :
+            if(isset($_GET['idn'])) {
+                try {
+                    $formationAdmin =new FormationManager($connection);
+                    $formationAdmin->deleteFormation($_GET['idn']);
+
+                } catch (Exception $e) {
+                    $e = throw new Exception ('Un problème est survenu lors de la supression, veuillez réessayer');
+                }
+            }
+
+
             break;
         case "modifFormation" :
             /* Création d'un manager VALIDE avec sa connexion */
-            $forAdmin =new FormationManager($connection);
+            $modFormation =new FormationManager($connection);
             /* Instantiation du AccueilMapping.php avec la méthod du manager */
-          /*  $forAdmin = $forAction->updateFormation($connection);*/
+
             if(isset($_GET['id'])){
                 if(isset($_POST['formationText']) && ($_POST['formationImage'])){
                     $updateFormation = new FormationMapping($_POST);
-                    $forAdmin ->updateFormation($updateFormation);
+                    $modFormation ->updateFormation($updateFormation);
                 }else {
-                    $formModi = $forAdmin->getOneById($_GET['id']);
+                    $modForm= $modFormation->getOneById($_GET['id']);
                     include_once "../view/private_view/modifierFormation.php";
                 }
             }
 
             break;
-        case "deleteFormation" :
+
+        case "agenda" :
+            /* Création d'un manager VALIDE avec sa connexion */
+            $agenda =new AgendaManager($connection);
+            /* Instantiation du AccueilMapping.php avec la méthod du manager */
+            $agendaAll= $agenda->getAll();
+            if(isset($_POST['agendaTextDetail']) && ($_POST['agendaImages']) && ($_POST['agendaText'])){
+                $insert =new AgendaMapping($_POST);
+                try{
+                    $a = $agenda->insertAgenda($insert);
+                    if($a === true){
+                        header("Location: ./?p=agenda&yes");
+                        die();
+                    }
+                }catch (Exception $e){
+                    $e = throw new Exception ('Un problème est survenu lors de la inseration , veuillez réessayer');
+                }
+            }
+            include_once "../view/private_view/agendaAdmin.php";
+            break;
+
+        case "deleteAgenda" :
             if(isset($_GET['idn'])) {
                 try {
-                    $formaAdmin =new FormationManager($connection);
-                    $formaAdmin->deleteAction($_GET['idn']);
+                    $agenda =new ActionManager($connection);
+                    $agenda->deleteAgenda($_GET['idn']);
                     // header("Refresh:2");
                 } catch (Exception $e) {
                     $e = throw new Exception ('Un problème est survenu lors de la supression, veuillez réessayer');
@@ -126,26 +159,31 @@ if (isset($_GET['p'])) {
 
 
             break;
-        case "agenda" :
-            /* Création d'un manager VALIDE avec sa connexion */
-            $agenda =new AgendaManager($connection);
-            /* Instantiation du AccueilMapping.php avec la méthod du manager */
-            $agendaAdmin = $agenda-> getOneById(1);
-            $agendaAll= $agenda->getAll();// ca marche pas
-            include_once "../view/private_view/agendaAdmin.php";
-            break;
         case "modifAgenda":
             /* Création d'un manager VALIDE avec sa connexion */
             $modAgenda =new AgendaManager($connection);
             /* Instantiation du AccueilMapping.php avec la méthod du manager */
-            $modAge =  $modAgenda->updateAgenda($connection);
 
-            include_once "../view/private_view/modifierAgenda.php";
+        if(isset($_GET['id'])){
+            if(isset($_POST["agendaTextDetail"]) &&($_POST['agendaImages']) && ($_POST['agendaText'])){
+
+                $update = new AgendaMapping($_POST);
+                $modAgenda->updateAgenda($update);
+            }else{
+
+                $modAge =  $modAgenda->getOneById($_GET['id']);
+                include_once "../view/private_view/modifierAgenda.php";
+            }
+        }
+
             break;
         default :
             include_once "../view/private_view/homeAdmin.php";
             break;
     }
+
+
+
 }else if (isset($_GET['disconnect'])) {
       $adminConect->disconnect();
         header("Location: ./");
