@@ -62,7 +62,7 @@ class  FormationManager implements ManagerInterface, FormationInterface {
      * @return bool
      */
     public function insertFormation(FormationMapping  $datas): bool{
-        $prepare = $this->connect->prepare("INSERT INTO `formation` ( `formationDescription`,`formationText`,`formationImage`) VALUES ( :formationDescription ,:formationText , :formationImage )");
+        $prepare = $this->connect->prepare("INSERT INTO `formation` ( `formationDescription`,`formationText`,`formationImage`) VALUES ( :formationDescription ,:formationText , :formationImage ) ");
         $prepare->bindValue(":formationDescription", $datas->getFormationDescription(), PDO::PARAM_STR);
         $prepare->bindValue(":formationText", $datas->getFormationText(), PDO::PARAM_STR);
         $prepare->bindValue(":formationImage",$datas->getFormationImage(),PDO::PARAM_STR);

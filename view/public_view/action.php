@@ -34,7 +34,8 @@
             <div id="positionAction">
                 <?php foreach ($recupAllAction as $item){?>
                 <div class="carteAction">
-                       <?=$item->getActionImg()?>
+                    <img src="<?=$item->getActionImg()?>" alt="">
+
                     <h1><?=$item->getActionImageText()?> </h1>
                 </div>
                 <?php }?>

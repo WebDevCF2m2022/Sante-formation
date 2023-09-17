@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : sam. 09 sep. 2023 à 22:25
+-- Généré le : dim. 17 sep. 2023 à 16:49
 -- Version du serveur : 8.0.31
--- Version de PHP : 8.1.13
+-- Version de PHP : 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `sante_anglais`
+-- Base de données : `sante_formation`
 --
 
 -- --------------------------------------------------------
@@ -31,7 +31,7 @@ DROP TABLE IF EXISTS `accueil`;
 CREATE TABLE IF NOT EXISTS `accueil` (
   `idAccueil` int NOT NULL AUTO_INCREMENT,
   `accueilTitre` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `accueilText` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `accueilText` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `accueilDescription` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `accueilImage` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `accueilButton` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -55,9 +55,9 @@ CREATE TABLE IF NOT EXISTS `accueil` (
 --
 
 INSERT INTO `accueil` (`idAccueil`, `accueilTitre`, `accueilText`, `accueilDescription`, `accueilImage`, `accueilButton`, `titreAction`, `photoAction`, `textAction`, `buttonAction`, `titreFormation`, `photoFormation`, `textFormation`, `buttonFormation`, `titreAgenda`, `photoAgenda`, `textAgenda`, `descriptionAgenda`) VALUES
-(1, 'About us', ' HEALTH AND TRAINING <br>\r\n Investing in a better future', 'Our \"Santé & Formation\" association actively contributes to the training, education and professional integration\r\nintegration of disadvantaged people.\r\n Our activities focus on physical and mental health, information and prevention. ', ' <img src=\"img/pexels-murilo-fonseca-17239050.jpg\" alt=\"\">', '', 'Our actions', '<img src=\"img/caravan.png\" alt=\"\">', 'Medical Caravan', 'Read more', 'Training courses', '<img src=\"img/02.png\" alt=\"\">', 'Economic emancipation', 'Read more', 'Calendar', '<img src=\"img/r.png\" alt=\"\">', 'Medical Caravans', '2024: Coming soon!'),
-(2, '', '', '', '', '', '', '<img src=\"img/08.PNG\" alt=\"\">', 'The importance of water', '', '', '<img src=\"img/06.PNG\" alt=\"\">', 'Reintegration into society', '', '', '<img src=\"img/r.png\" alt=\"\">', 'Education', 'Health Education '),
-(3, '', '', '', '', '', '', '<img src=\"img/07.PNG\" alt=\"\">', 'Family support', '', '', '<img src=\"img/05.jpg\" alt=\"\">', 'Preventive healthcare.', '', '', '<img src=\"img/r.png\" alt=\"\">', 'Scientific conference', 'Raising scientific awareness of health education <br>\r\n Lithotherapy in health.');
+(1, 'A propos de nous', '  SANTE ET FORMATION <br>\r\n Investir dans un avenir meilleur <br><br>\r\nIl était une fois ASF, une association née de la passion de Marocains et de Belges liés au Maroc. Elle a commencé par des caravanes médicales, s\'est engagée dans l\'éducation, et a sensibilisé par des conférences. En temps de crise, ASF était là. Aujourd\'hui, elle continue son voyage, renforçant l\'éducation et les soins médicaux pour le Maroc.', 'Notre Association \"Santé & Formation\" contribue activement à la formation, l’éducation et l’insertion\r\nprofessionnelle des personnes précaires.\r\n Nos activités sont axées sur la santé physique et mentale, l’information et la prévention. ', ' <img src=\"img/pexels-murilo-fonseca-17239050.jpg\" alt=\"\">', '', 'Nos actions', 'img/caravan.png', 'Caravane Medical', 'En savoir plus', 'Nos formations', 'img/02.png', 'L’émancipation économique', 'En savoir plus', 'Agenda', 'img/r.png', 'Caravanes Médicales', '2024: A venir!'),
+(2, '', '', '', '', '', '', 'img/08.PNG', 'L’eau : l’importance', '', '', 'img/06.PNG', 'Réinsertion sociale ', '', '', 'img/r.png', 'Education', 'Education à la Santé '),
+(3, '', '', '', '', '', '', 'img/07.PNG', 'Aide aux familles', '', '', 'img/05.jpg', 'La santé par la prévention.', '', '', 'img/r.png', 'Conférence scientifique', 'Sensibilisation du monde scientifique à l’éducation à la santé.<br>\r\n La lithéracie en santé.');
 
 -- --------------------------------------------------------
 
@@ -75,17 +75,17 @@ CREATE TABLE IF NOT EXISTS `action` (
   `actionImageText` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `actionImg` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`idAction`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `action`
 --
 
 INSERT INTO `action` (`idAction`, `actionTitre`, `actionDescription`, `actionText`, `actionDate`, `actionImageText`, `actionImg`) VALUES
-(1, 'Our actions', 'Investing in a better future .', 'Our activities focus on physical and mental health, information and prevention.', '2023-01-10', 'Medical Caravans', '<img src=\"img/caravan.png\" alt=\"\">'),
-(2, '', '', '', '0000-00-00', 'Humanitarian actions', '<img src=\"img/12.PNG\" alt=\"\">'),
-(3, '', '', '', '0000-00-00', 'Family assistance', '<img src=\"img/07.PNG\" alt=\"\">'),
-(4, '', '', '', '0000-00-00', 'The importance of water', '<img src=\"img/08.PNG\" alt=\"\">');
+(1, 'Nos actions', 'Investir dans un avenir meilleur . ', 'Nos activités sur la santé physique et mentale, l’information et la prévention.', '2023-01-10', ' Caravanes Médicales', 'img/caravan.png'),
+(2, '', '', '', '0000-00-00', 'Actions Humanitaires', 'img/12.PNG'),
+(3, '', '', '', '0000-00-00', ' Aide aux familles', 'img/07.PNG'),
+(4, '', '', '', '0000-00-00', 'L’eau : l’importance', 'img/08.PNG');
 
 -- --------------------------------------------------------
 
@@ -126,17 +126,17 @@ CREATE TABLE IF NOT EXISTS `agenda` (
   `agendaText` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `agendaDetail` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`idAgenda`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `agenda`
 --
 
 INSERT INTO `agenda` (`idAgenda`, `agendaTitre`, `agendaDate`, `agendaDescription`, `agendaTextDetail`, `agendaImages`, `agendaTitrelmage`, `agendaText`, `agendaDetail`) VALUES
-(1, 'Calendar', '0000-00-00', '\"A Better Future: Our Program, Our Commitment!\"', 'Medical Caravans', '<img src=\"img/r.png\" alt=\"\">', '', 'Coming soon 2024!', 'Detail'),
-(2, '', '0000-00-00', '', 'Health Education & Promotion', '<img src=\"img/r.png\" alt=\"\">', '', '  Coming soon!', ''),
-(3, '', '0000-00-00', '', 'Scientific conference', '<img src=\"img/r.png\" alt=\"\">', '', 'Raising awareness of the scientific world <br> in health education - Coming soon!', ''),
-(4, '', '0000-00-00', '', ' Seminar', '<img src=\"img/r.png\" alt=\"\">', '', 'Water Source of Life and sustainable <br> development in collaboration with Professor <br>\r\nFatima-Zahra Saoud. -Coming soon!', '');
+(1, 'Agenda', '0000-00-00', '\"Votre Action, Notre Histoire : Changeons le Monde Ensemble !\"', 'Caravanes Médicales', 'img/r.png', '', 'A venir 2024 !', 'Détail'),
+(2, '', '0000-00-00', '', 'Education à la Santé et Promotion à la Santé', 'img/r.png', '', ' A venir!', ''),
+(3, '', '0000-00-00', '', 'Conférence scientifique', 'img/r.png', '', 'Sensibilisation du monde scientifique <br> à l’éducation à la santé - A venir !', ''),
+(4, '', '0000-00-00', '', ' Séminaire', 'img/r.png', '', 'l’Eau Source de Vie et le développement <br> durable en collaboration avec la professeure <br>\r\nFatima-Zahra Saoud. -A Venir!', '');
 
 -- --------------------------------------------------------
 
@@ -164,7 +164,7 @@ CREATE TABLE IF NOT EXISTS `asbl` (
 --
 
 INSERT INTO `asbl` (`idasbl`, `titreSomme`, `textSomme`, `descriptionSomme`, `titreHistory`, `textHistory`, `descriptionHistory`, `titreObjectif`, `textObjectif`, `descriptionObjectif`) VALUES
-(1, 'Who we are ?', 'Our \"Health & Training\" association actively contributes to the training, education and professional integration\r\nintegration of disadvantaged people.\r\n Our activities focus on physical and mental health, information and prevention.', 'Organization name: : Association Health & Training (ASF)\r\n<br>\r\nMission: ASF was created to promote health and education in Moroccan communities by supporting families in their integration and well-being.', 'History', 'Once upon a time, ASF was an association born of the passion of Moroccans and Belgians for Morocco. It began with medical caravans, became involved in education, and raised awareness through conferences. In times of crisis, ASF was there. Today, it continues its journey, strengthening education and medical care for Morocco.', '\"Your Action, Our Story: Changing the World Together!\"', 'Objective', 'The Association Santé et Formation (ASF) embodies hope by offering help and support to families, promotes multiculturalism without borders by strengthening cultural ties, while improving health, education and integration.\r\n\r\n ', '\"Our Goal: A Better World For All!\"');
+(1, 'Qui sommes nous ?', 'Notre Association \"Santé & Formation\" contribue activement à la formation, l’éducation et l’insertion\r\nprofessionnelle des personnes précaires.\r\n Nos activités sont axées sur la santé physique et mentale, l’information et la prévention.', 'Nom de l\'Organisation : Association Santé et Formation (ASF)\r\n<br>\r\nMission : L\'ASF a été créée pour promouvoir la santé et l\'éducation au sein des communautés marocaines en soutenant les familles dans leur intégration et leur bien-être.\r\n', 'Historique', 'Il était une fois ASF, une association née de la passion de Marocains et de Belges liés au Maroc. Elle a commencé par des caravanes médicales, s\'est engagée dans l\'éducation, et a sensibilisé par des conférences. En temps de crise, ASF était là. Aujourd\'hui, elle continue son voyage, renforçant l\'éducation et les soins médicaux pour le Maroc.', '\"Votre Action, Notre Histoire : Changeons le Monde Ensemble !\"', 'Objectif', 'L\'Association Santé et Formation (ASF) incarne l\'espoir en offrant aide et soutien aux familles , favorise le multiculturalisme sans frontière en renforçant les liens culturels , tout en améliorant la santé, l\'éducation, et l\'intégration.\r\n\r\n ', '\"Notre Objectif : Un Monde Meilleur Pour Tous !\"');
 
 -- --------------------------------------------------------
 
@@ -199,7 +199,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
 --
 
 INSERT INTO `contact` (`idContact`, `contactTitre`, `contactText`, `contactName`, `contactEmail`, `contactCategorie`, `contactMessage`, `contactButton`, `option1`, `option2`, `option3`, `option4`, `contactCoor`, `contactSiege`, `contactMailCoo`, `contactTel`, `contactReseaux`) VALUES
-(1, 'Contact us!', 'A desire to send us a message ?<br>\r\nA question for us  ?<br> A problem encountered during your visit ? <br> Please use this form to contact us !<br>I will be pleased to answer you as soon as possible.', 'Name:', 'Mail :', 'Categories :', 'Message :', 'Send', 'Management', 'Donation', 'Volunteer', 'Other', 'Contact', 'Registered office:<br>Avenue voltaire 138, 1030 Schaerbeek', 'Mail:<br>contact@sante-et-formation.org', 'Tel:', 'Social networking');
+(1, 'Contactez-nous', 'Une envie de nous envoyer un message ?<br>\r\n Une question à nous poser ?<br> Un problème rencontré lors de votre visite ? <br> Veuillez utiliser ce formulaire pour prendre contact avec nous !<br>Je me ferai un plaisir de vous répondre dans les plus brefs délais .', 'Nom:', 'Mail :', 'Categorie :', 'Message :', 'Envoyer', 'Administration', 'Donation', 'Bénévole', 'Autre', 'Coordonnées', 'Siège social:<br>Avenue voltaire 138, 1030 Schaerbeek', 'Mail:<br>contact@sante-et-formation.org', 'Tel:0475.60.56.77', 'Réseaux sociaux');
 
 -- --------------------------------------------------------
 
@@ -224,10 +224,10 @@ CREATE TABLE IF NOT EXISTS `don` (
 --
 
 INSERT INTO `don` (`idDon`, `donTitre`, `donText`, `donPackTitre`, `donPackImage`, `donPackText`, `donPackButton`) VALUES
-(1, 'Back-to-school supplies', 'Communication: Back-to-school supplies', '30€/child', '<img id=\"photoDon\" src=\"img/back-to-school.jpg\" alt=\"Fourniture pour rentrée scolaire\">', 'IBAN: BE32 7340 2599 5302', ''),
-(2, 'Back-to-school clothing', 'Communication: Back-to-school clothing', '30€/child', '<img src=\"img/vetement-enfant.jpg\" alt=\"Vêtement pour rentrée scolaire\" id=\"photoDon\">', 'IBAN: BE32 7340 2599 5302', ''),
-(3, 'Food Assistance for<br> 1 family and 3 children', 'Communication: Food  assistance for 1 family and 3 children', '30€/child', '<img src=\"img/famille.jpg\" alt=\"Aide Alimentaire pour 1 famille et 3 enfants\" id=\"photoDon\">', 'IBAN: BE32 7340 2599 5302', ''),
-(4, 'Health care assistance:<br>Consultations-Medication', 'Communication: Healthcare assistance', '50€/child', '<img src=\"img/consultation.jpg\" alt=\"Aide pour les soins de santé / Consultations-Médicaments\" id=\"photoDon\">', 'IBAN: BE32 7340 2599 5302', '');
+(1, 'Fournitures pour rentrée scolaire', 'Communication: Fournitures pour rentrée scolaire', '30€/enfant', 'img/back-to-school.jpg ', 'IBAN: BE32 7340 2599 5302 <br>\r\nMAROC: 3106401017102604777301 24 ', ''),
+(2, 'Vêtement pour rentrée scolaire', 'Communication: Vêtement pour rentrée scolaire', '30€/enfant', 'img/vetement-enfant.jpg', 'IBAN: BE32 7340 2599 5302 <br>\r\nMAROC: 3106401017102604777301 24 ', ''),
+(3, 'Aide Alimentaire pour<br> 1 famille et 3 enfants', 'Communication: Aide Alimentaire pour 1 famille et 3 enfants', '50€/enfant', 'img/famille.jpg ', 'IBAN: BE32 7340 2599 5302 <br>\r\nMAROC: 3106401017102604777301 24 ', ''),
+(4, 'Aide pour les soins de santé:<br>Consultations-Médicaments', 'Communication: Aide pour les soins de santé', '50€/enfant', 'img/consultation.jpg', 'IBAN: BE32 7340 2599 5302<br>\r\nMAROC: 3106401017102604777301 24 ', '');
 
 -- --------------------------------------------------------
 
@@ -274,7 +274,7 @@ CREATE TABLE IF NOT EXISTS `footer` (
 --
 
 INSERT INTO `footer` (`idFooter`, `footerFaireUnDonTitre`, `footerFaireUnDonText`, `footerFaireUnDonButton`, `footerAsbl`, `footerFormation`, `footerDon`, `footerAgenda`, `footerAdmin`, `footerMention`, `footerPolitique`, `footerTitre`, `footerDescription`, `footerCoordonnee`, `footerSiegeSociete`, `footerMail`, `footerTelephone`, `footerReseauxSocial`, `footerContactTitre`, `footerContactNom`, `footerContactEmail`, `footerContactMsg`, `footerContactButton`, `footerCopyrigth`, `footerAction`, `footerOp1`, `footerOp2`, `footerOp3`, `footerOp4`) VALUES
-(1, 'Make a donation', 'We need your help to bring hope and relief to those who desperately need it. Every donation counts. Make a difference today.\r\n<br>\r\nMake a donation now: IBAN BE32 7340 2599 5302\r\n<br>\r\nTogether, we can change people\'s lives.', 'Donation', 'L\'ASBL', 'Training', 'Don', 'Calendar', 'Admin', 'Legal notice', 'Privacy policy', 'Health & Training', 'Our \"Santé & Formation\" association actively contributes to the training, education and professional integration of people in precarious situations. Our activities focus on physical and mental health, information and prevention.', 'Contact', 'Registered office:<p>Avenue voltaire 138, 1030 Schaerbeek</p>\r\n', 'Mail:<p>contact@sante-et-formation.org</p>', 'Tel:', 'Social networks', 'Contact', 'Last name, first name *', 'Email *', 'Your message *', 'SEND ', 'Health & Training', 'Actions', 'Management', 'Donation', 'Volunteer', 'Other');
+(1, 'Faire un don', 'Nous avons besoin de votre aide pour apporter de l\'espoir et des secours à ceux qui en ont désespérément besoin. Chaque don compte. Faites la différence aujourd\'hui.\r\n<br>\r\nFaites un don maintenant : IBAN BE32 7340 2599 5302\r\n<br>\r\nEnsemble, nous pouvons changer des vies.', 'Donation', 'L\'ASBL', 'Formations', 'Don', 'Agenda', 'Admin', 'Mention légales', 'Politique de confidentialité', 'Santé et formation', 'Notre Association \"Santé & Formation\" contribue activement à la formation, l’éducation et l’insertion professionnelle des personnes précaires. Nos activités sont axées sur la santé physique et mentale, l’information et la prévention', 'Coordonées', 'Siège social:<p>Avenue voltaire 138, 1030 Schaerbeek</p>\r\n', 'Mail:<p>contact@sante-et-formation.org</p>', 'Tel:0475.60.56.77', 'Réseaux sociaux', 'Contact', 'Nom, prénom *', 'Email *', 'Votre message *', 'ENVOYER', 'Santé-et-formation', 'Actions', 'Administration', 'Donation', 'Bénévole', 'Autre');
 
 -- --------------------------------------------------------
 
@@ -291,16 +291,16 @@ CREATE TABLE IF NOT EXISTS `formation` (
   `formationText` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `formationImage` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`idFormation`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `formation`
 --
 
 INSERT INTO `formation` (`idFormation`, `formationTitre`, `formationDate`, `formationDescription`, `formationText`, `formationImage`) VALUES
-(1, 'Our training courses', '0000-00-00', 'Economic emancipation through training', 'Health education through prevention', '  <img src=\"img/01.png\" alt=\"\">'),
-(2, '', '0000-00-00', '', 'Training for social reintegration ', ' <img src=\"img/05.jpg\" alt=\"\">'),
-(3, '', '0000-00-00', '', ' Health education for disadvantaged people', '<img src=\"img/18.PNG\" alt=\"\">');
+(1, 'Nos Formations', '0000-00-00', 'L’émancipation économique par la voie de la formation', ' Education à la santé par la prévention', 'img/01.png'),
+(2, '', '0000-00-00', '', 'Formation pour la <br>réinsertion sociale ', 'img/05.jpg'),
+(3, '', '0000-00-00', '', ' Education à la santé aux personnes précaires', 'img/18.PNG');
 
 -- --------------------------------------------------------
 
@@ -325,7 +325,7 @@ CREATE TABLE IF NOT EXISTS `navbar` (
 --
 
 INSERT INTO `navbar` (`idNavbar`, `navbarAsbl`, `navbarAction`, `navbarFormation`, `navbarAgenda`, `navbarContact`, `navbarDon`) VALUES
-(1, 'ASBL', 'Actions', 'Training', 'Calendar', 'Contact', 'Make a donation');
+(1, 'ASBL', 'Actions', 'Formations', 'Agenda', 'Contact', 'Faire un don');
 
 -- --------------------------------------------------------
 
@@ -339,7 +339,7 @@ CREATE TABLE IF NOT EXISTS `valuers` (
   `valeursTitre` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `valeursLogo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `valueDescription` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `valeurT` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `valeurT` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`idValeurs`)
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -348,12 +348,10 @@ CREATE TABLE IF NOT EXISTS `valuers` (
 --
 
 INSERT INTO `valuers` (`idValeurs`, `valeursTitre`, `valeursLogo`, `valueDescription`, `valeurT`) VALUES
-(1, 'Equity', '', ' Social, economic and political equity between the sexes', 'OUR VALUES'),
-(2, 'Justice', '', ' Promoting greater social and economic justice', ''),
-(3, 'Respect', '', 'Respecting the dignity of vulnerable people', ''),
-(4, 'Ecology', '', 'Working towards a healthier planet', ''),
-(5, 'Solidarity', '', 'Working together for a better world.', ''),
-(6, 'Education', '', 'Educating for a brilliant future.', '');
+(1, 'Equité', '', ' Equité sociale, économique et politique entre les genres', 'NOS VALEURS'),
+(2, 'Justice', '', ' Promotion pour une meilleure justice sociale et économique', ''),
+(3, 'Respect', '', 'Respecter la dignité des personnes précaires', ''),
+(4, 'Ecologie', '', ' Oeuvrer pour une planète plus saine', '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -33,7 +33,8 @@
 <div id="positionAgenda">
      <?php foreach ($recupAllAgenda as $key){?>
     <div class="carteAgenda">
-        <?=$key->getAgendaImages()?>
+        <img src="<?=$key->getAgendaImages()?>" alt="">
+
         <h1><?=$key->getAgendaTextDetail()?></h1>
         <p><?=$key->getAgendaText()?></p>
 

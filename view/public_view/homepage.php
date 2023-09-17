@@ -48,7 +48,7 @@
 <div id="positionAction">
     <?php  foreach($all as $key) {?>
     <div class="carteAction">
-        <?=$key->getPhotoAction()?>
+        <img src="<?=$key->getPhotoAction()?>" alt="">
         <h1> <?=$key->getTextAction()?></h1>
     </div>
 
@@ -68,7 +68,8 @@
 <div id="positionFormation">
     <?php  foreach($all as $key) {?>
     <div class="carteFormation">
-        <?=$key->getPhotoFormation()?>
+        <img src="<?=$key->getPhotoFormation()?>" alt="">
+
         <h1><?=$key->getTextFormation()?></h1>
     </div>
     <?php }?>
@@ -85,7 +86,7 @@
 <div id="positionAgenda">
     <?php  foreach($all as $key) {?>
     <div class="carteAgenda">
-        <?=$key->getPhotoAgenda()?>
+        <img src="<?=$key->getPhotoAgenda()?>" alt="">
         <h1><?=$key->getTextAgenda()?></h1>
         <p><?=$key->getDescriptionAgenda()?></p>
     </div>
