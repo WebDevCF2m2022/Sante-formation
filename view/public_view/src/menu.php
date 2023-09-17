@@ -34,9 +34,11 @@ $URL = isset($_GET['lang'])? '&lang='.$_GET['lang']:"";
                             case "nl":
                                 echo '<img class="flag-icon" src="img/icons8-netherlands-48.png" alt="American Flag"><p>NL</p><i class="fas fa-caret-down"></i>';
                                 break;
+                                /*
                             case "ar":
                                 echo '<img class="flag-icon" src="img/icons8-saudi-arabia-48.png" alt="American Flag"><p>AR</p><i class="fas fa-caret-down"></i>';
                                 break;
+                                */
                             default:
                                 echo '<img class="flag-icon" src="img/icons8-french-flag-48.png" alt="French Flag"><p>FR</p><i class="fas fa-caret-down"></i>';
                         }
@@ -52,8 +54,10 @@ $URL = isset($_GET['lang'])? '&lang='.$_GET['lang']:"";
                 <img class="flag-icon" src="img/icons8-great-britain-48.png" alt="American Flag"><p>EN</p></li></a>
             <a href="?<?=$URL2?>&lang=nl"><li data-lang="nl">
                 <img class="flag-icon" src="img/icons8-netherlands-48.png" alt="American Flag"><p>NL</p></li></a>
+                <!--
             <a href="?<?=$URL2?>&lang=ar"><li data-lang="ar">
                 <img class="flag-icon" src="img/icons8-saudi-arabia-48.png" alt="American Flag"><p>AR</p></li></a>
+                  -->
             </ul>
         </div>
 </header>

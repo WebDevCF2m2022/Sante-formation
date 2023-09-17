@@ -28,8 +28,8 @@ body {
 }
 
 #formationBloc h1 {
-    height: 60px;
-    line-height: 60px;
+    padding: 20px 0;
+    height: auto;
     grid-area: titreAc;
     justify-self: center;
     font-size: x-large;

@@ -9,6 +9,7 @@
     <title>Administration</title>
 </head>
 <body>
+<a href="./"><button id="buttonAdmin">Retour sur notre site...</button></a>
 <div class="blocAdmin">
     <form class="form" action="" method="POST">
       <div class="logo">
@@ -29,8 +30,6 @@
       </div>
 
     </form><br>
-        <a href="./"><button id="buttonAdmin">Retour sur notre site...</button></a>
-
   </div>
 </body>
 </html>
